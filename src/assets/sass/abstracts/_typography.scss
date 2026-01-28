@@ -1,0 +1,120 @@
+/* ================================= Common Typography Css Start =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: hsl(var(--body-color));
+  word-break: break-word;
+  background-color: hsl(var(--body-bg));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: hsl(var(--body-color));
+}
+
+span {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px 0;
+  font-family: var(--heading-font);
+  color: hsl(var(--heading-color));
+  font-weight: 700;
+
+  @include sm-screen {
+    margin: 0 0 10px 0;
+  }
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  transition: 0.2s linear;
+  line-height: inherit;
+}
+
+a {
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+  color: hsl(var(--heading-color));
+}
+
+a:hover {
+  color: hsl(var(--base));
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+select {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+/* ================================= Common Typography Css End =========================== */

@@ -1,0 +1,72 @@
+/* ======================  Security Section Start  ======================*/
+.security {
+  position: relative;
+  z-index: 1;
+
+  &__wrapper {
+    padding-top: 100px;
+    border-left: 1px solid hsl(var(--border-color));
+  }
+
+  &__item {
+    height: 1171px;
+    width: 1320px;
+    background-image: linear-gradient(
+      223deg,
+      hsl(var(--section-bg)),
+      transparent
+    );
+    border-radius: 0 100% 0 0;
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(
+        223deg,
+        hsl(var(--section-bg)),
+        transparent
+      );
+      height: 500px;
+      width: 650px;
+      border-radius: 0 100% 0 0;
+    }
+
+    &__thumb {
+      position: absolute;
+      left: 36px;
+      bottom: 0;
+      z-index: 2;
+      max-width: 490px;
+    }
+    &__content {
+      max-width: 340px;
+    }
+    &__icon {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      color: hsl(var(--body-color));
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    &__desc {
+      font-size: 20px;
+      font-weight: 400;
+      color: hsl(var(--body-color));
+    }
+  }
+}
+
+/* ======================  Security Section End  ======================*/
+
+.security__item > .security__item__content:nth-child(2) {
+  position: absolute;
+  left: 60px;
+}

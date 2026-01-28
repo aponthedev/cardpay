@@ -1,0 +1,43 @@
+/* ======================  Social Icon Section Start  ======================*/
+.social__icon {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    &.dark__social {
+        li {
+            a {
+                background-color: hsl(var(--white) / 0.15);
+                color: hsl(var(--white));
+
+                &:hover {
+                    background-color: hsl(var(--base));
+                    color: hsl(var(--white));
+                }
+            }
+        }
+    }
+
+    li {
+        a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: hsl(var(--base) / 0.1);
+            color: hsl(var(--body-color));
+            border-radius: 50%;
+            transition: 0.3s;
+            font-size: 16px;
+
+            &:hover {
+                background-color: hsl(var(--base));
+                color: hsl(var(--white));
+            }
+        }
+    }
+}
+
+/* ======================  Social Icon Section End  ======================*/

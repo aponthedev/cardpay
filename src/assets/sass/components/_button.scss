@@ -1,0 +1,116 @@
+/* ================================= Button Css Start =========================== */
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: none;
+  background-color: none;
+  border-color: none;
+}
+
+.pill {
+  border-radius: 40px !important;
+}
+
+.btn {
+  color: hsl(var(--white)) !important;
+  font-weight: 600;
+  padding: 19px 22px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  border: 1px solid transparent;
+  font-family: var(--body-font);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1;
+  white-space: nowrap;
+
+  i.fa-solid.fa-arrow-down {
+    transform: rotate(218deg);
+    transition: 0.3s;
+  }
+
+  @include sm-screen {
+    padding: 14px 25px;
+    font-size: 14px;
+  }
+
+  @include msm-screen {
+    padding: 12px 20px;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    box-shadow: none !important;
+    i.fa-solid.fa-arrow-down {
+      transform: rotate(267deg);
+    }
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  &--lg {
+    padding: 20px 35px;
+
+    @include md-screen {
+      padding: 18px 30px;
+    }
+
+    @include sm-screen {
+      padding: 16px 25px;
+    }
+  }
+
+  &--sm {
+    padding: 7px 18px;
+    font-weight: 600;
+    font-size: rem(12px);
+
+    @include sm-screen {
+      padding: 8px 12px;
+    }
+  }
+
+  &--dark {
+    border: 2px solid hsl(var(--body-color)) !important;
+    color: hsl(var(--body-color)) !important;
+    transition: 0.3s;
+
+    &:hover {
+      color: hsl(var(--white)) !important;
+      background-color: hsl(var(--black)) !important;
+    }
+  }
+
+  &--icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    padding: 0;
+  }
+
+  // ============= Gradient Button Start =======================
+  @include gradient-btn(--base, --base, --base-two, 271deg);
+  // ============= Gradient Button End =======================
+
+  // ============= Different Color Button Start ==================
+  @include btn-style(--base);
+  @include btn-style(--success);
+  @include btn-style(--base-two);
+  @include btn-style(--primary);
+  @include btn-style(--secondary);
+  @include btn-style(--danger);
+  @include btn-style(--warning);
+  @include btn-style(--info);
+  @include btn-style(--black);
+}
+
+/* ================================= Button Css End =========================== */

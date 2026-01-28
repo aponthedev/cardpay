@@ -1,0 +1,153 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+    <div class="dashboard__sidebar">
+        <div class="sidebar__close"><i class="las la-times"></i></div>
+        <div class="dashboard__logo">
+            <a href="dashboard.html"><img src="assets/images/logo/logo-white.png" alt="logo"></a>
+        </div>
+        <div class="dashboard__menu">
+            <ul>
+                <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li class="upload__file__sb"><a href="upload-file.html"><i class="fa-solid fa-cloud-arrow-up"></i>
+                        Upload File</a></li>
+                <li>
+                    <a href="#collapseExample" class="active" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-file"></i> File
+                        <span class="dropdown__arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="sidebar__dropdown">
+                            <ul>
+                                <li><a href="published-files.html" class="active">Published Files</a></li>
+                                <li><a href="reject-files.html">Reject File</a></li>
+                                <li><a href="pending-files.html">Pending File</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="my-download.html"><i class="fa-solid fa-cloud-arrow-down"></i> My Download</a></li>
+                <li><a href="deposit.html"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</a></li>
+                <li><a href="withdraw.html"><i class="fa-solid fa-coins"></i> Withdraw</a></li>
+                <li><a href="transactions.html"><i class="fa-solid fa-list-ul"></i> Transactions</a></li>
+                <li><a href="my-tickets.html"><i class="fa-solid fa-headset"></i> Support Ticket</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dashboard__wrap">
+        <div class="dashboard__header">
+            <div class="search__box">
+                <input type="text" class="form-control" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="dashboard__header__widgets">
+                <div class="upload__file">
+                    <a href="upload-file.html" class="btn btn--base"><i class="fa-solid fa-cloud-arrow-up"></i> Upload
+                        File</a>
+                </div>
+                <div class="dropdown">
+                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="notification__btn">
+                            <i class="las la-bell"></i>
+                            <span class="notification__count">
+                                <span>21</span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="notification__wrap">
+                            <div class="notification__header">
+                                <h4>Notifications</h4>
+                                <span class="badge badge--base">12 Unread</span>
+                            </div>
+                            <div class="notification__body">
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                            </div>
+                            <div class="notification__footer">
+                                <a href="#" class="btn btn--sm btn--base w-100">View all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle d-flex align-items-center gap-2" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="profile__dropdown">
+                            <img src="assets/images/user.jpg" alt="image">
+                            <span>Max Sujak</span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">Profile Setting</a></li>
+                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+                        <li><a class="dropdown-item" href="two-factor.html">2FA Security</a></li>
+                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                    </ul>
+                </div>
+                <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+        <div class="dashboard__wrapper">
+            <div class="row g-4">
+                <div class="col-xl-6">
+                    <div class="card p-4">
+                        <div class="card-header pt-0">
+                            <h5 class="card-title">Add Your Account</h5>
+                        </div>
+                        <div class="card-body px-0 pb-0">
+                            <div class="two__factor__info">
+                                <p>Use the QR code or setup key on your Google Authenticator app to add your account.
+                                </p>
+                                <img src="assets/images/code.png" alt="image">
+                            </div>
+                            <div class="two__factor__key">
+                                <label class="form-label">Setup Key</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="BMP5SAEW53GV4B2Z">
+                                    <button class="input-group-text"><i class="fa-solid fa-copy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="card p-4">
+                        <div class="card-header pt-0">
+                            <h5 class="card-title">Enable 2FA Security</h5>
+                        </div>
+                        <div class="card-body px-0 pb-0">
+                            <div class="two__factor__form">
+                                <label class="form-label">Google Authenticatior OTP</label>
+                                <input class="form-control" type="text" placeholder="Enter OTP">
+                                <button type="submit" class="btn btn--base w-100 mt-3">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==========================  Dashboard Section End  ==========================-->
+
+@@include('../partials/_template-bottom.html')

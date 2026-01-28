@@ -1,0 +1,498 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+    <div class="dashboard__sidebar">
+        <div class="sidebar__close"><i class="las la-times"></i></div>
+        <div class="dashboard__logo">
+            <a href="dashboard.html"><img src="assets/images/logo/logo-white.png" alt="logo"></a>
+        </div>
+        <div class="dashboard__menu">
+            <ul>
+                <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li class="upload__file__sb"><a href="upload-file.html"><i class="fa-solid fa-cloud-arrow-up"></i>
+                        Upload File</a></li>
+                <li>
+                    <a href="#collapseExample" class="active" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-file"></i> File
+                        <span class="dropdown__arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="sidebar__dropdown">
+                            <ul>
+                                <li><a href="published-files.html" class="active">Published Files</a></li>
+                                <li><a href="reject-files.html">Reject File</a></li>
+                                <li><a href="pending-files.html">Pending File</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="my-download.html"><i class="fa-solid fa-cloud-arrow-down"></i> My Download</a></li>
+                <li><a href="deposit.html"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</a></li>
+                <li><a href="withdraw.html"><i class="fa-solid fa-coins"></i> Withdraw</a></li>
+                <li><a href="transactions.html"><i class="fa-solid fa-list-ul"></i> Transactions</a></li>
+                <li><a href="my-tickets.html"><i class="fa-solid fa-headset"></i> Support Ticket</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dashboard__wrap">
+        <div class="dashboard__header">
+            <div class="search__box">
+                <input type="text" class="form-control" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="dashboard__header__widgets">
+                <div class="upload__file">
+                    <a href="upload-file.html" class="btn btn--base"><i class="fa-solid fa-cloud-arrow-up"></i> Upload
+                        File</a>
+                </div>
+                <div class="dropdown">
+                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="notification__btn">
+                            <i class="las la-bell"></i>
+                            <span class="notification__count">
+                                <span>21</span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="notification__wrap">
+                            <div class="notification__header">
+                                <h4>Notifications</h4>
+                                <span class="badge badge--base">12 Unread</span>
+                            </div>
+                            <div class="notification__body">
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <span>26 minutes ago</span>
+                                </a>
+                            </div>
+                            <div class="notification__footer">
+                                <a href="#" class="btn btn--sm btn--base w-100">View all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle d-flex align-items-center gap-2" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="profile__dropdown">
+                            <img src="assets/images/user.jpg" alt="image">
+                            <span>Max Sujak</span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">Profile Setting</a></li>
+                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+                        <li><a class="dropdown-item" href="two-factor.html">2FA Security</a></li>
+                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                    </ul>
+                </div>
+                <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+        <div class="dashboard__wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="table__topbar">
+                            <h5>My Tickets</h5>
+                            <div class="table__topbar__right ticket__pg">
+                                <div class="search__box">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                                <a href="#" class="btn btn--base open__ticket"><i class="fa-solid fa-plus"></i> Open
+                                    Ticket</a>
+                                <div class="filter__wrap">
+                                    <span class="btn btn--base filter__btn"><i class="fa-solid fa-filter"></i>
+                                        Filter</span>
+                                    <div class="filter__main">
+                                        <div class="row g-3">
+                                            <div class="col-lg-12">
+                                                <div class="text-end">
+                                                    <span class="filter__close"><i class="fa-solid fa-xmark"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="filter__topbar">
+                                                    <h5>Filter</h5>
+                                                    <a href="#">Clear All</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="filter__card">
+                                                    <h5>File Type</h5>
+                                                    <div class="filter__form">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check1">
+                                                                PDF
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check1">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check2">
+                                                                DOCX
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check2">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check3">
+                                                                ZIP
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check3">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check4">
+                                                                RTF
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check4">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check5">
+                                                                Microsoft Word
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check5">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check51">
+                                                                TXT
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check51">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="filter__card">
+                                                    <h5>Category</h5>
+                                                    <div class="filter__form">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check6">
+                                                                All
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check6">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check7">
+                                                                Resume
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check7">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check8">
+                                                                Invoice
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check8">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check9">
+                                                                Ebook
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check9">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check10">
+                                                                Report
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check10">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check11">
+                                                                Legal Form
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check11">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="filter__card">
+                                                    <h5>License Type</h5>
+                                                    <div class="filter__form">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check12">
+                                                                Personal
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check12">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="filter__check13">
+                                                                Commercial
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="filter__check13">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="filter__card">
+                                                    <h5>Price Range</h5>
+                                                    <div class="filter__range">
+                                                        <div class="range-slider" data-group-type="status"
+                                                            bis_skin_checked="1">
+                                                            <div class="range-slider-box" bis_skin_checked="1">
+                                                                <div class="slider-box" bis_skin_checked="1">
+                                                                    <div class="sliderr" bis_skin_checked="1">
+                                                                        <div class="progresss" bis_skin_checked="1">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="range-input" bis_skin_checked="1">
+                                                                        <input type="range" class="range-min" min="10"
+                                                                            max="10000" value="10" step="100">
+                                                                        <input type="range" class="range-max" min="0"
+                                                                            max="10000" value="10000" step="100">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="price-input d-flex justify-content-between align-items-center g-2"
+                                                                    bis_skin_checked="1">
+                                                                    <h6>$<span class="input-min min_price">10</span>
+                                                                    </h6>
+                                                                    <h6>$<span class="input-max min_price">10000</span>
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="filter__action">
+                                                    <button type="submit" class="btn btn--base w-100">Apply Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard__table">
+                            <table class="table table--responsive--md">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Status</th>
+                                        <th>Priority</th>
+                                        <th>Last Reply</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">[Ticket#38630424] dfgaer</a></td>
+                                        <td><span class="badge badge--success">Answered</span></td>
+                                        <td><span class="badge badge--warning">Medium</span></td>
+                                        <td>1 month ago</td>
+                                        <td>
+                                            <div class="action__btn">
+                                                <div class="dropdown">
+                                                    <button class="px-2 py-1" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">[Ticket#38630424] dfgaer</a></td>
+                                        <td><span class="badge badge--success">Answered</span></td>
+                                        <td><span class="badge badge--warning">Medium</span></td>
+                                        <td>1 month ago</td>
+                                        <td>
+                                            <div class="action__btn">
+                                                <div class="dropdown">
+                                                    <button class="px-2 py-1" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">[Ticket#38630424] dfgaer</a></td>
+                                        <td><span class="badge badge--success">Answered</span></td>
+                                        <td><span class="badge badge--warning">Medium</span></td>
+                                        <td>1 month ago</td>
+                                        <td>
+                                            <div class="action__btn">
+                                                <div class="dropdown">
+                                                    <button class="px-2 py-1" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">[Ticket#38630424] dfgaer</a></td>
+                                        <td><span class="badge badge--success">Answered</span></td>
+                                        <td><span class="badge badge--warning">Medium</span></td>
+                                        <td>1 month ago</td>
+                                        <td>
+                                            <div class="action__btn">
+                                                <div class="dropdown">
+                                                    <button class="px-2 py-1" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">[Ticket#38630424] dfgaer</a></td>
+                                        <td><span class="badge badge--success">Answered</span></td>
+                                        <td><span class="badge badge--warning">Medium</span></td>
+                                        <td>1 month ago</td>
+                                        <td>
+                                            <div class="action__btn">
+                                                <div class="dropdown">
+                                                    <button class="px-2 py-1" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">[Ticket#38630424] dfgaer</a></td>
+                                        <td><span class="badge badge--success">Answered</span></td>
+                                        <td><span class="badge badge--warning">Medium</span></td>
+                                        <td>1 month ago</td>
+                                        <td>
+                                            <div class="action__btn">
+                                                <div class="dropdown">
+                                                    <button class="px-2 py-1" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">[Ticket#38630424] dfgaer</a></td>
+                                        <td><span class="badge badge--success">Answered</span></td>
+                                        <td><span class="badge badge--warning">Medium</span></td>
+                                        <td>1 month ago</td>
+                                        <td>
+                                            <div class="action__btn">
+                                                <div class="dropdown">
+                                                    <button class="px-2 py-1" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">[Ticket#38630424] dfgaer</a></td>
+                                        <td><span class="badge badge--success">Answered</span></td>
+                                        <td><span class="badge badge--warning">Medium</span></td>
+                                        <td>1 month ago</td>
+                                        <td>
+                                            <div class="action__btn">
+                                                <div class="dropdown">
+                                                    <button class="px-2 py-1" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==========================  Dashboard Section End  ==========================-->
+
+@@include('../partials/_template-bottom.html')

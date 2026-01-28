@@ -1,0 +1,65 @@
+/* ======================  Dropdown Section Start  ======================*/
+.dropdown-toggle {
+    color: hsl(var(--heading-color));
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.dropdown-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-left: 0;
+    margin-top: -4px;
+    border: solid currentColor;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    vertical-align: 0;
+    transition: 0.2s;
+}
+
+.dropdown-toggle[aria-expanded=true]::after {
+    transform: rotate(225deg);
+    margin-top: 2px;
+}
+
+.dropdown-menu {
+    min-width: max-content;
+    padding: 0;
+    font-size: 14px;
+    color: hsl(var(--heading-color));
+    background-color: hsl(var(--white));
+    border: 0;
+    border-radius: 0;
+    white-space: nowrap;
+    box-shadow: var(--box-shadow);
+}
+
+.dropdown-item {
+    padding: 8px 18px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid hsl(var(--border-color) / 0.3);
+    border-radius: 0;
+    font-size: 14px;
+    transition: 0.3s;
+    &:hover {
+        color: hsl(var(--white));
+        background-color: hsl(var(--base));
+    }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: hsl(var(--white));
+    background-color: hsl(var(--base));
+}
+
+/* ======================  Dropdown Section End  ======================*/

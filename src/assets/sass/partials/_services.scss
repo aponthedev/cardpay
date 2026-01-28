@@ -1,0 +1,16 @@
+/* ======================  Services Section Start  ======================*/
+.services {
+  background-color: hsl(var(--section-bg));
+  border-bottom: 1px solid hsl(var(--border-color));
+  &__wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__item {
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+/* ======================  Services Section End  ======================*/

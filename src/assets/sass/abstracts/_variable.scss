@@ -1,0 +1,75 @@
+/* Font Family*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* ========================= Css Variables Start ======================== */
+:root {
+  /* Font Family */
+  --heading-font: "DM Sans", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+  /* ========================= Theme Color Start ============================= */
+  @include colorVariable(--base, #4623e9, 10);
+
+  @include colorVariable(--base-two, #eaabf0, 10);
+
+  /* ========================= Theme Color End ============================= */
+
+  /* ========================= Color Variables Start =========================== */
+  // White Color
+  @include colorVariable(--white, #fff);
+
+  // Body Color
+  @include colorVariable(--body-color, #64676c);
+
+  // Body BG
+  @include colorVariable(--body-bg, #fff);
+
+  // heading-color
+  @include colorVariable(--heading-color, #121314);
+
+  // Black Color
+  @include colorVariable(--black, #000);
+
+  //Border Color
+  @include colorVariable(--border-color, #d6dadf, 50);
+
+  // Section Background
+  @include colorVariable(--section-bg, #f8f3fd);
+
+  /* ================================ Box Shadow Start =============================== */
+  --box-shadow: 0px 2px 15px hsl(var(--black) / 0.05);
+  /* ================================ Box Shadow End =============================== */
+
+  /* ============================== Bootstrap Modifier Start ============================== */
+  /* Primary Color */
+  @include colorVariable(--primary, #0007cc, 5);
+
+  /* Secondary Color */
+  @include colorVariable(--secondary, #6d767e, 5);
+
+  /* Success Color */
+  @include colorVariable(--success, #1bcc00, 5);
+
+  /* Danger Color */
+  @include colorVariable(--danger, #fb4646, 5);
+
+  /* Warning Color */
+  @include colorVariable(--warning, #eb9c00, 5);
+
+  /* Info Color */
+  @include colorVariable(--info, #00bbff, 5);
+
+  /* ============================== Bootstrap Modifier End ============================== */
+
+  /* ============================== Dark Mood Color Modify Start ============================== */
+  [data-theme="dark"] {
+    // Reverse White
+    @include colorVariable(--white, #101213);
+
+    // Reverse Black
+    @include colorVariable(--black, #f8fafc);
+  }
+
+  /* ============================== Dark Mood Color Modify End ============================== */
+}
+
+/* ========================= Css Variables End =========================== */

@@ -1,0 +1,56 @@
+/* ================================= Tab Css Start =========================== */
+.custom--tab {
+  justify-content: center;
+  border-radius: 6px;
+  margin-bottom: 60px;
+  gap: 18px;
+
+  .nav-item {
+    border-bottom: 0;
+    padding: 5px;
+
+    .nav-link {
+      color: hsl(var(--heading-color));
+      padding: 16px;
+      background-color: hsl(var(--black) / 0.1) !important;
+      border-radius: 16px;
+      transition: 0.4s;
+      border: 1px solid hsl(var(--border-color)) !important;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 700;
+
+      @include lg-screen {
+        padding: 12px 15px;
+      }
+
+      &.active {
+        color: hsl(var(--black)) !important;
+        background-color: hsl(var(--white)) !important;
+        border: 1px solid hsl(var(--base)) !important;
+        box-shadow: 0px 4px 10px 0 hsl(var(--black) / 0.1);
+
+        .nav-link__icon svg {
+          stroke: hsl(var(--base)) !important;
+        }
+      }
+
+      &:hover {
+        color: hsl(var(--black)) !important;
+
+        .nav-link__icon svg {
+          stroke: hsl(var(--base)) !important;
+        }
+      }
+    }
+
+    #pills-disabled-tab.nav-link {
+      background-color: hsl(var(--black) / 0.04) !important;
+      color: hsl(var(--heading-color) / 0.6);
+    }
+  }
+}
+
+/* ================================= Tab Css End =========================== */

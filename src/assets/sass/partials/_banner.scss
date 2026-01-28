@@ -1,0 +1,91 @@
+/* ======================  Banner Section Start  ======================*/
+.banner {
+  border-bottom: 1px solid hsl(var(--border-color));
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  &__wrapper {
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+    padding-top: 178px;
+    padding-left: 40px;
+    padding-bottom: 100px;
+  }
+
+  &__thumb {
+    img {
+      max-width: 493px;
+      margin-top: -52px;
+      margin-left: -32px;
+    }
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(var(--base));
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--base) / 0.1),
+      transparent
+    );
+
+    padding: 4px 10px;
+    border-left: 2px solid hsl(var(--base));
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    font-size: 74px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+
+  &__desc {
+    font-size: 22px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+    margin-bottom: 46px;
+    max-width: 780px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    &__title {
+      font-size: 22px;
+      font-weight: 500;
+      color: hsl(var(--body-color));
+      margin-bottom: 6px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    &__line {
+      height: 48px;
+      width: 1px;
+      background-color: hsl(var(--black) / 0.3);
+    }
+  }
+}
+
+/* ======================  Banner Section End  ======================*/
