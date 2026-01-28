@@ -549,6 +549,23 @@ button:focus {
 }
 
 /* ======================  Swiper End  ======================*/
+.btn--text {
+    font-size: 16px;
+    font-weight: 600px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn--text:hover i {
+    transform: rotate(265deg);
+}
+
+.btn--text i {
+    transform: rotate(218deg);
+    transition: 0.3s;
+}
+
 /* ======================  wyg Start  ======================*/
 .wyg h1,
 .wyg h2,
@@ -6368,6 +6385,7 @@ input[type=number] {
 .testimonial {
     padding: 100px 40px;
     background-color: hsl(var(--section-bg));
+    border-bottom: 1px solid hsl(var(--border-color));
 }
 
 .testimonial__card {
@@ -6446,4 +6464,74 @@ input[type=number] {
 }
 
 /* ======================  Testimonial Section End  ======================*/
+/* ======================  Manage-payments Section Start  ======================*/
+.manage-payments {
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+.manage-payments__wrapper {
+    padding: 100px 40px;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+}
+
+.manage-payments__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(var(--black));
+    margin-bottom: 30px;
+}
+
+.manage-payments__desc {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.manage-payments__button {
+    margin-bottom: 30px;
+}
+
+.manage-payments__list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    flex-wrap: wrap;
+    gap: 40px;
+    row-gap: 12px;
+    text-align: start;
+    justify-content: start;
+}
+
+.manage-payments__list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.manage-payments__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 18px 16px 24px;
+    background-color: hsl(var(--base)/0.1);
+    border-radius: 14px;
+}
+
+.manage-payments__tag__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--heading-color));
+}
+
+.manage-payments__tag__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(var(--heading-color));
+    margin-bottom: 0;
+}
+
+/* ======================  Manage-payments Section End  ======================*/
 /*# sourceMappingURL=main.css.map */

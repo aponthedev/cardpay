@@ -2,6 +2,7 @@
 .testimonial {
   padding: 100px 40px;
   background-color: hsl(var(--section-bg));
+  border-bottom: 1px solid hsl(var(--border-color));
 
   &__card {
     border-radius: 24px;

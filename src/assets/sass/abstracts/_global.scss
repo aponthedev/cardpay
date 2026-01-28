@@ -72,6 +72,24 @@
 
 /* ======================  Swiper End  ======================*/
 
+.btn--text {
+  font-size: 16px;
+  font-weight: 600px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:hover {
+    i {
+      transform: rotate(265deg);
+    }
+  }
+  i {
+    transform: rotate(218deg);
+    transition: 0.3s;
+  }
+}
+
 /* ======================  wyg Start  ======================*/
 .wyg h1,
 .wyg h2,

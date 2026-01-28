@@ -127,13 +127,19 @@
   // ========================= Testimonial Swiper Js Start =====================
   var swiper = new Swiper(".testimonialSwiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 24,
     freeMode: true,
+    loop: true, // loop slides continuously
+    autoplay: {
+      delay: 2500, // 2.5 seconds between slides
+      disableOnInteraction: false, // keep autoplay even after user interacts
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
   });
+
   // ========================= Testimonial Swiper Js End =====================
 
   // ========================= Select2 Js Start =====================
