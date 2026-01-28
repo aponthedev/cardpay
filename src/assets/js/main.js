@@ -125,15 +125,15 @@
   // ========================= Magnific Popup Js End ===================
 
   // ========================= Testimonial Swiper Js Start =====================
-  // var swiper = new Swiper(".mySwiper", {
-  //   slidesPerView: 3,
-  //   spaceBetween: 30,
-  //   freeMode: true,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  // });
+  var swiper = new Swiper(".testimonialSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
   // ========================= Testimonial Swiper Js End =====================
 
   // ========================= Select2 Js Start =====================

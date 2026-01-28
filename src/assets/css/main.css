@@ -537,7 +537,7 @@ button:focus {
     height: 8px;
     display: inline-block;
     border-radius: 24px;
-    background: hsl(var(--section-bg));
+    background: hsl(var(--base)/0.3);
     opacity: 1;
     transition: 0.3s;
 }
