@@ -38,6 +38,7 @@
       margin-bottom: 24px;
       border-radius: 16px;
       overflow: hidden;
+      border: 1px solid hsl(var(--border-color));
 
       img {
         width: 100%;

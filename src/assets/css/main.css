@@ -2598,19 +2598,20 @@ label.required:after {
     width: 100%;
     padding: 14px 18px;
     background-color: transparent;
-    border: 1px solid hsl(var(--black)/0.1);
+    border: 1px solid hsl(var(--border-color));
     color: hsl(var(--black));
     line-height: 1;
 }
 
 .form-control::placeholder {
     color: hsl(var(--black)/0.6);
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .form-control:focus {
     background-color: hsl(var(--white));
-    border-color: hsl(var(--black)/0.2);
+    border-color: hsl(var(--base));
     box-shadow: none;
 }
 
@@ -3892,6 +3893,7 @@ input[type=number] {
 }
 
 .header__area.fixed-header {
+    margin-top: 0;
     position: fixed;
     top: 0px;
     background-color: hsl(var(--white));
@@ -4092,6 +4094,7 @@ input[type=number] {
 .header__login__button {
     padding: 11px 22px;
     font-weight: 400;
+    border-radius: 12px;
 }
 
 .login__button {
@@ -6715,6 +6718,7 @@ input[type=number] {
     margin-bottom: 24px;
     border-radius: 16px;
     overflow: hidden;
+    border: 1px solid hsl(var(--border-color));
 }
 
 .news__card__thumb img {
@@ -6998,4 +7002,55 @@ input[type=number] {
 }
 
 /* ======================  Accordion Section End  ======================*/
+/* ======================  Blog-page Section Start  ======================*/
+.blog-page {
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+.blog-page__card-wrap {
+    margin-top: 60px;
+}
+
+.blog-page__wrapper {
+    padding: 100px 40px;
+    padding-top: 125px;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+}
+
+.blog-page .section-heading__desc {
+    max-width: 424px;
+}
+
+.blog-page .section-heading__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* ======================  Blog-page Section End  ======================*/
+.subscribe__box {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: auto;
+}
+
+.subscribe__box .subscribe__btn {
+    position: absolute;
+    padding: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 23px;
+    height: calc(100% - 22px);
+    z-index: 2;
+    border-radius: 12px;
+}
+
+.blog-page .form-control {
+    padding: 22px 16px;
+    border-radius: 16px;
+    height: 80px;
+    padding-right: 180px;
+}
 /*# sourceMappingURL=main.css.map */

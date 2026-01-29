@@ -1,0 +1,48 @@
+/* ======================  Blog-page Section Start  ======================*/
+.blog-page {
+  border-bottom: 1px solid hsl(var(--border-color));
+
+  &__card-wrap {
+    margin-top: 60px;
+  }
+  &__wrapper {
+    padding: 100px 40px;
+    padding-top: 125px;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+  }
+}
+
+.blog-page .section-heading__desc {
+  max-width: 424px;
+}
+.blog-page .section-heading__title {
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+/* ======================  Blog-page Section End  ======================*/
+.subscribe__box {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: auto;
+}
+
+.subscribe__box .subscribe__btn {
+  position: absolute;
+  padding: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 23px;
+  height: calc(100% - 22px);
+  z-index: 2;
+  border-radius: 12px;
+}
+
+.blog-page .form-control {
+  padding: 22px 16px;
+  border-radius: 16px;
+  height: 80px;
+  padding-right: 180px;
+}
