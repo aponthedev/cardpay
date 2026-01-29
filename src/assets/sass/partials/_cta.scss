@@ -1,0 +1,54 @@
+/* ======================  Cta Section Start  ======================*/
+.cta {
+  border-bottom: 1px solid hsl(var(--border-color));
+  &__wrapper {
+    padding: 76px 0;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    &__bg-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -2;
+      opacity: 0.3;
+    }
+
+    &__left {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    &__right {
+      position: absolute;
+      bottom: 0;
+      left: 24px;
+      z-index: 1;
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 52px;
+    .cta__gd {
+      box-shadow: 0px 25px 50px -12px hsl(var(--black) / 0.25);
+    }
+    a {
+      border-radius: 24px;
+      padding: 25px 40px;
+    }
+  }
+}
+/* ======================  Cta Section End  ======================*/

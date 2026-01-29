@@ -2165,7 +2165,7 @@ button:focus {
     font-family: var(--body-font);
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     font-size: 16px;
     line-height: 1;
     white-space: nowrap;
@@ -6599,4 +6599,64 @@ input[type=number] {
 }
 
 /* ======================  News Section End  ======================*/
+/* ======================  Cta Section Start  ======================*/
+.cta {
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+.cta__wrapper {
+    padding: 76px 0;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.cta__wrapper__bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
+    opacity: 0.3;
+}
+
+.cta__wrapper__left {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.cta__wrapper__right {
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+    z-index: 1;
+}
+
+.cta__button {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 52px;
+}
+
+.cta__button .cta__gd {
+    box-shadow: 0px 25px 50px -12px hsl(var(--black)/0.25);
+}
+
+.cta__button a {
+    border-radius: 24px;
+    padding: 25px 40px;
+}
+
+/* ======================  Cta Section End  ======================*/
 /*# sourceMappingURL=main.css.map */
