@@ -1,0 +1,32 @@
+/* ======================  Stats Section Start  ======================*/
+.stats {
+  background-color: hsl(var(--section-bg));
+  border-bottom: 1px solid hsl(var(--border-color));
+  &__wrapper {
+    padding: 100px 40px;
+  }
+
+  &__item {
+    text-align: center;
+    &__title {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: hsl(var(--base));
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: hsl(var(--black));
+    }
+
+    &__desc {
+      font-size: 16px;
+      font-weight: 400;
+      color: hsl(var(--body-color));
+    }
+  }
+}
+/* ======================  Stats Section End  ======================*/

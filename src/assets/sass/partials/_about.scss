@@ -1,0 +1,28 @@
+/* ======================  About Section Start  ======================*/
+.about {
+  border-bottom: 1px solid hsl(var(--border-color));
+  &__wrapper {
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+
+    padding: 100px 40px;
+    padding-top: 168px;
+
+    &__thumb {
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: -165px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.about .section-heading {
+  margin-bottom: 60px;
+}
+.about .section-heading__desc {
+  max-width: 448px;
+}
+
+/* ======================  About Section End  ======================*/

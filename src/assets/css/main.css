@@ -6766,4 +6766,192 @@ input[type=number] {
 }
 
 /* ======================  Cta Section End  ======================*/
+/* ======================  About Section Start  ======================*/
+.about {
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+.about__wrapper {
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+    padding: 100px 40px;
+    padding-top: 168px;
+}
+
+.about__wrapper__thumb {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: -165px;
+}
+
+.about__wrapper__thumb img {
+    width: 100%;
+}
+
+.about .section-heading {
+    margin-bottom: 60px;
+}
+
+.about .section-heading__desc {
+    max-width: 448px;
+}
+
+/* ======================  About Section End  ======================*/
+/* ======================  Stats Section Start  ======================*/
+.stats {
+    background-color: hsl(var(--section-bg));
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+.stats__wrapper {
+    padding: 100px 40px;
+}
+
+.stats__item {
+    text-align: center;
+}
+
+.stats__item__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: hsl(var(--base));
+}
+
+.stats__item__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: hsl(var(--black));
+}
+
+.stats__item__desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+}
+
+/* ======================  Stats Section End  ======================*/
+/* ======================  Company-values Section Start  ======================*/
+.company-values {
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+.company-values__wrapper {
+    padding: 100px 40px;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+}
+
+.company-values__item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.company-values__item:last-child {
+    margin-bottom: 0;
+}
+
+.company-values__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: hsl(var(--black));
+}
+
+.company-values__desc {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.company-values__thumb {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.company-values__thumb img {
+    width: 100%;
+}
+
+/* ======================  Company-values Section End  ======================*/
+/* ======================  About-us Section Start  ======================*/
+.about-us {
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+.about-us__wrapper {
+    padding: 134px 40px;
+    padding-bottom: 100px;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+}
+
+.about-us__wrapper__video {
+    max-width: 475px;
+    height: 512px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-us__left {
+    position: relative;
+    z-index: 1;
+}
+
+.about-us__left__image {
+    position: absolute;
+    left: 48%;
+    top: 11%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.about-us__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.about-us__desc {
+    font-size: 22px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+    margin-bottom: 30px;
+}
+
+.about-us__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.about-us__buttom {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.about-us__buttom__item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background-image: linear-gradient(to right, hsl(var(--base)/0.1), transparent);
+    padding: 16px 12px;
+    border-left: 2px solid hsl(var(--base));
+}
+
+.about-us__buttom__title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.about-us__buttom__desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+}
+
+/* ======================  About-us Section End  ======================*/
 /*# sourceMappingURL=main.css.map */

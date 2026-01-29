@@ -1,0 +1,40 @@
+/* ======================  Company-values Section Start  ======================*/
+.company-values {
+  border-bottom: 1px solid hsl(var(--border-color));
+  &__wrapper {
+    padding: 100px 40px;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+  }
+
+  &__item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 70px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: hsl(var(--black));
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__thumb {
+    border-radius: 16px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
+/* ======================  Company-values Section End  ======================*/
