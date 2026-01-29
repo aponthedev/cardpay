@@ -6,67 +6,88 @@
   &__wrapper {
     padding-top: 100px;
     border-left: 1px solid hsl(var(--border-color));
-  }
-
-  &__item {
-    height: 1171px;
-    width: 1320px;
-    background-image: linear-gradient(
-      223deg,
-      hsl(var(--section-bg)),
-      transparent
-    );
-    border-radius: 0 100% 0 0;
-    padding-top: 100px;
+    border-right: 1px solid hsl(var(--border-color));
     position: relative;
     z-index: 1;
-    &::after {
-      content: "";
+    overflow: hidden;
+
+    &__heading {
       position: absolute;
-      left: 0;
-      bottom: 0;
-      background-image: linear-gradient(
-        223deg,
-        hsl(var(--section-bg)),
-        transparent
-      );
-      height: 500px;
-      width: 650px;
-      border-radius: 0 100% 0 0;
+      max-width: 617px;
+      right: 0;
     }
 
     &__thumb {
       position: absolute;
-      left: 36px;
+      left: 24px;
       bottom: 0;
-      z-index: 2;
-      max-width: 490px;
+      z-index: 1;
     }
-    &__content {
-      max-width: 340px;
+
+    &__shape {
+      width: 100%;
+      position: absolute;
+      top: 74px;
+      left: 0;
+      z-index: -1;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
     }
-    &__icon {
+  }
+
+  &__shape {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__item {
+    &__icon svg {
       margin-bottom: 40px;
     }
 
     &__title {
-      color: hsl(var(--body-color));
       font-size: 24px;
       font-weight: 700;
-      margin-bottom: 16px;
+      color: hsl(var(--body-color));
     }
 
     &__desc {
       font-size: 20px;
       font-weight: 400;
-      color: hsl(var(--body-color));
+    }
+
+    &__wrap {
+      justify-content: flex-end;
+      align-items: center;
+      display: flex;
+      overflow: hidden;
+    }
+    &__content {
+      max-width: 340px;
     }
   }
 }
 
 /* ======================  Security Section End  ======================*/
 
-.security__item > .security__item__content:nth-child(2) {
-  position: absolute;
-  left: 60px;
+.security__item__wrap:nth-child(1) .security__item__content {
+  margin-right: auto;
+  margin-left: 40px;
+  margin-top: 100px;
+  margin-bottom: 24px;
+}
+.security__item__wrap:nth-child(2) .security__item__content {
+  margin-right: 44%;
+  margin-bottom: 24px;
+}
+.security__item__wrap:nth-child(3) .security__item__content {
+  margin-right: 20%;
+  margin-bottom: 24px;
+}
+.security__item__wrap:nth-child(4) .security__item__content {
+  margin-right: 40px;
+  margin-bottom: 24px;
 }
