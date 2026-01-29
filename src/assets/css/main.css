@@ -493,7 +493,7 @@ button:focus {
 /* ======================  Section Heading Start  ======================*/
 .section-heading {
     text-align: center;
-    margin-bottom: 76px;
+    margin-bottom: 48px;
 }
 
 @media screen and (max-width: 575px) {
@@ -509,6 +509,12 @@ button:focus {
     font-weight: 700;
 }
 
+.section-heading p {
+    font-size: 22px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+}
+
 .section__heading a {
     margin-top: 40px;
 }
@@ -517,6 +523,13 @@ button:focus {
     .section__heading a {
         margin-top: 24px;
     }
+}
+
+.section-heading__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(var(--black));
+    margin-bottom: 24px;
 }
 
 /* ======================  Section Heading End  ======================*/
@@ -2051,9 +2064,9 @@ button:focus {
 /* ======================  Gap End  ======================*/
 /* =========================== Accordion Css start ============================= */
 .accordion .accordion-item {
-    border: 1px solid hsl(var(--black)/0.09);
+    border: 0;
+    border-bottom: 1px solid hsl(var(--black)/0.09);
     background-color: transparent !important;
-    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -2066,8 +2079,8 @@ button:focus {
 }
 
 .accordion .accordion-body {
-    padding: 20px;
-    background-color: hsl(var(--section-bg));
+    padding: 0;
+    padding-bottom: 32px;
 }
 
 .accordion .accordion-body .text {
@@ -2081,18 +2094,24 @@ button:focus {
 }
 
 .accordion:first-of-type .accordion-button.collapsed {
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .accordion:last-of-type .accordion-button.collapsed {
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .accordion .accordion-button {
-    background-color: hsl(var(--section-bg));
     color: var(--heading-color);
     font-size: 18px;
+    font-weight: 600;
     padding: 15px;
+    padding-left: 0;
+    padding-bottom: 32px;
+}
+
+.accordion .accordion-button:hover, .accordion .accordion-button.active {
+    color: hsl(var(--base));
 }
 
 @media screen and (max-width: 575px) {
@@ -2111,9 +2130,13 @@ button:focus {
 }
 
 .accordion .accordion-button:not(.collapsed) {
-    color: hsl(var(--white));
-    background-color: hsl(var(--black)) !important;
+    color: hsl(var(--heading-color));
+    background-color: transparent !important;
     box-shadow: none;
+}
+
+.accordion .accordion-button:not(.collapsed):hover, .accordion .accordion-button:not(.collapsed).active {
+    color: hsl(var(--base));
 }
 
 .accordion .accordion-button:not(.collapsed)::after {
@@ -2124,7 +2147,7 @@ button:focus {
 .accordion .accordion-button[aria-expanded=true]::after, .accordion .accordion-button[aria-expanded=false]::after {
     font-family: "Line Awesome Free";
     font-weight: 900;
-    content: "\f068";
+    content: "\f00d";
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -4068,6 +4091,13 @@ input[type=number] {
 
 .header__login__button {
     padding: 11px 22px;
+    font-weight: 400;
+}
+
+.login__button {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(var(--black));
 }
 
 /* ======================  Header Section End  ======================*/
@@ -4093,6 +4123,8 @@ input[type=number] {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     opacity: 0.1;
+    line-height: 1;
+    margin-bottom: 0;
 }
 
 .footer__logo {
@@ -6775,7 +6807,7 @@ input[type=number] {
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
     padding: 100px 40px;
-    padding-top: 168px;
+    padding-top: 124px;
 }
 
 .about__wrapper__thumb {
@@ -6793,7 +6825,7 @@ input[type=number] {
 }
 
 .about .section-heading__desc {
-    max-width: 448px;
+    max-width: 504px;
 }
 
 /* ======================  About Section End  ======================*/
@@ -6954,4 +6986,16 @@ input[type=number] {
 }
 
 /* ======================  About-us Section End  ======================*/
+/* ======================  Accordion Section Start  ======================*/
+.accordion {
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+.accordion__wrapper {
+    padding: 100px 40px;
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+}
+
+/* ======================  Accordion Section End  ======================*/
 /*# sourceMappingURL=main.css.map */

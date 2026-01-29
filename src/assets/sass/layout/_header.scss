@@ -324,6 +324,13 @@
 .header__login {
   &__button {
     padding: 11px 22px;
+    font-weight: 400;
   }
+}
+
+.login__button {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(var(--black));
 }
 /* ======================  Header Section End  ======================*/

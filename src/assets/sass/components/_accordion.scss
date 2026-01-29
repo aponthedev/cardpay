@@ -1,9 +1,11 @@
 /* =========================== Accordion Css start ============================= */
 .accordion {
   .accordion-item {
-    border: 1px solid hsl(var(--black) / 0.09);
+    border: 0;
+
+    border-bottom: 1px solid hsl(var(--black) / 0.09);
     background-color: transparent !important;
-    border-radius: 5px;
+
     overflow: hidden;
 
     &:not(:last-child) {
@@ -16,9 +18,8 @@
   }
 
   .accordion-body {
-    padding: 20px;
-    background-color: hsl(var(--section-bg));
-
+    padding: 0;
+    padding-bottom: 32px;
     .text {
       max-width: 60%;
 
@@ -29,18 +30,25 @@
   }
 
   &:first-of-type .accordion-button.collapsed {
-    border-radius: 5px;
+    border-radius: 0px;
   }
 
   &:last-of-type .accordion-button.collapsed {
-    border-radius: 5px;
+    border-radius: 0px;
   }
 
   .accordion-button {
-    background-color: hsl(var(--section-bg));
     color: var(--heading-color);
     font-size: 18px;
+    font-weight: 600;
     padding: 15px;
+    padding-left: 0;
+    padding-bottom: 32px;
+
+    &:hover,
+    &.active {
+      color: hsl(var(--base));
+    }
 
     @include msm-screen {
       padding: 13px;
@@ -56,9 +64,14 @@
     }
 
     &:not(.collapsed) {
-      color: hsl(var(--white));
-      background-color: hsl(var(--black)) !important;
+      color: hsl(var(--heading-color));
+      background-color: transparent !important;
       box-shadow: none;
+
+      &:hover,
+      &.active {
+        color: hsl(var(--base));
+      }
 
       &::after {
         background-image: none;
@@ -66,12 +79,12 @@
       }
     }
 
-    &[aria-expanded='true'],
-    &[aria-expanded='false'] {
+    &[aria-expanded="true"],
+    &[aria-expanded="false"] {
       &::after {
-        font-family: 'Line Awesome Free';
+        font-family: "Line Awesome Free";
         font-weight: 900;
-        content: '\f068';
+        content: "\f00d";
         display: inline-block;
         position: absolute;
         top: 50%;
@@ -81,9 +94,9 @@
       }
     }
 
-    &[aria-expanded='false'] {
+    &[aria-expanded="false"] {
       &::after {
-        content: '\f067';
+        content: "\f067";
         color: hsl(var(--body-color));
       }
     }
