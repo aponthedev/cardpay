@@ -1,0 +1,208 @@
+/* ======================  Account Section Start  ======================*/
+.account {
+  border-top: 1px solid hsl(var(--border-color));
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    height: 1px;
+    width: 100%;
+    background-color: hsl(var(--border-color));
+    left: 0;
+    top: 54px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    height: 1px;
+    width: 100%;
+    background-color: hsl(var(--border-color));
+    left: 0;
+    bottom: 40px;
+  }
+
+  &__btn {
+    margin-bottom: 16px;
+  }
+
+  &__wrapper {
+    border-left: 1px solid hsl(var(--border-color));
+    border-right: 1px solid hsl(var(--border-color));
+
+    padding: 12px 40px;
+    padding-bottom: 100px;
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+  }
+
+  &__logo {
+    max-width: 200px;
+  }
+
+  &__form {
+    padding-top: 36px;
+    // text-align: center;
+
+    &__code {
+      background-color: hsl(var(--black) / 0.02);
+      padding: 4px;
+      border-radius: 16px;
+      border: 1px solid hsl(var(--border-color));
+      transition: 0.3s;
+      text-align: center;
+
+      &:hover {
+        background-color: hsl(var(--base) / 0.1);
+        border-color: hsl(var(--base));
+      }
+    }
+
+    &__or {
+      position: relative;
+      z-index: 1;
+      margin-top: 46px;
+      text-align: center;
+
+      &::after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: hsl(var(--border-color));
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 13px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        background-color: hsl(var(--body-bg));
+        display: inline;
+        padding: 0 20px;
+      }
+    }
+
+    &__social {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      justify-content: center;
+      text-align: center;
+      a {
+        padding: 12px;
+        width: 100%;
+        border: 1px solid hsl(var(--border-color));
+        border-radius: 12px;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: hsl(var(--base) / 0.1);
+          border: 1px solid hsl(var(--base));
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  &__desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+    max-width: 475px;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+}
+.account__thunb {
+  margin-top: 36px;
+  height: 95%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.text-link {
+  //   margin-top: 24px;
+  text-align: center;
+  a {
+    color: hsl(var(--base));
+    font-weight: 600;
+  }
+}
+
+.password-input {
+  padding-right: 44px;
+}
+
+.qr-code__item .account__desc {
+  max-width: 100% !important;
+}
+
+.qr-code {
+  &__subtitle {
+    font-size: 16px;
+    color: hsl(var(--base));
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 36px;
+    padding-bottom: 12px;
+  }
+
+  &__list {
+    li {
+      font-size: 20px;
+      font-weight: 600;
+      color: hsl(var(--balck));
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(var(--black) / 0.03);
+    padding: 36px;
+    border: 1px solid hsl(var(--border-color));
+    border-radius: 24px;
+
+    &__thumb {
+      max-width: 442px;
+      border: 1px solid hsl(var(--base));
+      border-radius: 24px;
+      padding: 24px;
+    }
+
+    &__desc {
+      max-width: 360px;
+    }
+  }
+}
+
+.qr-code__wrapper {
+  padding-bottom: 120px !important;
+}
+/* ======================  Account Section End  ======================*/

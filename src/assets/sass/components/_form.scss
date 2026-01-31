@@ -1,10 +1,10 @@
 /* ================================= Form Css Start =========================== */
 /* Form Label */
 .form-label {
-  margin-bottom: 6px;
-  font-size: 15px;
-  color: hsl(var(--heading-color));
-  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: hsl(var(--body-color));
+  font-weight: 400;
 }
 
 label.required:after {
@@ -14,7 +14,9 @@ label.required:after {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Form Select */
@@ -44,11 +46,12 @@ label.required:after {
   font-weight: 400;
   outline: none;
   width: 100%;
-  padding: 14px 18px;
+  padding: 22px 18px;
   background-color: hsl(var(--white));
   border: 1px solid hsl(var(--border-color));
   color: hsl(var(--black));
   line-height: 1;
+  padding-left: 45px;
 
   &::placeholder {
     color: hsl(var(--black) / 0.6);
@@ -106,7 +109,7 @@ label.required:after {
 
 // Message Field Css
 textarea.form-control {
-  height: 130px;
+  height: 280px;
 }
 
 /* Autofill Css */
