@@ -113,4 +113,17 @@
   @include btn-style(--black);
 }
 
+.back__button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(var(--black));
+
+  i {
+    transform: rotate(85deg);
+  }
+}
+
 /* ================================= Button Css End =========================== */

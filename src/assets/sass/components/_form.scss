@@ -40,12 +40,12 @@ label.required:after {
 
 /* Form Control Start */
 .form-control {
-  border-radius: 5px;
+  border-radius: 16px;
   font-weight: 400;
   outline: none;
   width: 100%;
   padding: 14px 18px;
-  background-color: transparent;
+  background-color: hsl(var(--white));
   border: 1px solid hsl(var(--border-color));
   color: hsl(var(--black));
   line-height: 1;

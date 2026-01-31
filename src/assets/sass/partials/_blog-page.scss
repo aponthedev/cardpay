@@ -27,6 +27,13 @@
   z-index: 1;
   max-width: 760px;
   margin: auto;
+
+  &__icon {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .subscribe__box .subscribe__btn {
@@ -45,4 +52,5 @@
   border-radius: 16px;
   height: 80px;
   padding-right: 180px;
+  padding-left: 48px;
 }

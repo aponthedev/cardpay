@@ -129,10 +129,10 @@
     slidesPerView: 3,
     spaceBetween: 24,
     freeMode: true,
-    loop: true, // loop slides continuously
+    loop: true,
     autoplay: {
-      delay: 2500, // 2.5 seconds between slides
-      disableOnInteraction: false, // keep autoplay even after user interacts
+      delay: 2500,
+      disableOnInteraction: false,
     },
     pagination: {
       el: ".swiper-pagination",
