@@ -53,6 +53,14 @@ label.required:after {
   line-height: 1;
   padding-left: 45px;
 
+  @include sm-screen {
+    padding: 16px 18px;
+    padding-left: 45px;
+  }
+  @include xsm-screen {
+    border-radius: 10px;
+  }
+
   &::placeholder {
     color: hsl(var(--black) / 0.6);
     font-size: 16px;
@@ -110,6 +118,10 @@ label.required:after {
 // Message Field Css
 textarea.form-control {
   height: 280px;
+
+  @include sm-screen {
+    height: 140px;
+  }
 }
 
 /* Autofill Css */
@@ -184,17 +196,17 @@ input[type="number"] {
     box-shadow: none !important;
     border: 0;
     position: relative;
-    border-radius: 3px;
-    width: 16px;
-    height: 16px;
+    border-radius: 6px;
+    width: 22px;
+    height: 22px;
     border: 1px solid hsl(var(--black) / 0.2);
     cursor: pointer;
     margin-left: 0;
     margin-top: 0;
 
     &:checked {
-      background-color: hsl(var(--base)) !important;
-      border-color: hsl(var(--base)) !important;
+      background-color: hsl(var(--black)) !important;
+      border-color: hsl(var(--black)) !important;
       box-shadow: none;
 
       &[type="checkbox"] {

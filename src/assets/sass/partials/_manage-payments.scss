@@ -5,6 +5,13 @@
     padding: 100px 40px;
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
+
+    @include sm-screen {
+      padding: 40px 16px;
+    }
+    @include xsm-screen {
+      padding: 30px 8px;
+    }
   }
 
   &__title {
@@ -12,12 +19,28 @@
     font-weight: 700;
     color: hsl(var(--black));
     margin-bottom: 30px;
+
+    @include msm-screen {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
   }
 
   &__desc {
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 30px;
+
+    @include sm-screen {
+      font-size: 18px;
+    }
+
+    @include sm-screen {
+      font-size: 16px;
+    }
+    @include xsm-screen {
+      font-size: 15px;
+    }
   }
 
   &__button {
@@ -60,6 +83,12 @@
       color: hsl(var(--heading-color));
       margin-bottom: 0;
     }
+  }
+}
+
+.sociel-media {
+  @include msm-screen {
+    flex-wrap: wrap;
   }
 }
 /* ======================  Manage-payments Section End  ======================*/

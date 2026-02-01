@@ -5,6 +5,13 @@
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
     padding: 100px 40px;
+
+    @include sm-screen {
+      padding: 40px 16px;
+    }
+    @include xsm-screen {
+      padding: 40px 8px;
+    }
   }
 
   &__card2 {
@@ -13,6 +20,15 @@
     overflow: hidden;
     padding: 30px;
     height: 100%;
+
+    @include xsm-screen {
+      padding: 16px;
+    }
+
+    @include msm-screen {
+      flex-direction: column;
+      gap: 30px;
+    }
 
     &__thumb {
       max-width: 80%;
@@ -69,6 +85,12 @@
     &__bg {
       position: relative;
       z-index: 2;
+
+      img {
+        @include msm-screen {
+          width: 170px;
+        }
+      }
     }
 
     &__button2 {
@@ -96,6 +118,10 @@
       margin-left: 30px;
       background-color: hsl(var(--white));
 
+      @include xsm-screen {
+        padding: 8px;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -118,6 +144,10 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  @include msm-screen {
+    margin-bottom: 24px;
+  }
 
   &__bg {
     position: absolute;
@@ -146,6 +176,10 @@
     font-weight: 700;
     color: hsl(var(--heading-color));
     margin-bottom: 0;
+
+    @include xsm-screen {
+      font-size: 25px;
+    }
   }
 
   &__desc {
@@ -153,6 +187,10 @@
     font-weight: 400;
     color: hsl(var(--body-color));
     margin-bottom: 163px;
+
+    @include msm-screen {
+      margin-bottom: 36px;
+    }
   }
 }
 
@@ -184,21 +222,6 @@
     font-size: 16px;
     font-weight: 400;
   }
-}
-
-.payments__items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.div3 {
-  grid-row: span 2 / span 2;
-}
-
-.div4 {
-  grid-column: span 2 / span 2;
-  grid-row-start: 2;
 }
 
 /* ======================  Payments Section End  ======================*/

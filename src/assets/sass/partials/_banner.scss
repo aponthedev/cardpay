@@ -10,6 +10,10 @@
     right: 0;
     top: 0;
     z-index: -1;
+
+    @include md-screen {
+      display: none;
+    }
   }
   &__wrapper {
     border-left: 1px solid hsl(var(--border-color));
@@ -17,6 +21,28 @@
     padding-top: 178px;
     padding-left: 40px;
     padding-bottom: 100px;
+
+    @include md-screen {
+      padding-top: 140px;
+    }
+
+    @include msm-screen {
+      padding: 40px 16px;
+      padding-top: 120px;
+    }
+
+    @include xsm-screen {
+      padding: 40px 8px;
+      padding-top: 100px;
+    }
+  }
+
+  &__button {
+    a {
+      @include xxsm-screen {
+        width: 100% !important;
+      }
+    }
   }
 
   &__thumb {
@@ -24,6 +50,26 @@
       max-width: 493px;
       margin-top: -52px;
       margin-left: -32px;
+
+      @include xl-screen {
+        max-width: 450px;
+        margin-top: -40px;
+        margin-left: -87px;
+      }
+
+      @include lg-screen {
+        margin-left: -141px;
+      }
+
+      @include md-screen {
+        max-width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+      @include msm-screen {
+        max-width: 80%;
+      }
     }
   }
   &__subtitle {
@@ -39,12 +85,38 @@
     padding: 4px 10px;
     border-left: 2px solid hsl(var(--base));
     margin-bottom: 28px;
+
+    @include msm-screen {
+      font-size: 15px;
+      margin-bottom: 17px;
+    }
   }
 
   &__title {
     font-size: 74px;
     font-weight: 700;
     margin-bottom: 28px;
+
+    @include xl-screen {
+      font-size: 55px;
+    }
+
+    @include lg-screen {
+      font-size: 44px;
+    }
+
+    @include msm-screen {
+      font-size: 35px;
+      margin-bottom: 14px;
+    }
+
+    @include xsm-screen {
+      font-size: 32px;
+    }
+
+    @include xsm-screen {
+      font-size: 24px;
+    }
   }
 
   &__desc {
@@ -53,6 +125,25 @@
     color: hsl(var(--body-color));
     margin-bottom: 46px;
     max-width: 780px;
+
+    @include xl-screen {
+      max-width: 550px;
+    }
+
+    @include lg-screen {
+      font-size: 18px;
+      max-width: 400px;
+    }
+
+    @include md-screen {
+      max-width: 540px;
+      margin-bottom: 38px;
+    }
+
+    @include xsm-screen {
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
   }
 
   &__button {
@@ -61,23 +152,39 @@
     gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 60px;
+
+    @include msm-screen {
+      margin-bottom: 24px;
+    }
   }
 
   &__counter {
     display: flex;
     align-items: center;
     gap: 32px;
+
+    @include xsm-screen {
+      gap: 18px;
+    }
     &__title {
       font-size: 22px;
       font-weight: 500;
       color: hsl(var(--body-color));
       margin-bottom: 6px;
+
+      @include xxsm-screen {
+        font-size: 16px;
+      }
     }
 
     &__desc {
       font-size: 14px;
       font-weight: 400;
       margin-bottom: 0;
+
+      @include xxsm-screen {
+        font-size: 12px;
+      }
     }
 
     &__line {

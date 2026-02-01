@@ -18,9 +18,15 @@
   width: 275px;
   height: 100vh;
   z-index: 2;
-  background-color: hsl(var(--heading-color));
+  background-color: hsl(var(--white));
+  border-right: 1px solid hsl(var(--border-color));
   overflow-y: auto;
   scrollbar-width: none;
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
 
   @include md-screen {
     background-color: hsl(var(--heading-color));
@@ -45,7 +51,8 @@
 }
 
 .dashboard__logo {
-  padding: 32px 24px;
+  padding: 28px 22px;
+  border-bottom: 1px solid hsl(var(--border-color));
 }
 
 .sidebar__close {
@@ -87,7 +94,7 @@
   display: flex;
   flex-direction: column;
   gap: 1px;
-  padding-right: 14px;
+  padding: 18px;
   overflow: hidden;
 }
 
@@ -98,49 +105,23 @@
   gap: 12px;
   font-size: 16px;
   font-weight: 500;
-  color: hsl(var(--white) / 0.76);
-  border-radius: 0 4px 4px 0;
+  color: hsl(var(--heading-color));
+  border-radius: 12px;
   position: relative;
   z-index: 1;
-  transition: 0.4s;
-
-  &::after {
-    position: absolute;
-    left: -17px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    content: "";
-    z-index: -1;
-    background-color: hsl(var(--white));
-    border-radius: 50%;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.4s;
-  }
+  transition: 0.3s;
 }
 
 .dashboard__menu ul li a:hover {
-  background-color: hsl(var(--base) / 0.3);
+  background: linear-gradient(90deg, hsl(var(--base)), hsl(var(--base-two)));
+  border: 1px solid hsl(var(--border-color));
   color: hsl(var(--white));
-
-  &::after {
-    opacity: 0.3;
-    visibility: visible;
-    left: -8px;
-  }
 }
 
 .dashboard__menu ul li a.active {
-  background-color: hsl(var(--base));
+  background: linear-gradient(90deg, hsl(var(--base)), hsl(var(--base-two)));
+  border: 1px solid hsl(var(--border-color));
   color: hsl(var(--white));
-
-  &::after {
-    opacity: 1;
-    visibility: visible;
-    left: -8px;
-  }
 }
 
 .sidebar__dropdown {
@@ -702,3 +683,51 @@
 }
 
 /* ======================  Dashboard Section End  ======================*/
+.sidebar__footer {
+  margin: 16px;
+  padding: 18px;
+  border-radius: 16px;
+  background:
+    radial-gradient(
+      2374.73% 261.17% at 123.74% -69.33%,
+      var(--Brand-Primary-color, #4623e9) 17.84%,
+      var(--Shades-Secondary-S-500, #eaabf0) 49.88%,
+      var(--Brand-Primary-color, #4623e9) 88.63%
+    ),
+    var(--Theme-Body-color, #64676c);
+
+  position: absolute;
+  left: calc(100% - 56%);
+  bottom: -262px;
+  transform: translate(-50%, -50%);
+  width: 89%;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(var(--white));
+    text-align: center;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(var(--white));
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  &__button {
+    background-color: hsl(var(--white));
+    color: hsl(var(--black)) !important;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+
+    &:hover {
+      background-color: hsl(var(--black));
+
+      color: hsl(var(--white)) !important ;
+    }
+  }
+}

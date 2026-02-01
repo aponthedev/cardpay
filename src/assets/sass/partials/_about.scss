@@ -8,6 +8,15 @@
     padding: 100px 40px;
     padding-top: 124px;
 
+    @include sm-screen {
+      padding: 40px 16px;
+      padding-top: 80px;
+    }
+    @include xsm-screen {
+      padding: 30px 8px;
+      padding-top: 80px;
+    }
+
     &__thumb {
       border-radius: 16px;
       overflow: hidden;
@@ -20,6 +29,14 @@
 }
 .about .section-heading {
   margin-bottom: 60px;
+
+  @include lg-screen {
+    flex-wrap: wrap;
+  }
+
+  @include msm-screen {
+    margin-bottom: 24px;
+  }
 }
 .about .section-heading__desc {
   max-width: 504px;

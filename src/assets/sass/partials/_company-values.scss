@@ -5,6 +5,18 @@
     padding: 100px 40px;
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
+
+    @include sm-screen {
+      padding: 40px 16px;
+    }
+    @include xsm-screen {
+      padding: 30px 8px;
+    }
+  }
+
+  &__icon svg {
+    height: 60px;
+    width: 60px;
   }
 
   &__item {
@@ -12,6 +24,12 @@
     gap: 24px;
     align-items: center;
     margin-bottom: 70px;
+
+    @include sm-screen {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 24px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -27,6 +45,10 @@
   &__desc {
     font-size: 20px;
     font-weight: 400;
+
+    @include sm-screen {
+      font-size: 16px;
+    }
   }
 
   &__thumb {

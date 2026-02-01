@@ -32,12 +32,20 @@
   margin-bottom: 8px;
   font-size: 40px;
   font-weight: 700;
+
+  @include xsm-screen {
+    font-size: 24px;
+  }
 }
 
 .section-heading p {
   font-size: 22px;
   font-weight: 400;
   color: hsl(var(--body-color));
+
+  @include sm-screen {
+    font-size: 16px;
+  }
 }
 
 .section__heading a {

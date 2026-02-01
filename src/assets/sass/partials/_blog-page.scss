@@ -4,22 +4,47 @@
 
   &__card-wrap {
     margin-top: 60px;
+
+    @include xsm-screen {
+      margin-top: 24px;
+    }
   }
   &__wrapper {
     padding: 100px 40px;
     padding-top: 125px;
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
+
+    @include sm-screen {
+      padding: 40px 16px;
+      padding-top: 120px;
+    }
+    @include xsm-screen {
+      padding: 30px 8px;
+      padding-top: 120px;
+    }
   }
 }
 
 .blog-page .section-heading__desc {
   max-width: 424px;
+  @include md-screen {
+    font-size: 16px;
+  }
 }
 .blog-page .section-heading__title {
   font-size: 64px;
   font-weight: 500;
   margin-bottom: 0;
+
+  @include md-screen {
+    font-size: 38px;
+  }
+
+  @include msm-screen {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
 }
 /* ======================  Blog-page Section End  ======================*/
 .subscribe__box {
@@ -33,6 +58,18 @@
     left: 5%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    @include md-screen {
+      left: 6%;
+    }
+
+    @include sm-screen {
+      left: 8%;
+    }
+
+    @include msm-screen {
+      display: none;
+    }
   }
 }
 
@@ -45,6 +82,15 @@
   height: calc(100% - 22px);
   z-index: 2;
   border-radius: 12px;
+
+  @include md-screen {
+    height: calc(100% - 32px);
+  }
+
+  @include msm-screen {
+    padding: 16px;
+    border-radius: 8px;
+  }
 }
 
 .blog-page .form-control {
@@ -53,4 +99,37 @@
   height: 80px;
   padding-right: 180px;
   padding-left: 48px;
+
+  @include md-screen {
+    height: 65px;
+  }
+
+  @include msm-screen {
+    padding: 12px;
+    height: 48px;
+    border-radius: 12px;
+    padding-right: 147px;
+  }
+}
+
+.blog-page .section-heading {
+  @include lg-screen {
+    flex-wrap: wrap;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+.blog-page .section-heading__desc {
+  @include lg-screen {
+    max-width: 660px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.blog-page .section-heading__title {
+  @include lg-screen {
+    text-align: center;
+  }
 }

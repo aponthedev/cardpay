@@ -5,6 +5,11 @@
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
     padding-bottom: 100px;
+
+    @include sm-screen {
+      padding: 60px 16px;
+      padding-top: 120px;
+    }
   }
 
   &__form {
@@ -12,6 +17,11 @@
     padding: 24px;
     border-radius: 24px;
     border: 1px solid hsl(var(--border-color));
+
+    @include xsm-screen {
+      padding: 14px;
+      border-radius: 14px;
+    }
   }
 
   &__info {
@@ -19,6 +29,10 @@
       border-radius: 16px;
       overflow: hidden;
       margin-bottom: 36px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -43,6 +57,10 @@
     &:hover {
       color: hsl(var(--base));
     }
+
+    @include msm-screen {
+      font-size: 16px;
+    }
   }
 
   &__desc {
@@ -55,14 +73,28 @@
 .input__icon {
   position: absolute;
   top: 50%;
-  left: 4%;
+  left: 30px;
   transform: translate(-50%, -50%);
 }
 
 .form-shot .input__icon {
-  left: 7% !important;
+  left: 26px !important;
 }
 
 .textarea {
   padding-left: 24px !important;
+}
+
+.account__policy {
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(var(--balck));
+  }
+}
+
+.contact .section-heading {
+  @include xl-screen {
+    flex-wrap: wrap;
+  }
 }

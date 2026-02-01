@@ -11,10 +11,37 @@
     z-index: 1;
     overflow: hidden;
 
+    @include lg-screen {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @include sm-screen {
+      padding: 50px 20px;
+    }
+
+    @include msm-screen {
+      padding: 50px 16px;
+    }
+    @include xsm-screen {
+      padding: 50px 8px;
+    }
+
     &__heading {
       position: absolute;
       max-width: 617px;
       right: 0;
+
+      @include xl-screen {
+        max-width: 400px;
+      }
+
+      @include lg-screen {
+        position: unset;
+        text-align: center;
+        max-width: 606px;
+        margin: auto;
+      }
     }
 
     &__thumb {
@@ -22,6 +49,14 @@
       left: 24px;
       bottom: 0;
       z-index: 1;
+
+      @include xl-screen {
+        max-width: 420px;
+      }
+
+      @include lg-screen {
+        display: none;
+      }
     }
 
     &__shape {
@@ -30,6 +65,10 @@
       top: 74px;
       left: 0;
       z-index: -1;
+
+      @include lg-screen {
+        display: none;
+      }
       svg {
         width: 100%;
         height: 100%;
@@ -44,19 +83,48 @@
   }
 
   &__item {
+    @include lg-screen {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @include sm-screen {
+      grid-template-columns: repeat(1, 1fr);
+    }
     &__icon svg {
       margin-bottom: 40px;
+
+      @include xl-screen {
+        margin-bottom: 10px;
+      }
+
+      @include xsm-screen {
+        height: 36px;
+        width: 36px;
+      }
     }
 
     &__title {
       font-size: 24px;
       font-weight: 700;
       color: hsl(var(--body-color));
+
+      @include sm-screen {
+        font-size: 20px;
+      }
+
+      @include xsm-screen {
+        font-size: 18px;
+      }
     }
 
     &__desc {
       font-size: 20px;
       font-weight: 400;
+      @include sm-screen {
+        font-size: 16px;
+      }
     }
 
     &__wrap {
@@ -64,9 +132,25 @@
       align-items: center;
       display: flex;
       overflow: hidden;
+
+      @include lg-screen {
+        display: unset;
+      }
     }
     &__content {
       max-width: 340px;
+
+      @include xl-screen {
+        margin-bottom: 14px;
+      }
+
+      @include lg-screen {
+        max-width: 100%;
+        border: 1px solid hsl(var(--border-color));
+        border-radius: 16px;
+        padding: 20px;
+        height: 100%;
+      }
     }
   }
 }
@@ -78,16 +162,49 @@
   margin-left: 40px;
   margin-top: 100px;
   margin-bottom: 24px;
+
+  @include xl-screen {
+    margin-top: 20px;
+  }
+
+  @include lg-screen {
+    margin: 0;
+  }
 }
 .security__item__wrap:nth-child(2) .security__item__content {
   margin-right: 44%;
   margin-bottom: 24px;
+
+  @include xl-screen {
+    margin-right: 38%;
+  }
+
+  @include lg-screen {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 .security__item__wrap:nth-child(3) .security__item__content {
   margin-right: 20%;
   margin-bottom: 24px;
+
+  @include lg-screen {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 .security__item__wrap:nth-child(4) .security__item__content {
   margin-right: 40px;
   margin-bottom: 24px;
+
+  @include lg-screen {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.security__wrapper__heading .section-heading {
+  @include lg-screen {
+    text-align: center !important;
+  }
 }

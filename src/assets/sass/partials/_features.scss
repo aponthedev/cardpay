@@ -5,11 +5,29 @@
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
     padding: 100px 40px;
+
+    @include sm-screen {
+      padding: 40px 16px;
+    }
+    @include xsm-screen {
+      padding: 30px 8px;
+    }
   }
   &__card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+
+    @include lg-screen {
+      height: 100%;
+    }
+
+    @include lg-screen {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include md-screen {
+      grid-template-columns: repeat(1, 1fr);
+    }
     &__item {
       background-color: hsl(var(--black) / 0.01);
       padding: 24px;
@@ -19,6 +37,10 @@
       position: relative;
       z-index: 1;
       overflow: hidden;
+
+      @include md-screen {
+        padding-bottom: 28px;
+      }
 
       &:hover {
         border: 1px solid hsl(var(--base));
@@ -47,9 +69,28 @@
       z-index: -1;
       opacity: 0;
       transition: 0.3s;
+      width: 100%;
+
+      svg {
+        @include sm-screen {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
     }
     &__icon {
       margin-bottom: 40px;
+
+      @include md-screen {
+        margin-bottom: 20px;
+      }
+
+      svg {
+        @include xsm-screen {
+          height: 30px;
+          width: 30px;
+        }
+      }
     }
 
     &__title {
@@ -57,12 +98,21 @@
       font-weight: 700;
       color: hsl(var(--body-color));
       margin-bottom: 16px;
+
+      @include md-screen {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
     }
 
     &__desc {
       font-size: 20px;
       font-weight: 400;
       color: hsl(var(--body-color));
+
+      @include md-screen {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -70,10 +120,19 @@
 .features__card__item:nth-child(2) {
   margin-top: 20px;
   margin-bottom: -24px;
+
+  @include lg-screen {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .features__card__item:nth-child(5) {
   margin-top: 20px;
   margin-bottom: -24px;
+  @include lg-screen {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 /* ======================  Features Section End  ======================*/

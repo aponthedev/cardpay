@@ -1,11 +1,23 @@
 /* ======================  Footer Section Start  ======================*/
 .footer {
+  &__content {
+    @include md-screen {
+      margin-bottom: 24px;
+    }
+  }
   &__wrapper {
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
     padding: 100px 40px;
     position: relative;
     z-index: 1;
+
+    @include sm-screen {
+      padding: 40px 16px;
+    }
+    @include xsm-screen {
+      padding: 30px 8px;
+    }
 
     &__bg {
       font-size: 190px;
@@ -26,6 +38,26 @@
       opacity: 0.1;
       line-height: 1;
       margin-bottom: 0;
+
+      @include lg-screen {
+        font-size: 126px;
+        bottom: 27%;
+      }
+
+      @include md-screen {
+        font-size: 91px;
+        bottom: 22%;
+      }
+
+      @include msm-screen {
+        font-size: 62px;
+        bottom: 14%;
+      }
+
+      @include xsm-screen {
+        font-size: 44px;
+        bottom: 9%;
+      }
     }
   }
 
@@ -40,6 +72,10 @@
       font-weight: 400;
       color: hsl(var(--body-color));
       margin-bottom: 38px;
+
+      @include md-screen {
+        margin-bottom: 10px;
+      }
     }
 
     &__copyright {

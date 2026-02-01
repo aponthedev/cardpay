@@ -72,15 +72,18 @@
     },
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       576: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       992: {
+        slidesPerView: 3,
+      },
+      1199: {
         slidesPerView: 5,
       },
     },
@@ -130,13 +133,36 @@
     spaceBetween: 24,
     freeMode: true,
     loop: true,
+
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
+
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
+
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1399: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
     },
   });
 

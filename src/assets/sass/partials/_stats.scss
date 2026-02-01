@@ -4,6 +4,13 @@
   border-bottom: 1px solid hsl(var(--border-color));
   &__wrapper {
     padding: 100px 40px;
+
+    @include sm-screen {
+      padding: 40px 16px;
+    }
+    @include xsm-screen {
+      padding: 30px 8px;
+    }
   }
 
   &__item {
@@ -13,6 +20,10 @@
       font-weight: 700;
       margin-bottom: 8px;
       color: hsl(var(--base));
+
+      @include msm-screen {
+        font-size: 26px;
+      }
     }
 
     &__subtitle {

@@ -51,8 +51,9 @@
     }
 
     @include msm-screen {
+      font-size: 15px;
       padding: 13px;
-      padding-right: 30px;
+      padding-right: 50px;
     }
 
     &::after {

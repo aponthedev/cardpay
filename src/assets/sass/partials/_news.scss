@@ -5,6 +5,13 @@
     padding: 100px 40px;
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
+
+    @include sm-screen {
+      padding: 40px 16px;
+    }
+    @include xsm-screen {
+      padding: 30px 8px;
+    }
   }
   &_top {
     color: hsl(var(--body-color));
@@ -15,6 +22,8 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 36px;
+    gap: 24px;
+    flex-wrap: wrap;
   }
 
   &__card {
@@ -54,6 +63,10 @@
       font-size: 22px;
       font-weight: 700;
       margin-bottom: 16px;
+
+      @include xsm-screen {
+        font-size: 18px;
+      }
     }
 
     &__desc {
@@ -61,6 +74,10 @@
       font-weight: 400;
       color: hsl(var(--body-color));
       margin-bottom: 32px;
+
+      @include xsm-screen {
+        margin-bottom: 20px;
+      }
     }
   }
 }
