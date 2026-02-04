@@ -39,6 +39,23 @@
   });
   //====================== testimonial card js====================== //
 
+  // ================card slider================
+  var swiper = new Swiper(".mycardSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  // ================card slider ends ================
+
   // ========================= Header Sticky Js Start ==============
   $(window).on("scroll", function () {
     if ($(window).scrollTop() >= 300) {

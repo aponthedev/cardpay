@@ -1,44 +1,86 @@
 /* ================================= Badge Css Start =========================== */
 .badge {
-  font-size: rem(12px);
+  font-size: rem(14px);
   border-radius: 5px;
-  padding: 8px 10px;
+  padding: 4px 15px;
   font-weight: 500;
   position: relative;
   text-align: center;
 
   &--base {
-    background-color: hsl(var(--base) / 0.15) !important;
+    background-color: hsl(var(--base)) !important;
+    color: hsl(var(--white)) !important;
+  }
+
+  &--primary {
+    background-color: hsl(var(--primary)) !important;
+    color: hsl(var(--white)) !important;
+  }
+
+  &--secondary {
+    background-color: hsl(var(--secondary)) !important;
+    color: hsl(var(--white)) !important;
+  }
+
+  &--success {
+    background-color: hsl(var(--success)) !important;
+    color: hsl(var(--white)) !important;
+  }
+
+  &--danger {
+    background-color: hsl(var(--danger)) !important;
+    color: hsl(var(--white)) !important;
+  }
+
+  &--warning {
+    background-color: hsl(var(--warning)) !important;
+    color: hsl(var(--white)) !important;
+  }
+
+  &--info {
+    background-color: hsl(var(--info)) !important;
+    color: hsl(var(--white)) !important;
+  }
+}
+
+.badge2 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px 32px;
+  border-radius: 8px;
+
+  &--base {
+    background-color: hsl(var(--base) / 0.1);
     color: hsl(var(--base)) !important;
   }
 
   &--primary {
-    background-color: hsl(var(--primary) / 0.15) !important;
+    background-color: hsl(var(--primary) / 0.1) !important;
     color: hsl(var(--primary)) !important;
   }
 
   &--secondary {
-    background-color: hsl(var(--secondary) / 0.15) !important;
+    background-color: hsl(var(--secondary) / 0.1) !important;
     color: hsl(var(--secondary)) !important;
   }
 
   &--success {
-    background-color: hsl(var(--success) / 0.15) !important;
+    background-color: hsl(var(--success) / 0.1);
     color: hsl(var(--success)) !important;
   }
 
   &--danger {
-    background-color: hsl(var(--danger) / 0.15) !important;
+    background-color: hsl(var(--danger) / 0.1) !important;
     color: hsl(var(--danger)) !important;
   }
 
   &--warning {
-    background-color: hsl(var(--warning) / 0.15) !important;
+    background-color: hsl(var(--warning) / 0.1) !important;
     color: hsl(var(--warning)) !important;
   }
 
   &--info {
-    background-color: hsl(var(--info) / 0.15) !important;
+    background-color: hsl(var(--info) / 0.1) !important;
     color: hsl(var(--info)) !important;
   }
 }

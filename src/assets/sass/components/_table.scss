@@ -77,16 +77,16 @@
     tr {
       th {
         background-color: hsl(var(--white));
-        text-align: center;
-        padding: 15px 20px;
+        text-align: left;
+        padding: 16px 20px;
         color: hsl(var(--black) / 0.7);
         font-family: var(--heading-font);
         font-weight: 600;
         border-bottom: 0;
         max-width: 170px;
-        font-size: 14px;
-        border: 1px solid hsl(var(--black) / 0.08);
-        background-color: hsl(var(--base) / 0.03);
+        font-size: 16px;
+        background-color: hsl(var(--dashboard-bg));
+        border-right: 0;
 
         &:not(:first-child) {
           border-left: 0;
@@ -94,11 +94,11 @@
 
         &:first-child {
           text-align: left;
-          border-radius: 6px 0 0 0;
+          border-radius: 8px 0 0 8px;
         }
 
         &:last-child {
-          border-radius: 0 6px 0 0;
+          border-radius: 0 8px 8px 0;
           text-align: right;
         }
 
@@ -135,18 +135,17 @@
       }
 
       td {
-        text-align: center;
+        text-align: left;
         vertical-align: middle;
-        padding: 10px 15px;
+        padding: 20px;
         border-width: 1px;
         border: 0;
         font-family: var(--heading-font);
         color: hsl(var(--black) / 0.7);
-        font-weight: 500;
+        font-weight: 400;
         max-width: 170px;
-        font-size: 13px;
+        font-size: 16px;
         border-bottom: 1px solid hsl(var(--black) / 0.08);
-        border-right: 1px solid hsl(var(--black) / 0.08);
 
         &::before {
           content: attr(data-label);
@@ -161,13 +160,11 @@
 
         &:first-child {
           text-align: left;
-          border-left: 1px solid hsl(var(--black) / 0.08);
           font-size: 14px;
         }
 
         &:last-child {
           text-align: right;
-          border-right: 1px solid hsl(var(--black) / 0.08);
         }
       }
     }
@@ -396,6 +393,13 @@
       }
     }
   }
+}
+
+.table__action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: end;
 }
 
 /* ================================= Table Css End =========================== */

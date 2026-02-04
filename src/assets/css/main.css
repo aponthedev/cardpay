@@ -165,15 +165,119 @@
     --border-color-l-4800: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.8);
     --border-color-l-4900: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.9);
     --border-color-l-5000: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 5);
-    --section-bg: 270 71% 97%;
+    --border-color-h: 210;
+    --border-color-s: 10%;
+    --border-color-l: 96%;
+    --border-color: var(--border-color-h) var(--border-color-s) var(--border-color-l);
+    --border-color-d-100: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.1);
+    --border-color-d-200: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.2);
+    --border-color-d-300: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.3);
+    --border-color-d-400: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.4);
+    --border-color-d-500: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.5);
+    --border-color-d-600: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.6);
+    --border-color-d-700: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.7);
+    --border-color-d-800: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.8);
+    --border-color-d-900: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 0.9);
+    --border-color-d-1000: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1);
+    --border-color-d-1100: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.1);
+    --border-color-d-1200: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.2);
+    --border-color-d-1300: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.3);
+    --border-color-d-1400: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.4);
+    --border-color-d-1500: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.5);
+    --border-color-d-1600: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.6);
+    --border-color-d-1700: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.7);
+    --border-color-d-1800: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.8);
+    --border-color-d-1900: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 1.9);
+    --border-color-d-2000: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2);
+    --border-color-d-2100: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.1);
+    --border-color-d-2200: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.2);
+    --border-color-d-2300: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.3);
+    --border-color-d-2400: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.4);
+    --border-color-d-2500: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.5);
+    --border-color-d-2600: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.6);
+    --border-color-d-2700: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.7);
+    --border-color-d-2800: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.8);
+    --border-color-d-2900: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 2.9);
+    --border-color-d-3000: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3);
+    --border-color-d-3100: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.1);
+    --border-color-d-3200: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.2);
+    --border-color-d-3300: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.3);
+    --border-color-d-3400: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.4);
+    --border-color-d-3500: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.5);
+    --border-color-d-3600: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.6);
+    --border-color-d-3700: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.7);
+    --border-color-d-3800: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.8);
+    --border-color-d-3900: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 3.9);
+    --border-color-d-4000: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4);
+    --border-color-d-4100: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.1);
+    --border-color-d-4200: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.2);
+    --border-color-d-4300: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.3);
+    --border-color-d-4400: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.4);
+    --border-color-d-4500: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.5);
+    --border-color-d-4600: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.6);
+    --border-color-d-4700: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.7);
+    --border-color-d-4800: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.8);
+    --border-color-d-4900: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 4.9);
+    --border-color-d-5000: var(--border-color-h) var(--border-color-s) calc(var(--border-color-l) - var(--border-color-l) * 5);
+    --border-color-l-100: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.1);
+    --border-color-l-200: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.2);
+    --border-color-l-300: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.3);
+    --border-color-l-400: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.4);
+    --border-color-l-500: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.5);
+    --border-color-l-600: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.6);
+    --border-color-l-700: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.7);
+    --border-color-l-800: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.8);
+    --border-color-l-900: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 0.9);
+    --border-color-l-1000: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1);
+    --border-color-l-1100: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.1);
+    --border-color-l-1200: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.2);
+    --border-color-l-1300: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.3);
+    --border-color-l-1400: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.4);
+    --border-color-l-1500: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.5);
+    --border-color-l-1600: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.6);
+    --border-color-l-1700: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.7);
+    --border-color-l-1800: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.8);
+    --border-color-l-1900: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 1.9);
+    --border-color-l-2000: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2);
+    --border-color-l-2100: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.1);
+    --border-color-l-2200: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.2);
+    --border-color-l-2300: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.3);
+    --border-color-l-2400: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.4);
+    --border-color-l-2500: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.5);
+    --border-color-l-2600: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.6);
+    --border-color-l-2700: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.7);
+    --border-color-l-2800: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.8);
+    --border-color-l-2900: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 2.9);
+    --border-color-l-3000: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3);
+    --border-color-l-3100: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.1);
+    --border-color-l-3200: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.2);
+    --border-color-l-3300: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.3);
+    --border-color-l-3400: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.4);
+    --border-color-l-3500: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.5);
+    --border-color-l-3600: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.6);
+    --border-color-l-3700: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.7);
+    --border-color-l-3800: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.8);
+    --border-color-l-3900: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 3.9);
+    --border-color-l-4000: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4);
+    --border-color-l-4100: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.1);
+    --border-color-l-4200: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.2);
+    --border-color-l-4300: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.3);
+    --border-color-l-4400: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.4);
+    --border-color-l-4500: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.5);
+    --border-color-l-4600: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.6);
+    --border-color-l-4700: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.7);
+    --border-color-l-4800: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.8);
+    --border-color-l-4900: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 4.9);
+    --border-color-l-5000: var(--border-color-h) calc(var(--border-color-s)) calc(var(--border-color-l) + (100% - var(--border-color-l)) * 5);
+    --dashboard-bg: 210 10% 96%;
   /* ================================ Box Shadow Start =============================== */
     --box-shadow: 0px 2px 15px hsl(var(--black) / 0.05);
   /* ================================ Box Shadow End =============================== */
   /* ============================== Bootstrap Modifier Start ============================== */
   /* Primary Color */
-    --primary-h: 238;
-    --primary-s: 100%;
-    --primary-l: 40%;
+    --primary-h: 221;
+    --primary-s: 97%;
+    --primary-l: 54%;
     --primary: var(--primary-h) var(--primary-s) var(--primary-l);
     --primary-d-100: var(--primary-h) var(--primary-s) calc(var(--primary-l) - var(--primary-l) * 0.1);
     --primary-d-200: var(--primary-h) var(--primary-s) calc(var(--primary-l) - var(--primary-l) * 0.2);
@@ -201,9 +305,9 @@
     --secondary-l-400: var(--secondary-h) calc(var(--secondary-s)) calc(var(--secondary-l) + (100% - var(--secondary-l)) * 0.4);
     --secondary-l-500: var(--secondary-h) calc(var(--secondary-s)) calc(var(--secondary-l) + (100% - var(--secondary-l)) * 0.5);
   /* Success Color */
-    --success-h: 112;
-    --success-s: 100%;
-    --success-l: 40%;
+    --success-h: 142;
+    --success-s: 71%;
+    --success-l: 45%;
     --success: var(--success-h) var(--success-s) var(--success-l);
     --success-d-100: var(--success-h) var(--success-s) calc(var(--success-l) - var(--success-l) * 0.1);
     --success-d-200: var(--success-h) var(--success-s) calc(var(--success-l) - var(--success-l) * 0.2);
@@ -490,6 +594,17 @@ button:focus {
 }
 
 /* ======================  Overlay End  ======================*/
+.fw--600 {
+    font-weight: 600;
+}
+
+.card {
+    background-color: hsl(var(--white)) !important;
+    border-radius: 24px !important;
+    padding: 24px !important;
+    border: 1px solid hsl(var(--border-color)) !important;
+}
+
 /* ======================  Section Heading Start  ======================*/
 .section-heading {
     text-align: center;
@@ -3185,16 +3300,16 @@ input[type=number] {
 
 .table thead tr th {
     background-color: hsl(var(--white));
-    text-align: center;
-    padding: 15px 20px;
+    text-align: left;
+    padding: 16px 20px;
     color: hsl(var(--black)/0.7);
     font-family: var(--heading-font);
     font-weight: 600;
     border-bottom: 0;
     max-width: 170px;
-    font-size: 14px;
-    border: 1px solid hsl(var(--black)/0.08);
-    background-color: hsl(var(--base)/0.03);
+    font-size: 16px;
+    background-color: hsl(var(--dashboard-bg));
+    border-right: 0;
 }
 
 .table thead tr th:not(:first-child) {
@@ -3203,11 +3318,11 @@ input[type=number] {
 
 .table thead tr th:first-child {
     text-align: left;
-    border-radius: 6px 0 0 0;
+    border-radius: 8px 0 0 8px;
 }
 
 .table thead tr th:last-child {
-    border-radius: 0 6px 0 0;
+    border-radius: 0 8px 8px 0;
     text-align: right;
 }
 
@@ -3241,18 +3356,17 @@ input[type=number] {
 }
 
 .table tbody tr td {
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
-    padding: 10px 15px;
+    padding: 20px;
     border-width: 1px;
     border: 0;
     font-family: var(--heading-font);
     color: hsl(var(--black)/0.7);
-    font-weight: 500;
+    font-weight: 400;
     max-width: 170px;
-    font-size: 13px;
+    font-size: 16px;
     border-bottom: 1px solid hsl(var(--black)/0.08);
-    border-right: 1px solid hsl(var(--black)/0.08);
 }
 
 .table tbody tr td::before {
@@ -3268,13 +3382,11 @@ input[type=number] {
 
 .table tbody tr td:first-child {
     text-align: left;
-    border-left: 1px solid hsl(var(--black)/0.08);
     font-size: 14px;
 }
 
 .table tbody tr td:last-child {
     text-align: right;
-    border-right: 1px solid hsl(var(--black)/0.08);
 }
 
 @media screen and (max-width: 767px) {
@@ -3469,6 +3581,13 @@ input[type=number] {
     }
 }
 
+.table__action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: end;
+}
+
 /* ================================= Table Css End =========================== */
 /* ================================= Tab Css Start =========================== */
 .custom--tab {
@@ -3544,46 +3663,88 @@ input[type=number] {
 /* ================================= Tab Css End =========================== */
 /* ================================= Badge Css Start =========================== */
 .badge {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     border-radius: 5px;
-    padding: 8px 10px;
+    padding: 4px 15px;
     font-weight: 500;
     position: relative;
     text-align: center;
 }
 
 .badge--base {
-    background-color: hsl(var(--base)/0.15) !important;
-    color: hsl(var(--base)) !important;
+    background-color: hsl(var(--base)) !important;
+    color: hsl(var(--white)) !important;
 }
 
 .badge--primary {
-    background-color: hsl(var(--primary)/0.15) !important;
-    color: hsl(var(--primary)) !important;
+    background-color: hsl(var(--primary)) !important;
+    color: hsl(var(--white)) !important;
 }
 
 .badge--secondary {
-    background-color: hsl(var(--secondary)/0.15) !important;
-    color: hsl(var(--secondary)) !important;
+    background-color: hsl(var(--secondary)) !important;
+    color: hsl(var(--white)) !important;
 }
 
 .badge--success {
-    background-color: hsl(var(--success)/0.15) !important;
-    color: hsl(var(--success)) !important;
+    background-color: hsl(var(--success)) !important;
+    color: hsl(var(--white)) !important;
 }
 
 .badge--danger {
-    background-color: hsl(var(--danger)/0.15) !important;
-    color: hsl(var(--danger)) !important;
+    background-color: hsl(var(--danger)) !important;
+    color: hsl(var(--white)) !important;
 }
 
 .badge--warning {
-    background-color: hsl(var(--warning)/0.15) !important;
-    color: hsl(var(--warning)) !important;
+    background-color: hsl(var(--warning)) !important;
+    color: hsl(var(--white)) !important;
 }
 
 .badge--info {
-    background-color: hsl(var(--info)/0.15) !important;
+    background-color: hsl(var(--info)) !important;
+    color: hsl(var(--white)) !important;
+}
+
+.badge2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 32px;
+    border-radius: 8px;
+}
+
+.badge2--base {
+    background-color: hsl(var(--base)/0.1);
+    color: hsl(var(--base)) !important;
+}
+
+.badge2--primary {
+    background-color: hsl(var(--primary)/0.1) !important;
+    color: hsl(var(--primary)) !important;
+}
+
+.badge2--secondary {
+    background-color: hsl(var(--secondary)/0.1) !important;
+    color: hsl(var(--secondary)) !important;
+}
+
+.badge2--success {
+    background-color: hsl(var(--success)/0.1);
+    color: hsl(var(--success)) !important;
+}
+
+.badge2--danger {
+    background-color: hsl(var(--danger)/0.1) !important;
+    color: hsl(var(--danger)) !important;
+}
+
+.badge2--warning {
+    background-color: hsl(var(--warning)/0.1) !important;
+    color: hsl(var(--warning)) !important;
+}
+
+.badge2--info {
+    background-color: hsl(var(--info)/0.1) !important;
     color: hsl(var(--info)) !important;
 }
 
@@ -3771,38 +3932,44 @@ input[type=number] {
 
 .dropdown-menu {
     min-width: max-content;
-    padding: 0;
+    padding: 20px;
     font-size: 14px;
     color: hsl(var(--heading-color));
     background-color: hsl(var(--white));
     border: 0;
-    border-radius: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid hsl(var(--border-color));
     white-space: nowrap;
     box-shadow: var(--box-shadow);
 }
 
 .dropdown-item {
-    padding: 8px 18px;
-    font-weight: 400;
+    padding: 14px 20px;
+    font-weight: 700;
     color: hsl(var(--body-color));
     white-space: nowrap;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid hsl(var(--border-color)/0.3);
+    font-size: 16px;
     border-radius: 0;
-    font-size: 14px;
+    font-size: 16px;
     transition: 0.3s;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .dropdown-item:hover {
     color: hsl(var(--white));
-    background-color: hsl(var(--base));
+    background-image: linear-gradient(246deg, hsl(var(--base-two)), hsl(var(--base)));
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
     color: hsl(var(--white));
-    background-color: hsl(var(--base));
+    background-image: linear-gradient(246deg, hsl(var(--base-two)), hsl(var(--base)));
 }
 
 /* ======================  Dropdown Section End  ======================*/
@@ -4565,7 +4732,7 @@ input[type=number] {
 .select2-container--default .select2-selection--single {
     background-color: hsl(var(--white));
     border: 1px solid hsl(var(--black)/0.1);
-    border-radius: 8px;
+    border-radius: 12px;
     height: auto;
     padding: 14px 30px 14px 14px;
 }
@@ -5383,6 +5550,8 @@ input[type=number] {
 /* ======================  Dashboard Section Start  ======================*/
 .dashboard__wrap {
     padding-left: 275px;
+    background-color: hsl(var(--dashboard-bg));
+    min-height: 100vh;
 }
 
 @media screen and (max-width: 991px) {
@@ -5437,7 +5606,8 @@ input[type=number] {
 }
 
 .dashboard__logo {
-    padding: 28px 22px;
+    padding: 23px 22px;
+    padding-bottom: 24px;
     border-bottom: 1px solid hsl(var(--border-color));
 }
 
@@ -5500,6 +5670,7 @@ input[type=number] {
     position: relative;
     z-index: 1;
     transition: 0.3s;
+    border: 1px solid hsl(var(--white));
 }
 
 .dashboard__menu ul li a:hover {
@@ -5574,18 +5745,32 @@ input[type=number] {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 24px;
-    padding-bottom: 0;
+    padding: 12px;
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+    background-color: hsl(var(--white));
+}
+
+.dashboard__header__title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.dashboard__header__button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dashboard__header__line {
+    height: 26px;
+    width: 1px;
+    background-color: hsl(var(--black));
 }
 
 @media screen and (max-width: 767px) {
     .dashboard__header {
         flex-direction: column;
         gap: 24px;
-    }
-
-    .dashboard__header .search__box {
-        width: 100%;
     }
 }
 
@@ -5658,9 +5843,9 @@ input[type=number] {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: hsl(var(--base)/0.15);
-    border-radius: 15px;
-    color: hsl(var(--base));
+    border: 1px solid hsl(var(--border-color));
+    border-radius: 50%;
+    color: hsl(var(--black));
     font-size: 26px;
     transition: 0.3s;
 }
@@ -5682,13 +5867,13 @@ input[type=number] {
 
 .notification__count {
     position: absolute;
-    right: -6px;
-    top: -10px;
+    right: -4px;
+    top: -8px;
     z-index: 2;
-    background-color: hsl(var(--base));
+    background-color: hsl(var(--danger));
     line-height: 1;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     color: hsl(var(--white));
     font-size: 10px;
@@ -5845,23 +6030,6 @@ input[type=number] {
     }
 }
 
-.dashboard__card h5 {
-    font-weight: 600;
-}
-
-.dashboard__card p {
-    font-size: 32px;
-    font-weight: 600;
-    color: hsl(var(--heading-color));
-    line-height: 1;
-}
-
-@media screen and (max-width: 1199px) {
-    .dashboard__card p {
-        font-size: 28px;
-    }
-}
-
 .chart__topbar {
     display: flex;
     align-items: center;
@@ -5959,6 +6127,17 @@ input[type=number] {
 
 .filter__btn {
     white-space: nowrap;
+    background-color: hsl(var(--white));
+    padding: 10px 14px;
+    display: inline-flex;
+    gap: 7px;
+    align-items: center;
+    border: 1px solid hsl(var(--black)/0.2);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(var(--black));
 }
 
 .table__topbar > h5 {
@@ -6091,10 +6270,10 @@ input[type=number] {
     margin: 16px;
     padding: 18px;
     border-radius: 16px;
-    background: radial-gradient(2374.73% 261.17% at 123.74% -69.33%, var(--Brand-Primary-color, #4623e9) 17.84%, var(--Shades-Secondary-S-500, #eaabf0) 49.88%, var(--Brand-Primary-color, #4623e9) 88.63%), var(--Theme-Body-color, #64676c);
+    background-image: linear-gradient(350deg, hsl(var(--base)) 0%, hsl(var(--base-two)) 50%, hsl(var(--base)) 100%);
     position: absolute;
     left: 44%;
-    bottom: -262px;
+    bottom: -360px;
     transform: translate(-50%, -50%);
     width: 89%;
 }
@@ -6125,6 +6304,1032 @@ input[type=number] {
 .sidebar__footer__button:hover {
     background-color: hsl(var(--black));
     color: hsl(var(--white)) !important;
+}
+
+.create__card {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 16px;
+    background-color: hsl(var(--base)/0.1);
+    border-radius: 50px;
+}
+
+.create__card:hover {
+    background-color: hsl(var(--base));
+    color: hsl(var(--white));
+}
+
+.deposit__funds {
+    background-image: linear-gradient(246deg, hsl(var(--base-two)), hsl(var(--base)));
+    color: hsl(var(--white));
+}
+
+.dashboard__header__profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header__profile {
+    background-color: hsl(var(--base)/0.1);
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+
+.dashboard__card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: hsl(var(--white));
+    padding: 24px;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.dashboard__card__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(var(--heading-color));
+    margin-bottom: 12px;
+}
+
+.dashboard__card__amount {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(var(--heading-color));
+    margin-bottom: 0;
+}
+
+.dashboard__card__desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+    margin-bottom: 30px;
+}
+
+.dashboard__card__left p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dashboard__card__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard__card__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(35px);
+    opacity: 0.8;
+}
+
+.dashboard__card__bg-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.dashboard__table__card {
+    background-color: hsl(var(--white));
+    padding: 18px 24px;
+    border-radius: 24px;
+}
+
+.dh__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dh__title h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: hsl(var(--heading-color));
+}
+
+.dh__button {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(var(--body-color));
+    gap: 10px;
+}
+
+.mycardSwiper .swiper-slide {
+    width: 400px;
+  /* card size */
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.mycardSwiper .swiper-slide img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Active Slide Highlight */
+.mycardSwiper .swiper-slide-active {
+    transform: scale(1.05);
+    margin-right: 0;
+}
+
+.mycardSwiper .swiper-pagination {
+    margin-top: 20px;
+}
+
+.mycardSwiper .swiper-pagination-bullet {
+    background-color: hsl(var(--black)/0.1);
+}
+
+.mycardSwiper .swiper-pagination-bullet-active {
+    width: 72px;
+    border-color: 1px solid hsl(var(--black)/0.1) !important;
+}
+
+.credit-card {
+    background-image: linear-gradient(179deg, hsl(var(--base)) 0%, hsl(var(--base-two)) 64% 39%);
+    padding: 20px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.credit-card__tag {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: hsl(var(--success));
+    color: hsl(var(--white));
+    padding: 4px 12px;
+    border-radius: 8px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.credit-card__logo {
+    position: absolute;
+    right: 12px;
+    bottom: 33px;
+    z-index: 1;
+}
+
+.credit-card__shape1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.credit-card__shape2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.credit-card__shape3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.credit-card__shape4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.credit-card__shape5 {
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.credit-card__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(var(--white));
+    margin-bottom: 12px;
+}
+
+.credit-card__title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 34px;
+    color: hsl(var(--white));
+}
+
+.credit-card__amount {
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(var(--white));
+}
+
+.credit-card__content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.credit-card__items__subtitle {
+    font-size: 10px;
+    color: hsl(var(--white));
+}
+
+.credit-card__items__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: hsl(var(--white));
+}
+
+.credit-card__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(var(--dashboard-bg));
+    padding: 14px 24px;
+    border-radius: 12px;
+}
+
+.credit-card__item__left p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.credit-card__info__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.credit-card__info__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(var(--balck));
+}
+
+.quick__actions {
+    background-color: hsl(var(--dashboard-bg));
+    text-align: center;
+    padding: 12px;
+    padding-bottom: 16px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.quick__actions:hover {
+    background-color: hsl(var(--base)/0.1);
+}
+
+.quick__actions__icon {
+    margin-bottom: 4px;
+}
+
+.quick__actions__title {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+}
+
+.outline-black {
+    border: 1px solid hsl(var(--black)) !important;
+    color: hsl(var(--black)) !important;
+}
+
+.outline-black:hover {
+    background-color: hsl(var(--black));
+    color: hsl(var(--white)) !important;
+}
+
+.credit-card__button {
+    border-radius: 12px;
+}
+
+.credit-card__alart {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.dashboaed-card {
+    background-color: hsl(var(--white));
+    padding: 20px;
+    border-radius: 24px;
+}
+
+.summary-card {
+    padding: 24px;
+    background-color: hsl(var(--white));
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid hsl(var(--black)/0.1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.summary-card__bg-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.summary-card__bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.summary-card__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(var(--body-color));
+    margin-bottom: 6px;
+}
+
+.summary-card__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(var(--heading-color));
+    margin-bottom: 4px;
+}
+
+.summary-card__desc {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dashboaed-card2 {
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid hsl(var(--white)/0.3);
+    position: relative;
+    width: 100%;
+}
+
+.dashboaed-card2__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--white));
+    margin-bottom: 12px;
+}
+
+.dashboaed-card2__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(var(--white));
+}
+
+.dashboaed-card2__logo {
+    padding-bottom: 56px;
+}
+
+.dashboaed-card2__amount {
+    color: hsl(var(--white));
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.dashboaed-card2__date {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--white));
+}
+
+.dashboaed-card2__date-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(var(--white));
+}
+
+.dashboaed-card2__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboaed-card2__tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.dashboaed-card2__search .form-control {
+    padding: 10px !important;
+    border-radius: 12px;
+    width: 330px;
+    padding-right: 40px !important;
+}
+
+.dashboaed-card2__search {
+    max-width: 380px;
+    position: relative;
+    z-index: 1;
+}
+
+.dashboaed-card2__search__icon {
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.dashboaed-card2__heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.dashboaed-card2__heading__title {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.dashboaed-card2__heading__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dashboaed-card2__alart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.alart {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid hsl(var(--black)/0.2);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.alart__title {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.alart-danger {
+    border-color: hsl(var(--danger)) !important;
+}
+
+.alart-danger .alart__icon {
+    color: hsl(var(--danger)) !important;
+}
+
+.alart-danger .alart__title {
+    color: hsl(var(--danger)) !important;
+}
+
+.alart-success {
+    border-color: hsl(var(--success)) !important;
+}
+
+.alart-success .alart__icon {
+    color: hsl(var(--success)) !important;
+}
+
+.alart-success .alart__title {
+    color: hsl(var(--success)) !important;
+}
+
+.alart-dark {
+    border-color: hsl(var(--dark)) !important;
+}
+
+.alart-dark .alart__icon {
+    color: hsl(var(--dark)) !important;
+}
+
+.alart-dark .alart__title {
+    color: hsl(var(--dark)) !important;
+}
+
+.card-details__logo {
+    padding-bottom: 100px !important;
+}
+
+.card-details {
+    padding: 24px;
+    background-color: hsl(var(--white));
+    border-radius: 24px;
+}
+
+.card-details__heading {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+    margin-bottom: 20px;
+}
+
+.card-details__item__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(var(--body-color));
+    margin-bottom: 4px;
+}
+
+.card-details__item__amount {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(var(--heading-color));
+}
+
+.card-details__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin-bottom: 38px;
+}
+
+.card-details__button__item {
+    text-align: center;
+    background-color: hsl(var(--success)/0.06);
+    padding: 16px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.card-details__button__icon {
+    color: hsl(var(--success));
+    margin-bottom: 4px;
+}
+
+.card-details__button__title {
+    color: hsl(var(--success));
+}
+
+/* 2nd Button (Withdraw) */
+.card-details__button .col-lg-3:nth-child(2) .card-details__button__item {
+    background-color: hsl(var(--base)/0.1) !important;
+}
+
+.card-details__button .col-lg-3:nth-child(2) .card-details__button__item .card-details__button__icon {
+    color: hsl(var(--base));
+}
+
+.card-details__button .col-lg-3:nth-child(2) .card-details__button__item .card-details__button__title {
+    color: hsl(var(--base));
+}
+
+.card-details__button .col-lg-3:nth-child(3) .card-details__button__item {
+    background-color: hsl(var(--info)/0.1) !important;
+}
+
+.card-details__button .col-lg-3:nth-child(3) .card-details__button__item .card-details__button__icon {
+    color: hsl(var(--info));
+}
+
+.card-details__button .col-lg-3:nth-child(3) .card-details__button__item .card-details__button__title {
+    color: hsl(var(--info));
+}
+
+.card-details__button .col-lg-3:nth-child(4) .card-details__button__item {
+    background-color: hsl(var(--danger)/0.1) !important;
+}
+
+.card-details__button .col-lg-3:nth-child(4) .card-details__button__item .card-details__button__icon {
+    color: hsl(var(--danger));
+}
+
+.card-details__button .col-lg-3:nth-child(4) .card-details__button__item .card-details__button__title {
+    color: hsl(var(--danger));
+}
+
+.create-card {
+    max-width: 984px;
+    margin: auto;
+}
+
+.create-card__warning {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(var(--warning)/0.1);
+    border-left: 4px solid hsl(var(--warning));
+}
+
+.create-card__warning__title {
+    color: hsl(var(--warning-d-400));
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.create-card__warning__desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--warning-d-100));
+    margin-bottom: 10px;
+}
+
+.create-card__warning__link {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(var(--warning-d-400));
+    text-decoration: underline;
+}
+
+.create-card__preview__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.create-card__preview__wrap {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.create-card__preview__wrap span {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(var(--black)/0.4);
+}
+
+.credit-card {
+    max-width: 510px;
+}
+
+.credit-card__view {
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid hsl(var(--border-color));
+    width: 510px;
+    margin: auto;
+}
+
+.credit-card__view__amount {
+    font-size: 28px;
+    font-weight: 700;
+    color: hsl(var(--white));
+}
+
+.credit-card__view-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.credit-card__view__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(var(--white));
+    margin-bottom: 2px;
+}
+
+.credit-card__view__title {
+    font-size: 34px;
+    font-weight: 700;
+    color: hsl(var(--white));
+    margin-bottom: 0;
+}
+
+.credit-card__view__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+}
+
+.card-holder__info__desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+}
+
+.card-holder__info__check {
+    font-size: 20px;
+    color: hsl(var(--white));
+    display: none;
+}
+
+.card-holder__info__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid hsl(var(--border-color));
+    padding: 12px 20px;
+    border-radius: 12px;
+    background-color: hsl(var(--white));
+    transition: 0.3s;
+}
+
+.card-holder__info__link:hover, .card-holder__info__link.active {
+    background-color: hsl(var(--base)/0.06);
+    border-color: hsl(var(--base));
+}
+
+.card-holder__info__link:hover .card-holder__info__icon, .card-holder__info__link.active .card-holder__info__icon {
+    background-color: hsl(var(--base));
+    color: hsl(var(--white));
+}
+
+.card-holder__info__link:hover .card-holder__info__check, .card-holder__info__link.active .card-holder__info__check {
+    display: block;
+    color: hsl(var(--primary));
+}
+
+.card-holder__info__link__wrap {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.card-holder__info__icon {
+    height: 56px;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--black)/0.1);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card-holder__info__top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: hsl(var(--dashboard-bg));
+    padding: 20px;
+    border-radius: 24px;
+    border: 1px solid hsl(var(--border-color));
+    margin: 16px 0;
+}
+
+.card-holder__info__content__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(var(--heading-color));
+    margin-bottom: 0;
+}
+
+.card-holder__info__content__desc {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-holder__form .form-control {
+    padding: 13px !important;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px 0 hsl(var(--black)/0.01), 0 1px 2px 0 hsl(var(--black)/0.04);
+}
+
+.card-holder__form__desc {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.card-holder__form .select2-selection--single {
+    padding: 13px !important;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px 0 hsl(var(--black)/0.01), 0 1px 2px 0 hsl(var(--black)/0.04);
+}
+
+.create-card__summary__title {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(var(--black));
+    margin-bottom: 24px;
+}
+
+.create-card__summary__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    padding-bottom: 12px;
+}
+
+.create-card__summary__amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.create-card__summary__amount__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(var(--heading-color));
+    margin-bottom: 0;
+}
+
+.create-card__summary__amount__mouny {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(var(--info));
+}
+
+.create-card__summary__item__Wrap {
+    border-bottom: 1px solid hsl(var(--black)/0.2);
+}
+
+.summary__button {
+    padding: 15px 22px;
+    margin-bottom: 20px;
+}
+
+.summary__alart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hsl(var(--primary));
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-holder__client {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid hsl(var(--black)/0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px 0 hsl(var(--black)/0.01), 0 1px 2px 0 hsl(var(--black)/0.04);
+    margin-bottom: 16px;
+}
+
+.card-holder__client:last-child {
+    margin-bottom: 0;
+}
+
+.card-holder__client__icon {
+    height: 48px;
+    width: 48px;
+    background-color: hsl(var(--dashboard-bg));
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-holder__client__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(var(--black));
+    margin-bottom: 2px;
+}
+
+.card-holder__client__desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--black)/0.5);
+}
+
+.card-holder__client__subdesc {
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(var(--black)/0.2);
+}
+
+.deposit__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(246deg, hsl(var(--base-two)), hsl(var(--base)));
+    padding: 24px 48px;
+    border-radius: 16px;
+    border: 1px solid hsl(var(--border-color));
+}
+
+.deposit__top__content__title {
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: hsl(var(--white));
+}
+
+.deposit__top__content__amount {
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(var(--white));
+    margin-bottom: 0;
+}
+
+.deposit__top__content__desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(var(--white));
+}
+
+.deposit__top__content__thumb {
+    color: hsl(var(--white));
+}
+
+.Select__title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: hsl(var(--heading-color));
+}
+
+.country__button {
+    color: hsl(var(--black)/0.5);
+    position: absolute;
+    right: 4px;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.deposit__footer {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--black)/0.6);
+    text-align: center;
+}
+
+.fiat-deposit {
+    background-color: hsl(var(--white));
+    padding: 14px 16px;
+    border: 1px solid hsl(var(--black)/0.1);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px 0 hsl(var(--black)/0.1), 0 1px 2px 0 hsl(var(--black)/0.16);
+    margin-top: 16px;
+}
+
+.fiat-deposit__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+    padding: 8px;
+}
+
+.fiat-deposit__wrap:last-child {
+    border-bottom: none;
+}
+
+.fiat-deposit__left__brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fiat-deposit__right__amount {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(var(--body-color));
 }
 
 /* ======================  Profile Section Start  ======================*/

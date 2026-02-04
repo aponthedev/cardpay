@@ -4,276 +4,1388 @@
 <!--==========================  Dashboard Section Start  ==========================-->
 <div class="dashboard">
     @@include('../components/_dashboard-sidebar.html')
-
-
     <div class="dashboard__wrap">
-        <div class="dashboard__header">
-            <div class="search__box">
-                <input type="text" class="form-control" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="dashboard__header__widgets">
-                <div class="upload__file">
-                    <a href="upload-file.html" class="btn btn--base"><i class="fa-solid fa-cloud-arrow-up"></i> Upload
-                        File</a>
-                </div>
-                <div class="dropdown">
-                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="notification__btn">
-                            <i class="las la-bell"></i>
-                            <span class="notification__count">
-                                <span>21</span>
-                            </span>
-                        </span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <div class="notification__wrap">
-                            <div class="notification__header">
-                                <h4>Notifications</h4>
-                                <span class="badge badge--base">12 Unread</span>
-                            </div>
-                            <div class="notification__body">
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                            </div>
-                            <div class="notification__footer">
-                                <a href="#" class="btn btn--sm btn--base w-100">View all</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropdown-toggle d-flex align-items-center gap-2" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="profile__dropdown">
-                            <img src="assets/images/user.jpg" alt="image">
-                            <span>Max Sujak</span>
-                        </span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="profile.html">Profile Setting</a></li>
-                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
-                        <li><a class="dropdown-item" href="two-factor.html">2FA Security</a></li>
-                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
-                    </ul>
-                </div>
-                <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
-            </div>
-        </div>
+        @@include('../components/_dashboard__header.html')
         <div class="dashboard__wrapper">
             <div class="row g-4">
-                <div class="col-xl-3 col-sm-6">
-                    <a href="#" class="d-block w-100">
-                        <div class="dashboard__card card">
-                            <h5>Earnings</h5>
-                            <p>$7,265</p>
-                            <img class="dc__img" src="assets/images/dc-1.png" alt="image">
+
+                <div class="col-xl-8">
+                    <div class="row">
+                        <div class="col-xl-4 col-sm-6">
+                            <a href="#" class="dashboard__card">
+                                <span class="dashboard__card__bg"><svg width="191" height="233" viewBox="0 0 191 233"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.8">
+                                            <path
+                                                d="M112.241 275.134C107.278 202.392 39.4485 148.282 6.15417 130.319L141.809 78.558C192.401 73.3501 228.715 174.8 240.548 226.176C237.372 226.632 207.264 237.062 112.241 275.134Z"
+                                                fill="#F3C7DD" />
+                                            <path
+                                                d="M222.668 258.542C229.968 185.957 171.774 121.405 141.765 98.2012L285.032 69.4678C336.093 72.6593 355.069 178.729 358.174 231.365C354.947 231.292 323.327 236.625 222.668 258.542Z"
+                                                fill="#E179D9" />
+                                            <g filter="url(#filter0_f_12125_7102)">
+                                                <path
+                                                    d="M295.983 238.934C303.283 166.349 245.09 101.796 215.08 78.5928L358.347 49.8594C409.409 53.0509 428.384 159.121 431.49 211.757C428.262 211.684 396.642 217.017 295.983 238.934Z"
+                                                    fill="#C985F4" />
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_f_12125_7102" x="115.08" y="-50.1406" width="416.409"
+                                                height="389.074" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape" />
+                                                <feGaussianBlur stdDeviation="0"
+                                                    result="effect1_foregroundBlur_12125_7102" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                                <span class="dashboard__card__bg-image"><svg width="153" height="172"
+                                        viewBox="0 0 153 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g style="mix-blend-mode:overlay" opacity="0.4"
+                                            clip-path="url(#clip0_12125_976)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M82.756 42.3835C89.1528 35.9272 98.9812 33.6994 107.46 38.2499C109.639 39.4187 112.103 40.8271 114.833 42.5139C105.812 47.2428 92.6189 54.5642 74.9938 65.34C65.0534 71.4174 56.7335 76.7409 49.8752 81.2816C59.6992 67.7161 71.1136 54.1343 82.756 42.3835ZM103.406 201.214C112.259 196.609 125.662 189.219 143.912 178.061C162.162 166.903 174.848 158.342 182.983 152.562C191.942 146.195 194.978 134.576 189.979 124.675C189.024 122.784 187.943 120.69 186.723 118.39C184.121 120.087 181.09 122.007 177.595 124.144C172.817 127.065 168.796 129.398 165.503 131.234C154.864 137.167 141.617 134.341 134.63 123.973C132.922 121.439 130.958 118.4 128.757 114.799C126.555 111.198 124.745 108.065 123.268 105.389C117.225 94.4445 120.748 81.3662 130.879 74.6005C134.014 72.5066 137.922 69.991 142.7 67.0698C146.196 64.9327 149.286 63.1107 151.983 61.5675C150.492 59.4339 149.121 57.5168 147.873 55.8046C141.338 46.8423 129.614 44.2483 119.862 49.321C111.01 53.9263 97.6068 61.3157 79.3567 72.4736C61.1066 83.6315 48.4202 92.1927 40.286 97.973C31.326 104.34 28.2906 115.958 33.2892 125.86C37.3389 133.881 43.6683 145.554 53.133 161.034C62.5976 176.515 70.1018 187.469 75.3958 194.73C81.9302 203.692 93.6546 206.287 103.406 201.214ZM142.951 118.365C146.935 124.277 154.39 125.942 160.617 122.47C163.787 120.702 167.692 118.437 172.361 115.583C177.029 112.729 180.825 110.285 183.844 108.269C189.772 104.31 191.688 96.9157 188.243 90.6746C186.84 88.1334 185.104 85.1281 182.977 81.6492C180.85 78.1702 178.966 75.2557 177.344 72.8485C173.36 66.9368 165.905 65.272 159.679 68.7444C156.508 70.5122 152.603 72.7766 147.934 75.631C143.266 78.4853 139.47 80.9289 136.451 82.9448C130.523 86.9042 128.607 94.2983 132.052 100.539C133.455 103.081 135.191 106.086 137.318 109.565C139.445 113.044 141.329 115.958 142.951 118.365ZM152.932 90.2174C155.296 88.7721 158.384 89.5169 159.83 91.8809L163.319 97.5884C164.764 99.9524 164.02 103.041 161.656 104.486C159.292 105.931 156.203 105.187 154.758 102.823L151.268 97.1151C149.823 94.7511 150.568 91.6628 152.932 90.2174Z"
+                                                fill="#C5CBD1" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_12125_976">
+                                                <rect width="160.551" height="160.551" fill="white"
+                                                    transform="translate(0 83.7471) rotate(-31.4411)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <p class="dashboard__card__subtitle">Wallet Balance</p>
+                                <h3 class="dashboard__card__amount">$970,678.20</h3>
+                                <p class="dashboard__card__desc">Available balance for card usage</p>
+
+                                <div class="dashboard__card__wrap">
+                                    <div class="dashboard__card__left">
+                                        <p class="d-flex gap-2 align-items-center text-success">$1,400.90<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M1.60001 11.2L5.18401 7.75383L8.256 10.7077L14.4 4.79999M14.4 4.79999H9.79201M14.4 4.79999V9.23076"
+                                                    stroke="hsl(var(--success))" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></p>
+
+                                        <p>Deposited</p>
+                                    </div>
+                                    <div class="dashboard__card__left">
+                                        <p class="d-flex gap-2 align-items-center text-danger">$1,400.90<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M1.60001 4.80001L5.18401 8.24617L8.256 5.29232L14.4 11.2M14.4 11.2H9.79201M14.4 11.2V6.76924"
+                                                    stroke="hsl(var(--danger))" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></p>
+
+                                        <p>Spent</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-sm-6">
-                    <a href="#" class="d-block w-100">
-                        <div class="dashboard__card card">
-                            <h5>Total Transaction</h5>
-                            <p>$7,265</p>
-                            <img class="dc__img" src="assets/images/dc-1.png" alt="image">
+                        <div class="col-xl-4 col-sm-6">
+                            <a href="#" class="dashboard__card">
+                                <span class="dashboard__card__bg"><svg width="191" height="233" viewBox="0 0 191 233"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.8">
+                                            <path
+                                                d="M112.241 275.134C107.278 202.392 39.4485 148.282 6.15417 130.319L141.809 78.558C192.401 73.3501 228.715 174.8 240.548 226.176C237.372 226.632 207.264 237.062 112.241 275.134Z"
+                                                fill="#F3C7DD" />
+                                            <path
+                                                d="M222.668 258.542C229.968 185.957 171.774 121.405 141.765 98.2012L285.032 69.4678C336.093 72.6593 355.069 178.729 358.174 231.365C354.947 231.292 323.327 236.625 222.668 258.542Z"
+                                                fill="#E179D9" />
+                                            <g filter="url(#filter0_f_12125_7102)">
+                                                <path
+                                                    d="M295.983 238.934C303.283 166.349 245.09 101.796 215.08 78.5928L358.347 49.8594C409.409 53.0509 428.384 159.121 431.49 211.757C428.262 211.684 396.642 217.017 295.983 238.934Z"
+                                                    fill="#C985F4" />
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_f_12125_7102" x="115.08" y="-50.1406" width="416.409"
+                                                height="389.074" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape" />
+                                                <feGaussianBlur stdDeviation="0"
+                                                    result="effect1_foregroundBlur_12125_7102" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                                <span class="dashboard__card__bg-image"><svg width="153" height="172"
+                                        viewBox="0 0 153 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g style="mix-blend-mode:overlay" opacity="0.4"
+                                            clip-path="url(#clip0_12125_976)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M82.756 42.3835C89.1528 35.9272 98.9812 33.6994 107.46 38.2499C109.639 39.4187 112.103 40.8271 114.833 42.5139C105.812 47.2428 92.6189 54.5642 74.9938 65.34C65.0534 71.4174 56.7335 76.7409 49.8752 81.2816C59.6992 67.7161 71.1136 54.1343 82.756 42.3835ZM103.406 201.214C112.259 196.609 125.662 189.219 143.912 178.061C162.162 166.903 174.848 158.342 182.983 152.562C191.942 146.195 194.978 134.576 189.979 124.675C189.024 122.784 187.943 120.69 186.723 118.39C184.121 120.087 181.09 122.007 177.595 124.144C172.817 127.065 168.796 129.398 165.503 131.234C154.864 137.167 141.617 134.341 134.63 123.973C132.922 121.439 130.958 118.4 128.757 114.799C126.555 111.198 124.745 108.065 123.268 105.389C117.225 94.4445 120.748 81.3662 130.879 74.6005C134.014 72.5066 137.922 69.991 142.7 67.0698C146.196 64.9327 149.286 63.1107 151.983 61.5675C150.492 59.4339 149.121 57.5168 147.873 55.8046C141.338 46.8423 129.614 44.2483 119.862 49.321C111.01 53.9263 97.6068 61.3157 79.3567 72.4736C61.1066 83.6315 48.4202 92.1927 40.286 97.973C31.326 104.34 28.2906 115.958 33.2892 125.86C37.3389 133.881 43.6683 145.554 53.133 161.034C62.5976 176.515 70.1018 187.469 75.3958 194.73C81.9302 203.692 93.6546 206.287 103.406 201.214ZM142.951 118.365C146.935 124.277 154.39 125.942 160.617 122.47C163.787 120.702 167.692 118.437 172.361 115.583C177.029 112.729 180.825 110.285 183.844 108.269C189.772 104.31 191.688 96.9157 188.243 90.6746C186.84 88.1334 185.104 85.1281 182.977 81.6492C180.85 78.1702 178.966 75.2557 177.344 72.8485C173.36 66.9368 165.905 65.272 159.679 68.7444C156.508 70.5122 152.603 72.7766 147.934 75.631C143.266 78.4853 139.47 80.9289 136.451 82.9448C130.523 86.9042 128.607 94.2983 132.052 100.539C133.455 103.081 135.191 106.086 137.318 109.565C139.445 113.044 141.329 115.958 142.951 118.365ZM152.932 90.2174C155.296 88.7721 158.384 89.5169 159.83 91.8809L163.319 97.5884C164.764 99.9524 164.02 103.041 161.656 104.486C159.292 105.931 156.203 105.187 154.758 102.823L151.268 97.1151C149.823 94.7511 150.568 91.6628 152.932 90.2174Z"
+                                                fill="#C5CBD1" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_12125_976">
+                                                <rect width="160.551" height="160.551" fill="white"
+                                                    transform="translate(0 83.7471) rotate(-31.4411)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <p class="dashboard__card__subtitle">Active Virtual Cards</p>
+                                <h3 class="dashboard__card__amount">08</h3>
+                                <p class="dashboard__card__desc">Out of 20 total cards</p>
+
+                                <div class="dashboard__card__wrap">
+                                    <div class="dashboard__card__left">
+
+
+                                        <p>Frozen: 2</p>
+                                    </div>
+                                    <div class="dashboard__card__left">
+
+
+                                        <p>Terminated: 1</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-sm-6">
-                    <a href="#" class="d-block w-100">
-                        <div class="dashboard__card card">
-                            <h5>Total Approved</h5>
-                            <p>458</p>
-                            <img class="dc__img" src="assets/images/dc-1.png" alt="image">
+                        <div class="col-xl-4 col-sm-6">
+                            <a href="#" class="dashboard__card">
+                                <span class="dashboard__card__bg"><svg width="191" height="233" viewBox="0 0 191 233"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.8">
+                                            <path
+                                                d="M112.241 275.134C107.278 202.392 39.4485 148.282 6.15417 130.319L141.809 78.558C192.401 73.3501 228.715 174.8 240.548 226.176C237.372 226.632 207.264 237.062 112.241 275.134Z"
+                                                fill="#F3C7DD" />
+                                            <path
+                                                d="M222.668 258.542C229.968 185.957 171.774 121.405 141.765 98.2012L285.032 69.4678C336.093 72.6593 355.069 178.729 358.174 231.365C354.947 231.292 323.327 236.625 222.668 258.542Z"
+                                                fill="#E179D9" />
+                                            <g filter="url(#filter0_f_12125_7102)">
+                                                <path
+                                                    d="M295.983 238.934C303.283 166.349 245.09 101.796 215.08 78.5928L358.347 49.8594C409.409 53.0509 428.384 159.121 431.49 211.757C428.262 211.684 396.642 217.017 295.983 238.934Z"
+                                                    fill="#C985F4" />
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_f_12125_7102" x="115.08" y="-50.1406" width="416.409"
+                                                height="389.074" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape" />
+                                                <feGaussianBlur stdDeviation="0"
+                                                    result="effect1_foregroundBlur_12125_7102" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                                <span class="dashboard__card__bg-image"><svg width="153" height="172"
+                                        viewBox="0 0 153 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g style="mix-blend-mode:overlay" opacity="0.4"
+                                            clip-path="url(#clip0_12125_976)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M82.756 42.3835C89.1528 35.9272 98.9812 33.6994 107.46 38.2499C109.639 39.4187 112.103 40.8271 114.833 42.5139C105.812 47.2428 92.6189 54.5642 74.9938 65.34C65.0534 71.4174 56.7335 76.7409 49.8752 81.2816C59.6992 67.7161 71.1136 54.1343 82.756 42.3835ZM103.406 201.214C112.259 196.609 125.662 189.219 143.912 178.061C162.162 166.903 174.848 158.342 182.983 152.562C191.942 146.195 194.978 134.576 189.979 124.675C189.024 122.784 187.943 120.69 186.723 118.39C184.121 120.087 181.09 122.007 177.595 124.144C172.817 127.065 168.796 129.398 165.503 131.234C154.864 137.167 141.617 134.341 134.63 123.973C132.922 121.439 130.958 118.4 128.757 114.799C126.555 111.198 124.745 108.065 123.268 105.389C117.225 94.4445 120.748 81.3662 130.879 74.6005C134.014 72.5066 137.922 69.991 142.7 67.0698C146.196 64.9327 149.286 63.1107 151.983 61.5675C150.492 59.4339 149.121 57.5168 147.873 55.8046C141.338 46.8423 129.614 44.2483 119.862 49.321C111.01 53.9263 97.6068 61.3157 79.3567 72.4736C61.1066 83.6315 48.4202 92.1927 40.286 97.973C31.326 104.34 28.2906 115.958 33.2892 125.86C37.3389 133.881 43.6683 145.554 53.133 161.034C62.5976 176.515 70.1018 187.469 75.3958 194.73C81.9302 203.692 93.6546 206.287 103.406 201.214ZM142.951 118.365C146.935 124.277 154.39 125.942 160.617 122.47C163.787 120.702 167.692 118.437 172.361 115.583C177.029 112.729 180.825 110.285 183.844 108.269C189.772 104.31 191.688 96.9157 188.243 90.6746C186.84 88.1334 185.104 85.1281 182.977 81.6492C180.85 78.1702 178.966 75.2557 177.344 72.8485C173.36 66.9368 165.905 65.272 159.679 68.7444C156.508 70.5122 152.603 72.7766 147.934 75.631C143.266 78.4853 139.47 80.9289 136.451 82.9448C130.523 86.9042 128.607 94.2983 132.052 100.539C133.455 103.081 135.191 106.086 137.318 109.565C139.445 113.044 141.329 115.958 142.951 118.365ZM152.932 90.2174C155.296 88.7721 158.384 89.5169 159.83 91.8809L163.319 97.5884C164.764 99.9524 164.02 103.041 161.656 104.486C159.292 105.931 156.203 105.187 154.758 102.823L151.268 97.1151C149.823 94.7511 150.568 91.6628 152.932 90.2174Z"
+                                                fill="#C5CBD1" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_12125_976">
+                                                <rect width="160.551" height="160.551" fill="white"
+                                                    transform="translate(0 83.7471) rotate(-31.4411)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <p class="dashboard__card__subtitle">Total Spending</p>
+                                <h3 class="dashboard__card__amount">$6,400.90</h3>
+                                <p class="dashboard__card__desc">All-time card expenses</p>
+
+                                <div class="dashboard__card__wrap">
+                                    <div class="dashboard__card__left">
+                                        <p>This month</p>
+                                        <p class="d-flex gap-2 align-items-center text-success">$1,400.90<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M1.60001 11.2L5.18401 7.75383L8.256 10.7077L14.4 4.79999M14.4 4.79999H9.79201M14.4 4.79999V9.23076"
+                                                    stroke="hsl(var(--success))" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></p>
+
+                                    </div>
+                                    <div class="dashboard__card__left">
+                                        <p>Last transaction</p>
+                                        <p class="d-flex gap-2 align-items-center text-danger">$1,400.90<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M1.60001 4.80001L5.18401 8.24617L8.256 5.29232L14.4 11.2M14.4 11.2H9.79201M14.4 11.2V6.76924"
+                                                    stroke="hsl(var(--danger))" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></p>
+
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-sm-6">
-                    <a href="#" class="d-block w-100">
-                        <div class="dashboard__card card">
-                            <h5>Total Asset</h5>
-                            <p>2789</p>
-                            <img class="dc__img" src="assets/images/dc-1.png" alt="image">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="chart__topbar">
-                            <h5>Number of Download</h5>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Weekly
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Weekly</a></li>
-                                    <li><a class="dropdown-item" href="#">Monthly</a></li>
-                                    <li><a class="dropdown-item" href="#">Yearly</a></li>
-                                </ul>
+                        <div class="col-lg-12">
+                            <div class="row mt-4">
+                                <div class="col-lg-12">
+                                    <div class="dashboard__table__card">
+                                        <div class="dh__title">
+                                            <h5>Recent Downloads</h5>
+                                            <a class="dh__button" href="#">View All<i
+                                                    class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                        <div class="dashboard__table">
+                                            <table class="table table--responsive--md">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Reference ID</th>
+                                                        <th>Type</th>
+                                                        <th>Description</th>
+                                                        <th>Amount</th>
+                                                        <th>Date</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            0000034
+                                                        </td>
+                                                        <td>Card Spend</td>
+                                                        <td>Netflix Subscriptim</td>
+                                                        <td>-45.99 USD</td>
+                                                        <td>06 Aug, 2025</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            0000034
+                                                        </td>
+                                                        <td>Card Spend</td>
+                                                        <td>Netflix Subscriptim</td>
+                                                        <td>-45.99 USD</td>
+                                                        <td>06 Aug, 2025</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            0000034
+                                                        </td>
+                                                        <td>Card Spend</td>
+                                                        <td>Netflix Subscriptim</td>
+                                                        <td>-45.99 USD</td>
+                                                        <td>06 Aug, 2025</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            0000034
+                                                        </td>
+                                                        <td>Card Spend</td>
+                                                        <td>Netflix Subscriptim</td>
+                                                        <td>-45.99 USD</td>
+                                                        <td>06 Aug, 2025</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            0000034
+                                                        </td>
+                                                        <td>Card Spend</td>
+                                                        <td>Netflix Subscriptim</td>
+                                                        <td>-45.99 USD</td>
+                                                        <td>06 Aug, 2025</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            0000034
+                                                        </td>
+                                                        <td>Card Spend</td>
+                                                        <td>Netflix Subscriptim</td>
+                                                        <td>-45.99 USD</td>
+                                                        <td>06 Aug, 2025</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            0000034
+                                                        </td>
+                                                        <td>Card Spend</td>
+                                                        <td>Netflix Subscriptim</td>
+                                                        <td>-45.99 USD</td>
+                                                        <td>06 Aug, 2025</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div id="download__chart"></div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="dh__title">
-                            <h5>Recent Downloads</h5>
+
+                <div class="col-xl-4">
+
+                    <div class="dashboaed-card">
+
+                        <div class="mycard">
+                            <p class="mycard__title">My Card</p>
+                            <div class="swiper mycardSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="credit-card">
+                                            <span class="credit-card__tag">Active</span>
+                                            <span class="credit-card__logo"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="112" height="35" viewBox="0 0 112 35" fill="none">
+                                                    <g clip-path="url(#clip0_10057_1388)">
+                                                        <path
+                                                            d="M44.757 1.01117L39.0649 34.414H48.1684L53.8651 1.01117H44.757Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M31.4309 1.04856L22.5147 23.8283L21.5641 20.3888C19.8057 16.2444 14.8137 10.2925 8.95312 6.54155L17.106 34.3976L26.7386 34.3812L41.0752 1.04153L31.4309 1.04856Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M18.1082 3.43934C17.5791 1.40463 16.0454 0.798201 14.1419 0.725616H0.0277161L-0.0893555 1.39058C10.8943 4.05513 18.1621 10.4753 21.1779 18.195L18.1082 3.43934Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M72.3152 7.41341C75.2935 7.36658 77.4523 8.01749 79.1288 8.69183L79.9506 9.07817L81.1822 1.83846C79.3793 1.16178 76.5532 0.435944 73.027 0.435944C64.0312 0.435944 57.6906 4.96661 57.6415 11.4594C57.5829 16.257 62.1581 18.9356 65.614 20.5348C69.1613 22.1738 70.3508 23.2157 70.3344 24.6791C70.3063 26.9152 67.5059 27.9407 64.8905 27.9407C61.2449 27.9407 59.3086 27.4373 56.3186 26.1917L55.1455 25.6578L53.8647 33.134C55.9954 34.0683 59.9267 34.8714 64.0078 34.9135C73.5773 34.9135 79.7961 30.4367 79.8617 23.499C79.9015 19.7036 77.4734 16.8072 72.2122 14.4307C69.0279 12.8806 67.0798 11.8504 67.0985 10.2863C67.0985 8.89787 68.7516 7.41341 72.3152 7.41341Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M104.545 1.04785H97.5112C95.3266 1.04785 93.7017 1.64258 92.7417 3.82011L79.2246 34.432H88.7847C88.7847 34.432 90.3441 30.3157 90.6976 29.4143C91.7442 29.4143 101.033 29.4283 102.356 29.4283C102.627 30.5944 103.465 34.432 103.465 34.432H111.911L104.545 1.04785ZM93.3177 22.5773C94.0669 20.6597 96.9446 13.242 96.9446 13.242C96.8954 13.3333 97.6868 11.3103 98.1574 10.053L98.7709 12.933C98.7709 12.933 100.515 20.9079 100.881 22.5773H93.3177Z"
+                                                            fill="hsl(var(--white))" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10057_1388">
+                                                            <rect width="112" height="35" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg></span>
+                                            <span class="credit-card__shape1"><svg width="271" height="169"
+                                                    viewBox="0 0 271 169" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1612)">
+                                                        <ellipse cx="221.1" cy="28.5" rx="136.5" ry="55.5"
+                                                            fill="#342089" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1612" x="-2.28882e-05" y="-111.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1612" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape2">
+                                                <svg width="264" height="128" viewBox="0 0 264 128" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1615)">
+                                                        <ellipse cx="42.5" cy="-12.5" rx="136.5" ry="55.5"
+                                                            fill="#3679CD" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1615" x="-178.6" y="-152.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1615" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+                                            <span class="credit-card__shape3"><svg width="303" height="167"
+                                                    viewBox="0 0 303 167" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1614)">
+                                                        <ellipse cx="81.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#F9C099" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1614" x="-139.6" y="7.62939e-06"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1614" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape4"><svg width="271" height="175"
+                                                    viewBox="0 0 271 175" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1616)">
+                                                        <ellipse cx="221.1" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#C8BAE1" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1616" x="-2.28882e-05"
+                                                            y="7.62939e-06" width="442.2" height="280.2"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1616" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            <span class="credit-card__shape5"><svg width="400" height="263"
+                                                    viewBox="0 0 400 263" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1613)">
+                                                        <ellipse cx="178.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#BA76B5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1613" x="-42.6" y="-2.28882e-05"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1613" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+
+                                            <p class="credit-card__subtitle">Card Balance</p>
+                                            <h3 class="credit-card__title">$34,750.00</h3>
+
+                                            <div class="credit-card__content">
+
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Card Name</p>
+                                                    <h3 class="credit-card__items__title">Brooklyn</h3>
+                                                </div>
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Expiry date</p>
+                                                    <h3 class="credit-card__items__title">08/**</h3>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="credit-card__amount">**** **** **** 3254</h3>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="credit-card">
+                                            <span class="credit-card__tag">Active</span>
+                                            <span class="credit-card__logo"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="112" height="35" viewBox="0 0 112 35" fill="none">
+                                                    <g clip-path="url(#clip0_10057_1388)">
+                                                        <path
+                                                            d="M44.757 1.01117L39.0649 34.414H48.1684L53.8651 1.01117H44.757Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M31.4309 1.04856L22.5147 23.8283L21.5641 20.3888C19.8057 16.2444 14.8137 10.2925 8.95312 6.54155L17.106 34.3976L26.7386 34.3812L41.0752 1.04153L31.4309 1.04856Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M18.1082 3.43934C17.5791 1.40463 16.0454 0.798201 14.1419 0.725616H0.0277161L-0.0893555 1.39058C10.8943 4.05513 18.1621 10.4753 21.1779 18.195L18.1082 3.43934Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M72.3152 7.41341C75.2935 7.36658 77.4523 8.01749 79.1288 8.69183L79.9506 9.07817L81.1822 1.83846C79.3793 1.16178 76.5532 0.435944 73.027 0.435944C64.0312 0.435944 57.6906 4.96661 57.6415 11.4594C57.5829 16.257 62.1581 18.9356 65.614 20.5348C69.1613 22.1738 70.3508 23.2157 70.3344 24.6791C70.3063 26.9152 67.5059 27.9407 64.8905 27.9407C61.2449 27.9407 59.3086 27.4373 56.3186 26.1917L55.1455 25.6578L53.8647 33.134C55.9954 34.0683 59.9267 34.8714 64.0078 34.9135C73.5773 34.9135 79.7961 30.4367 79.8617 23.499C79.9015 19.7036 77.4734 16.8072 72.2122 14.4307C69.0279 12.8806 67.0798 11.8504 67.0985 10.2863C67.0985 8.89787 68.7516 7.41341 72.3152 7.41341Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M104.545 1.04785H97.5112C95.3266 1.04785 93.7017 1.64258 92.7417 3.82011L79.2246 34.432H88.7847C88.7847 34.432 90.3441 30.3157 90.6976 29.4143C91.7442 29.4143 101.033 29.4283 102.356 29.4283C102.627 30.5944 103.465 34.432 103.465 34.432H111.911L104.545 1.04785ZM93.3177 22.5773C94.0669 20.6597 96.9446 13.242 96.9446 13.242C96.8954 13.3333 97.6868 11.3103 98.1574 10.053L98.7709 12.933C98.7709 12.933 100.515 20.9079 100.881 22.5773H93.3177Z"
+                                                            fill="hsl(var(--white))" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10057_1388">
+                                                            <rect width="112" height="35" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg></span>
+                                            <span class="credit-card__shape1"><svg width="271" height="169"
+                                                    viewBox="0 0 271 169" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1612)">
+                                                        <ellipse cx="221.1" cy="28.5" rx="136.5" ry="55.5"
+                                                            fill="#342089" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1612" x="-2.28882e-05" y="-111.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1612" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape2">
+                                                <svg width="264" height="128" viewBox="0 0 264 128" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1615)">
+                                                        <ellipse cx="42.5" cy="-12.5" rx="136.5" ry="55.5"
+                                                            fill="#3679CD" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1615" x="-178.6" y="-152.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1615" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+                                            <span class="credit-card__shape3"><svg width="303" height="167"
+                                                    viewBox="0 0 303 167" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1614)">
+                                                        <ellipse cx="81.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#F9C099" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1614" x="-139.6" y="7.62939e-06"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1614" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape4"><svg width="271" height="175"
+                                                    viewBox="0 0 271 175" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1616)">
+                                                        <ellipse cx="221.1" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#C8BAE1" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1616" x="-2.28882e-05"
+                                                            y="7.62939e-06" width="442.2" height="280.2"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1616" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            <span class="credit-card__shape5"><svg width="400" height="263"
+                                                    viewBox="0 0 400 263" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1613)">
+                                                        <ellipse cx="178.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#BA76B5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1613" x="-42.6" y="-2.28882e-05"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1613" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+
+                                            <p class="credit-card__subtitle">Card Balance</p>
+                                            <h3 class="credit-card__title">$34,750.00</h3>
+
+                                            <div class="credit-card__content">
+
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Card Name</p>
+                                                    <h3 class="credit-card__items__title">Brooklyn</h3>
+                                                </div>
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Expiry date</p>
+                                                    <h3 class="credit-card__items__title">08/**</h3>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="credit-card__amount">**** **** **** 3254</h3>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="credit-card">
+                                            <span class="credit-card__tag">Active</span>
+                                            <span class="credit-card__logo"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="112" height="35" viewBox="0 0 112 35" fill="none">
+                                                    <g clip-path="url(#clip0_10057_1388)">
+                                                        <path
+                                                            d="M44.757 1.01117L39.0649 34.414H48.1684L53.8651 1.01117H44.757Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M31.4309 1.04856L22.5147 23.8283L21.5641 20.3888C19.8057 16.2444 14.8137 10.2925 8.95312 6.54155L17.106 34.3976L26.7386 34.3812L41.0752 1.04153L31.4309 1.04856Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M18.1082 3.43934C17.5791 1.40463 16.0454 0.798201 14.1419 0.725616H0.0277161L-0.0893555 1.39058C10.8943 4.05513 18.1621 10.4753 21.1779 18.195L18.1082 3.43934Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M72.3152 7.41341C75.2935 7.36658 77.4523 8.01749 79.1288 8.69183L79.9506 9.07817L81.1822 1.83846C79.3793 1.16178 76.5532 0.435944 73.027 0.435944C64.0312 0.435944 57.6906 4.96661 57.6415 11.4594C57.5829 16.257 62.1581 18.9356 65.614 20.5348C69.1613 22.1738 70.3508 23.2157 70.3344 24.6791C70.3063 26.9152 67.5059 27.9407 64.8905 27.9407C61.2449 27.9407 59.3086 27.4373 56.3186 26.1917L55.1455 25.6578L53.8647 33.134C55.9954 34.0683 59.9267 34.8714 64.0078 34.9135C73.5773 34.9135 79.7961 30.4367 79.8617 23.499C79.9015 19.7036 77.4734 16.8072 72.2122 14.4307C69.0279 12.8806 67.0798 11.8504 67.0985 10.2863C67.0985 8.89787 68.7516 7.41341 72.3152 7.41341Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M104.545 1.04785H97.5112C95.3266 1.04785 93.7017 1.64258 92.7417 3.82011L79.2246 34.432H88.7847C88.7847 34.432 90.3441 30.3157 90.6976 29.4143C91.7442 29.4143 101.033 29.4283 102.356 29.4283C102.627 30.5944 103.465 34.432 103.465 34.432H111.911L104.545 1.04785ZM93.3177 22.5773C94.0669 20.6597 96.9446 13.242 96.9446 13.242C96.8954 13.3333 97.6868 11.3103 98.1574 10.053L98.7709 12.933C98.7709 12.933 100.515 20.9079 100.881 22.5773H93.3177Z"
+                                                            fill="hsl(var(--white))" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10057_1388">
+                                                            <rect width="112" height="35" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg></span>
+                                            <span class="credit-card__shape1"><svg width="271" height="169"
+                                                    viewBox="0 0 271 169" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1612)">
+                                                        <ellipse cx="221.1" cy="28.5" rx="136.5" ry="55.5"
+                                                            fill="#342089" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1612" x="-2.28882e-05" y="-111.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1612" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape2">
+                                                <svg width="264" height="128" viewBox="0 0 264 128" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1615)">
+                                                        <ellipse cx="42.5" cy="-12.5" rx="136.5" ry="55.5"
+                                                            fill="#3679CD" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1615" x="-178.6" y="-152.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1615" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+                                            <span class="credit-card__shape3"><svg width="303" height="167"
+                                                    viewBox="0 0 303 167" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1614)">
+                                                        <ellipse cx="81.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#F9C099" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1614" x="-139.6" y="7.62939e-06"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1614" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape4"><svg width="271" height="175"
+                                                    viewBox="0 0 271 175" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1616)">
+                                                        <ellipse cx="221.1" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#C8BAE1" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1616" x="-2.28882e-05"
+                                                            y="7.62939e-06" width="442.2" height="280.2"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1616" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            <span class="credit-card__shape5"><svg width="400" height="263"
+                                                    viewBox="0 0 400 263" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1613)">
+                                                        <ellipse cx="178.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#BA76B5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1613" x="-42.6" y="-2.28882e-05"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1613" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+
+                                            <p class="credit-card__subtitle">Card Balance</p>
+                                            <h3 class="credit-card__title">$34,750.00</h3>
+
+                                            <div class="credit-card__content">
+
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Card Name</p>
+                                                    <h3 class="credit-card__items__title">Brooklyn</h3>
+                                                </div>
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Expiry date</p>
+                                                    <h3 class="credit-card__items__title">08/**</h3>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="credit-card__amount">**** **** **** 3254</h3>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="credit-card">
+                                            <span class="credit-card__tag">Active</span>
+                                            <span class="credit-card__logo"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="112" height="35" viewBox="0 0 112 35" fill="none">
+                                                    <g clip-path="url(#clip0_10057_1388)">
+                                                        <path
+                                                            d="M44.757 1.01117L39.0649 34.414H48.1684L53.8651 1.01117H44.757Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M31.4309 1.04856L22.5147 23.8283L21.5641 20.3888C19.8057 16.2444 14.8137 10.2925 8.95312 6.54155L17.106 34.3976L26.7386 34.3812L41.0752 1.04153L31.4309 1.04856Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M18.1082 3.43934C17.5791 1.40463 16.0454 0.798201 14.1419 0.725616H0.0277161L-0.0893555 1.39058C10.8943 4.05513 18.1621 10.4753 21.1779 18.195L18.1082 3.43934Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M72.3152 7.41341C75.2935 7.36658 77.4523 8.01749 79.1288 8.69183L79.9506 9.07817L81.1822 1.83846C79.3793 1.16178 76.5532 0.435944 73.027 0.435944C64.0312 0.435944 57.6906 4.96661 57.6415 11.4594C57.5829 16.257 62.1581 18.9356 65.614 20.5348C69.1613 22.1738 70.3508 23.2157 70.3344 24.6791C70.3063 26.9152 67.5059 27.9407 64.8905 27.9407C61.2449 27.9407 59.3086 27.4373 56.3186 26.1917L55.1455 25.6578L53.8647 33.134C55.9954 34.0683 59.9267 34.8714 64.0078 34.9135C73.5773 34.9135 79.7961 30.4367 79.8617 23.499C79.9015 19.7036 77.4734 16.8072 72.2122 14.4307C69.0279 12.8806 67.0798 11.8504 67.0985 10.2863C67.0985 8.89787 68.7516 7.41341 72.3152 7.41341Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M104.545 1.04785H97.5112C95.3266 1.04785 93.7017 1.64258 92.7417 3.82011L79.2246 34.432H88.7847C88.7847 34.432 90.3441 30.3157 90.6976 29.4143C91.7442 29.4143 101.033 29.4283 102.356 29.4283C102.627 30.5944 103.465 34.432 103.465 34.432H111.911L104.545 1.04785ZM93.3177 22.5773C94.0669 20.6597 96.9446 13.242 96.9446 13.242C96.8954 13.3333 97.6868 11.3103 98.1574 10.053L98.7709 12.933C98.7709 12.933 100.515 20.9079 100.881 22.5773H93.3177Z"
+                                                            fill="hsl(var(--white))" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10057_1388">
+                                                            <rect width="112" height="35" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg></span>
+                                            <span class="credit-card__shape1"><svg width="271" height="169"
+                                                    viewBox="0 0 271 169" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1612)">
+                                                        <ellipse cx="221.1" cy="28.5" rx="136.5" ry="55.5"
+                                                            fill="#342089" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1612" x="-2.28882e-05" y="-111.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1612" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape2">
+                                                <svg width="264" height="128" viewBox="0 0 264 128" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1615)">
+                                                        <ellipse cx="42.5" cy="-12.5" rx="136.5" ry="55.5"
+                                                            fill="#3679CD" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1615" x="-178.6" y="-152.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1615" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+                                            <span class="credit-card__shape3"><svg width="303" height="167"
+                                                    viewBox="0 0 303 167" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1614)">
+                                                        <ellipse cx="81.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#F9C099" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1614" x="-139.6" y="7.62939e-06"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1614" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape4"><svg width="271" height="175"
+                                                    viewBox="0 0 271 175" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1616)">
+                                                        <ellipse cx="221.1" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#C8BAE1" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1616" x="-2.28882e-05"
+                                                            y="7.62939e-06" width="442.2" height="280.2"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1616" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            <span class="credit-card__shape5"><svg width="400" height="263"
+                                                    viewBox="0 0 400 263" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1613)">
+                                                        <ellipse cx="178.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#BA76B5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1613" x="-42.6" y="-2.28882e-05"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1613" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+
+                                            <p class="credit-card__subtitle">Card Balance</p>
+                                            <h3 class="credit-card__title">$34,750.00</h3>
+
+                                            <div class="credit-card__content">
+
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Card Name</p>
+                                                    <h3 class="credit-card__items__title">Brooklyn</h3>
+                                                </div>
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Expiry date</p>
+                                                    <h3 class="credit-card__items__title">08/**</h3>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="credit-card__amount">**** **** **** 3254</h3>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="credit-card">
+                                            <span class="credit-card__tag">Active</span>
+                                            <span class="credit-card__logo"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="112" height="35" viewBox="0 0 112 35" fill="none">
+                                                    <g clip-path="url(#clip0_10057_1388)">
+                                                        <path
+                                                            d="M44.757 1.01117L39.0649 34.414H48.1684L53.8651 1.01117H44.757Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M31.4309 1.04856L22.5147 23.8283L21.5641 20.3888C19.8057 16.2444 14.8137 10.2925 8.95312 6.54155L17.106 34.3976L26.7386 34.3812L41.0752 1.04153L31.4309 1.04856Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M18.1082 3.43934C17.5791 1.40463 16.0454 0.798201 14.1419 0.725616H0.0277161L-0.0893555 1.39058C10.8943 4.05513 18.1621 10.4753 21.1779 18.195L18.1082 3.43934Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M72.3152 7.41341C75.2935 7.36658 77.4523 8.01749 79.1288 8.69183L79.9506 9.07817L81.1822 1.83846C79.3793 1.16178 76.5532 0.435944 73.027 0.435944C64.0312 0.435944 57.6906 4.96661 57.6415 11.4594C57.5829 16.257 62.1581 18.9356 65.614 20.5348C69.1613 22.1738 70.3508 23.2157 70.3344 24.6791C70.3063 26.9152 67.5059 27.9407 64.8905 27.9407C61.2449 27.9407 59.3086 27.4373 56.3186 26.1917L55.1455 25.6578L53.8647 33.134C55.9954 34.0683 59.9267 34.8714 64.0078 34.9135C73.5773 34.9135 79.7961 30.4367 79.8617 23.499C79.9015 19.7036 77.4734 16.8072 72.2122 14.4307C69.0279 12.8806 67.0798 11.8504 67.0985 10.2863C67.0985 8.89787 68.7516 7.41341 72.3152 7.41341Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M104.545 1.04785H97.5112C95.3266 1.04785 93.7017 1.64258 92.7417 3.82011L79.2246 34.432H88.7847C88.7847 34.432 90.3441 30.3157 90.6976 29.4143C91.7442 29.4143 101.033 29.4283 102.356 29.4283C102.627 30.5944 103.465 34.432 103.465 34.432H111.911L104.545 1.04785ZM93.3177 22.5773C94.0669 20.6597 96.9446 13.242 96.9446 13.242C96.8954 13.3333 97.6868 11.3103 98.1574 10.053L98.7709 12.933C98.7709 12.933 100.515 20.9079 100.881 22.5773H93.3177Z"
+                                                            fill="hsl(var(--white))" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10057_1388">
+                                                            <rect width="112" height="35" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg></span>
+                                            <span class="credit-card__shape1"><svg width="271" height="169"
+                                                    viewBox="0 0 271 169" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1612)">
+                                                        <ellipse cx="221.1" cy="28.5" rx="136.5" ry="55.5"
+                                                            fill="#342089" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1612" x="-2.28882e-05" y="-111.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1612" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape2">
+                                                <svg width="264" height="128" viewBox="0 0 264 128" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1615)">
+                                                        <ellipse cx="42.5" cy="-12.5" rx="136.5" ry="55.5"
+                                                            fill="#3679CD" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1615" x="-178.6" y="-152.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1615" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+                                            <span class="credit-card__shape3"><svg width="303" height="167"
+                                                    viewBox="0 0 303 167" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1614)">
+                                                        <ellipse cx="81.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#F9C099" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1614" x="-139.6" y="7.62939e-06"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1614" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape4"><svg width="271" height="175"
+                                                    viewBox="0 0 271 175" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1616)">
+                                                        <ellipse cx="221.1" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#C8BAE1" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1616" x="-2.28882e-05"
+                                                            y="7.62939e-06" width="442.2" height="280.2"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1616" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            <span class="credit-card__shape5"><svg width="400" height="263"
+                                                    viewBox="0 0 400 263" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1613)">
+                                                        <ellipse cx="178.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#BA76B5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1613" x="-42.6" y="-2.28882e-05"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1613" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+
+                                            <p class="credit-card__subtitle">Card Balance</p>
+                                            <h3 class="credit-card__title">$34,750.00</h3>
+
+                                            <div class="credit-card__content">
+
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Card Name</p>
+                                                    <h3 class="credit-card__items__title">Brooklyn</h3>
+                                                </div>
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Expiry date</p>
+                                                    <h3 class="credit-card__items__title">08/**</h3>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="credit-card__amount">**** **** **** 3254</h3>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="credit-card">
+                                            <span class="credit-card__tag">Active</span>
+                                            <span class="credit-card__logo"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="112" height="35" viewBox="0 0 112 35" fill="none">
+                                                    <g clip-path="url(#clip0_10057_1388)">
+                                                        <path
+                                                            d="M44.757 1.01117L39.0649 34.414H48.1684L53.8651 1.01117H44.757Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M31.4309 1.04856L22.5147 23.8283L21.5641 20.3888C19.8057 16.2444 14.8137 10.2925 8.95312 6.54155L17.106 34.3976L26.7386 34.3812L41.0752 1.04153L31.4309 1.04856Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M18.1082 3.43934C17.5791 1.40463 16.0454 0.798201 14.1419 0.725616H0.0277161L-0.0893555 1.39058C10.8943 4.05513 18.1621 10.4753 21.1779 18.195L18.1082 3.43934Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M72.3152 7.41341C75.2935 7.36658 77.4523 8.01749 79.1288 8.69183L79.9506 9.07817L81.1822 1.83846C79.3793 1.16178 76.5532 0.435944 73.027 0.435944C64.0312 0.435944 57.6906 4.96661 57.6415 11.4594C57.5829 16.257 62.1581 18.9356 65.614 20.5348C69.1613 22.1738 70.3508 23.2157 70.3344 24.6791C70.3063 26.9152 67.5059 27.9407 64.8905 27.9407C61.2449 27.9407 59.3086 27.4373 56.3186 26.1917L55.1455 25.6578L53.8647 33.134C55.9954 34.0683 59.9267 34.8714 64.0078 34.9135C73.5773 34.9135 79.7961 30.4367 79.8617 23.499C79.9015 19.7036 77.4734 16.8072 72.2122 14.4307C69.0279 12.8806 67.0798 11.8504 67.0985 10.2863C67.0985 8.89787 68.7516 7.41341 72.3152 7.41341Z"
+                                                            fill="hsl(var(--white))" />
+                                                        <path
+                                                            d="M104.545 1.04785H97.5112C95.3266 1.04785 93.7017 1.64258 92.7417 3.82011L79.2246 34.432H88.7847C88.7847 34.432 90.3441 30.3157 90.6976 29.4143C91.7442 29.4143 101.033 29.4283 102.356 29.4283C102.627 30.5944 103.465 34.432 103.465 34.432H111.911L104.545 1.04785ZM93.3177 22.5773C94.0669 20.6597 96.9446 13.242 96.9446 13.242C96.8954 13.3333 97.6868 11.3103 98.1574 10.053L98.7709 12.933C98.7709 12.933 100.515 20.9079 100.881 22.5773H93.3177Z"
+                                                            fill="hsl(var(--white))" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10057_1388">
+                                                            <rect width="112" height="35" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg></span>
+                                            <span class="credit-card__shape1"><svg width="271" height="169"
+                                                    viewBox="0 0 271 169" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1612)">
+                                                        <ellipse cx="221.1" cy="28.5" rx="136.5" ry="55.5"
+                                                            fill="#342089" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1612" x="-2.28882e-05" y="-111.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1612" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape2">
+                                                <svg width="264" height="128" viewBox="0 0 264 128" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1615)">
+                                                        <ellipse cx="42.5" cy="-12.5" rx="136.5" ry="55.5"
+                                                            fill="#3679CD" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1615" x="-178.6" y="-152.6"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1615" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+                                            <span class="credit-card__shape3"><svg width="303" height="167"
+                                                    viewBox="0 0 303 167" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1614)">
+                                                        <ellipse cx="81.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#F9C099" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1614" x="-139.6" y="7.62939e-06"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1614" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+                                            <span class="credit-card__shape4"><svg width="271" height="175"
+                                                    viewBox="0 0 271 175" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1616)">
+                                                        <ellipse cx="221.1" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#C8BAE1" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1616" x="-2.28882e-05"
+                                                            y="7.62939e-06" width="442.2" height="280.2"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1616" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            <span class="credit-card__shape5"><svg width="400" height="263"
+                                                    viewBox="0 0 400 263" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_11193_1613)">
+                                                        <ellipse cx="178.5" cy="140.1" rx="136.5" ry="55.5"
+                                                            fill="#BA76B5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_f_11193_1613" x="-42.6" y="-2.28882e-05"
+                                                            width="442.2" height="280.2" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="42.3"
+                                                                result="effect1_foregroundBlur_11193_1613" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+
+                                            <p class="credit-card__subtitle">Card Balance</p>
+                                            <h3 class="credit-card__title">$34,750.00</h3>
+
+                                            <div class="credit-card__content">
+
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Card Name</p>
+                                                    <h3 class="credit-card__items__title">Brooklyn</h3>
+                                                </div>
+                                                <div class="credit-card__items">
+                                                    <p class="credit-card__items__subtitle">Expiry date</p>
+                                                    <h3 class="credit-card__items__title">08/**</h3>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="credit-card__amount">**** **** **** 3254</h3>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+                            <div class="credit-card__info">
+                                <div class="credit-card__info__heading">
+                                    <p class="credit-card__info__title">Card Information</p>
+                                    <button class="credit-card__info__eye"><i
+                                            class="fa-regular fa-eye-slash"></i></button>
+
+                                </div>
+
+                                <div class="credit-card__item">
+                                    <div class="credit-card__item__left">
+                                        <p>Card Name</p>
+                                        <p class="fw-600 text-black mb-3">Brooklyn</p>
+                                        <p>CVV</p>
+                                        <p class="fw-600 text-black">***</p>
+                                    </div>
+                                    <div class="credit-card__item__left">
+                                        <p>Card Number</p>
+                                        <p class="fw-600 text-black mb-3">6574 **** **** 3254</p>
+                                        <p>EXP Date</p>
+                                        <p class="fw-600 text-black">14/**</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="dashboard__table">
-                            <table class="table table--responsive--md">
-                                <thead>
-                                    <tr>
-                                        <th>Details</th>
-                                        <th>File Type</th>
-                                        <th>Date</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="table__pt">
-                                                <img src="assets/images//products/table-img.jpg" class="fit-image"
-                                                    alt="image">
-                                                <div>
-                                                    <h5>Business Proposal</h5>
-                                                    <p>by thememix</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>ZIP</td>
-                                        <td>19 May, 2025</td>
-                                        <td>
-                                            <div class="action__btn">
-                                                <a href="#" class="btn btn--secondary"><i
-                                                        class="fa-solid fa-file"></i></a>
-                                                <a href="#" class="btn btn--base"><i
-                                                        class="fa-solid fa-file-arrow-down"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="table__pt">
-                                                <img src="assets/images//products/table-img.jpg" class="fit-image"
-                                                    alt="image">
-                                                <div>
-                                                    <h5>Business Proposal</h5>
-                                                    <p>by thememix</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>ZIP</td>
-                                        <td>19 May, 2025</td>
-                                        <td>
-                                            <div class="action__btn">
-                                                <a href="#" class="btn btn--secondary"><i
-                                                        class="fa-solid fa-file"></i></a>
-                                                <a href="#" class="btn btn--base"><i
-                                                        class="fa-solid fa-file-arrow-down"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="table__pt">
-                                                <img src="assets/images//products/table-img.jpg" class="fit-image"
-                                                    alt="image">
-                                                <div>
-                                                    <h5>Business Proposal</h5>
-                                                    <p>by thememix</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>ZIP</td>
-                                        <td>19 May, 2025</td>
-                                        <td>
-                                            <div class="action__btn">
-                                                <a href="#" class="btn btn--secondary"><i
-                                                        class="fa-solid fa-file"></i></a>
-                                                <a href="#" class="btn btn--base"><i
-                                                        class="fa-solid fa-file-arrow-down"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="table__pt">
-                                                <img src="assets/images//products/table-img.jpg" class="fit-image"
-                                                    alt="image">
-                                                <div>
-                                                    <h5>Business Proposal</h5>
-                                                    <p>by thememix</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>ZIP</td>
-                                        <td>19 May, 2025</td>
-                                        <td>
-                                            <div class="action__btn">
-                                                <a href="#" class="btn btn--secondary"><i
-                                                        class="fa-solid fa-file"></i></a>
-                                                <a href="#" class="btn btn--base"><i
-                                                        class="fa-solid fa-file-arrow-down"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="table__pt">
-                                                <img src="assets/images//products/table-img.jpg" class="fit-image"
-                                                    alt="image">
-                                                <div>
-                                                    <h5>Business Proposal</h5>
-                                                    <p>by thememix</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>ZIP</td>
-                                        <td>19 May, 2025</td>
-                                        <td>
-                                            <div class="action__btn">
-                                                <a href="#" class="btn btn--secondary"><i
-                                                        class="fa-solid fa-file"></i></a>
-                                                <a href="#" class="btn btn--base"><i
-                                                        class="fa-solid fa-file-arrow-down"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="row mt-4">
+
+                            <div class="col-lg-4">
+                                <a href="#" class="quick__actions">
+                                    <div class="quick__actions__item">
+                                        <span class="quick__actions__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M18.1715 13.2L12 19.2M12 19.2L5.82861 13.2M12 19.2L12 4.79999"
+                                                    stroke="black" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <p class="quick__actions__title">Deposit to Card</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="quick__actions">
+                                    <div class="quick__actions__item">
+                                        <span class="quick__actions__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M5.82853 10.8L12 4.80001M12 4.80001L18.1714 10.8M12 4.80001L12 19.2"
+                                                    stroke="black" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <p class="quick__actions__title">Withdraw</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="quick__actions">
+                                    <div class="quick__actions__item">
+                                        <span class="quick__actions__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M22 9C21.9635 6.74771 21.7892 5.44656 20.9564 4.5129C20.7879 4.32403 20.6022 4.14935 20.4014 3.99087C19.1461 3 17.2659 3 13.5056 3H10.5041C6.74371 3 4.86352 3 3.60823 3.99087C3.40746 4.14935 3.22178 4.32403 3.05331 4.5129C2 5.69377 2 7.46252 2 11C2 14.5375 2 16.3062 3.05331 17.4871C3.22178 17.676 3.40746 17.8506 3.60823 18.0091C4.86352 19 6.74371 19 10.5041 19H11.5"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M2 8H22" stroke="black" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M18 13V14.7778M18 14.7778V19.2222M18 14.7778L19.5 14M18 14.7778L16.5 14M18 19.2222V21M18 19.2222L16.5 20M18 19.2222L19.5 20M22 17H20.2222M20.2222 17H15.7778M20.2222 17L21 18.5M20.2222 17L21 15.5M15.7778 17H14M15.7778 17L15 15.5M15.7778 17L15 18.5"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <p class="quick__actions__title">Freeze Card</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <a href="#" class="btn outline-black credit-card__button w-100 mt-4">View Card Details</a>
+                        <div class="credit-card__alart">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 8V12.5" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 15.9883V15.9983" stroke="#141B34" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></span>
+
+                            <p>All virtual cards are single-currency and can only be funded via crypto deposits.
+                                Each card requires a minimum balance and creation fee.</p>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--==========================  Dashboard Section End  ==========================-->
+    <!--==========================  Dashboard Section End  ==========================-->
 
-@@include('../partials/_template-bottom.html')
+    @@include('../partials/_template-bottom.html')
