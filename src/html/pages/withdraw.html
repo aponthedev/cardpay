@@ -3,149 +3,320 @@
 
 <!--==========================  Dashboard Section Start  ==========================-->
 <div class="dashboard">
-    <div class="dashboard__sidebar">
-        <div class="sidebar__close"><i class="las la-times"></i></div>
-        <div class="dashboard__logo">
-            <a href="dashboard.html"><img src="assets/images/logo/logo-white.png" alt="logo"></a>
-        </div>
-        <div class="dashboard__menu">
-            <ul>
-                <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
-                <li class="upload__file__sb"><a href="upload-file.html"><i class="fa-solid fa-cloud-arrow-up"></i>
-                        Upload File</a></li>
-                <li>
-                    <a href="#collapseExample" class="active" data-bs-toggle="collapse" role="button"
-                        aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-file"></i> File
-                        <span class="dropdown__arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-                    <div class="collapse" id="collapseExample">
-                        <div class="sidebar__dropdown">
-                            <ul>
-                                <li><a href="published-files.html" class="active">Published Files</a></li>
-                                <li><a href="reject-files.html">Reject File</a></li>
-                                <li><a href="pending-files.html">Pending File</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="my-download.html"><i class="fa-solid fa-cloud-arrow-down"></i> My Download</a></li>
-                <li><a href="deposit.html"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</a></li>
-                <li><a href="withdraw.html"><i class="fa-solid fa-coins"></i> Withdraw</a></li>
-                <li><a href="transactions.html"><i class="fa-solid fa-list-ul"></i> Transactions</a></li>
-                <li><a href="my-tickets.html"><i class="fa-solid fa-headset"></i> Support Ticket</a></li>
-            </ul>
-        </div>
-    </div>
+    @@include('../components/_dashboard-sidebar.html')
     <div class="dashboard__wrap">
-        <div class="dashboard__header">
-            <div class="search__box">
-                <input type="text" class="form-control" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="dashboard__header__widgets">
-                <div class="upload__file">
-                    <a href="upload-file.html" class="btn btn--base"><i class="fa-solid fa-cloud-arrow-up"></i> Upload
-                        File</a>
-                </div>
-                <div class="dropdown">
-                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="notification__btn">
-                            <i class="las la-bell"></i>
-                            <span class="notification__count">
-                                <span>21</span>
-                            </span>
-                        </span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <div class="notification__wrap">
-                            <div class="notification__header">
-                                <h4>Notifications</h4>
-                                <span class="badge badge--base">12 Unread</span>
-                            </div>
-                            <div class="notification__body">
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                            </div>
-                            <div class="notification__footer">
-                                <a href="#" class="btn btn--sm btn--base w-100">View all</a>
-                            </div>
+        @@include('../components/_dashboard__header.html')
+        <div class="dashboard__wrapper">
+            <div class="withdraw">
+                <div class="card">
+
+                    <div class="deposit__top mb-3">
+                        <div class="deposit__top__content">
+                            <p class="deposit__top__content__title">Wallet Balance<svg width="16" height="16"
+                                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_10128_1440)">
+                                        <path
+                                            d="M7.99967 14.6666C11.6816 14.6666 14.6663 11.6819 14.6663 7.99998C14.6663 4.31808 11.6816 1.33331 7.99967 1.33331C4.31778 1.33331 1.33301 4.31808 1.33301 7.99998C1.33301 11.6819 4.31778 14.6666 7.99967 14.6666Z"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M8 10.6667V8" stroke="currentColor" stroke-width="1.33333"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8 5.33333H8.00667" stroke="currentColor" stroke-width="1.33333"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10128_1440">
+                                            <rect width="16" height="16" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </p>
+
+                            <h3 class="deposit__top__content__amount">$ 25.90</h3>
+                            <p class="deposit__top__content__desc">Available balance</p>
+                        </div>
+
+                        <div class="deposit__top__content__thumb">
+                            <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.6391 6.09396C39.9132 6.09396 41.5659 6.07313 42.9869 6.4325L43.6586 6.62558C46.963 7.68882 49.51 10.2422 50.4216 13.4546L50.5486 13.9677C50.7477 14.9418 50.7745 16.0451 50.7785 17.3981C52.7957 17.778 54.8175 18.8027 56.2269 20.2122C57.6482 21.7898 58.2841 23.7378 58.5915 26.023C58.7643 27.3092 58.8366 28.7869 58.8719 30.469H51.4583C50.4709 30.469 49.2903 30.5305 48.5279 30.6778C46.5562 31.2062 44.9881 32.682 44.3357 34.5976C44.1109 35.4375 44.0104 36.7886 44.0104 37.9169C44.0104 39.0452 44.1109 40.3961 44.3357 41.2363C44.9879 43.1519 46.5562 44.6274 48.5279 45.1558C49.2903 45.3034 50.4709 45.3648 51.4583 45.3648H58.8719C58.8366 47.047 58.7643 48.5247 58.5915 49.8108C58.2841 52.0961 57.6482 54.044 56.2269 55.6216C54.5967 57.2517 52.2484 58.2641 49.8106 58.5918C47.4681 58.9065 44.4911 58.9065 40.7997 58.9065H24.2004C20.5088 58.9065 17.5319 58.9065 15.1894 58.5918C12.904 58.2844 10.6469 57.3525 9.06921 55.9311C7.4392 54.3007 6.73622 52.2486 6.40849 49.8108C6.09367 47.4684 6.09367 44.4911 6.09375 40.7997V13.5419C6.09408 9.42884 9.62561 6.09399 13.9807 6.09396H37.6391ZM58.9062 41.3023H51.4583C50.4151 41.3023 49.7578 41.2652 49.7578 41.2652C49.1766 41.3021 48.1417 40.4893 48.1417 39.7973C48.1417 39.5975 48.0729 39.3063 48.0729 37.9169C48.0729 36.527 48.09 36.2296 48.1417 36.0363C48.142 35.483 49.0994 34.5686 49.7578 34.5686C49.9877 34.5418 50.4151 34.5315 51.4583 34.5315H58.9062V41.3023ZM14.5203 11.0557C12.7707 11.0564 11.3526 12.4747 11.3517 14.2243C11.3517 15.9745 12.7702 17.3947 14.5203 17.3955H45.4943C45.4943 16.5389 45.4949 16.1099 45.4466 15.7503C45.1208 13.3325 43.2174 11.4289 40.7997 11.1033C40.44 11.055 40.011 11.0557 39.1544 11.0557H14.5203Z"
+                                    fill="currentColor"></path>
+                            </svg>
+
                         </div>
                     </div>
+
+
+
+                    <p class="Select__title">Select Payment Gateway</p>
+                    <select class="form-select select2 select2-hidden-accessible" aria-label="Default select example"
+                        data-select2-id="select2-data-1-y9yq" tabindex="-1" aria-hidden="true">
+                        <option selected="" data-select2-id="select2-data-3-yrlj">
+                            <span><img src="assets/images/dashboard/paypal.png" alt="image"> PayPal</span>USD, EUR, GBP
+                        </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+
+                    <div class="form-group mt-4">
+                        <label for="name" class="form-label text-black">Card Holder Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your name">
+                        <button class="country__button">USD</button>
+                        <p class="card-holder__form__desc mb-0">Must match your legal name</p>
+
+
+                    </div>
                 </div>
-                <div class="dropdown">
-                    <button class="dropdown-toggle d-flex align-items-center gap-2" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="profile__dropdown">
-                            <img src="assets/images/user.jpg" alt="image">
-                            <span>Max Sujak</span>
-                        </span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="profile.html">Profile Setting</a></li>
-                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
-                        <li><a class="dropdown-item" href="two-factor.html">2FA Security</a></li>
-                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
-                    </ul>
-                </div>
-                <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
-            </div>
-        </div>
-        <div class="dashboard__wrapper">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="card">
-                        <div class="table__topbar mb-4">
-                            <h5>Withdraw</h5>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-lg-12">
-                                <div class="deposit__form">
-                                    <label class="form-label">Select Gateway</label>
-                                    <select class="select2">
-                                        <option>Select One</option>
-                                        <option>Paypal - USD</option>
-                                        <option>Manual</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="deposit__form">
-                                    <label class="form-label">Amount</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Enter Amount">
-                                        <span class="input-group-text">USD</span>
+                <p class="verification__title">Security Verification</p>
+
+                <div class="verification__form card">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label class="form-label required">Password</label>
+                            <div class="form-group mb-3">
+                                <div class="password__field">
+                                    <input type="password" name="password" class="form-control password-input"
+                                        placeholder="• • • • • • • • • • • •" required="">
+                                    <span class="input__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M4.26781 18.8447C4.49269 20.515 5.87613 21.8235 7.55966 21.9009C8.97627 21.966 10.4153 22 12 22C13.5847 22 15.0237 21.966 16.4403 21.9009C18.1239 21.8235 19.5073 20.515 19.7322 18.8447C19.879 17.7547 20 16.6376 20 15.5C20 14.3624 19.879 13.2453 19.7322 12.1553C19.5073 10.485 18.1239 9.17649 16.4403 9.09909C15.0237 9.03397 13.5847 9 12 9C10.4153 9 8.97627 9.03397 7.55966 9.09909C5.87613 9.17649 4.49269 10.485 4.26781 12.1553C4.12105 13.2453 4 14.3624 4 15.5C4 16.6376 4.12105 17.7547 4.26781 18.8447Z"
+                                                stroke="currentColor" stroke-width="1.5"></path>
+                                            <path
+                                                d="M7.5 9V6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5V9"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M16 15.49V15.5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M12 15.49V15.5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M8 15.49V15.5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg></span>
+                                    <div class="password-show-hide">
+                                        <i class="fa-solid fa-eye open-eye-icon"></i>
+                                        <i class="fa-solid fa-eye-slash close-eye-icon"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="deposit__form">
-                                    <button type="submit" class="btn btn--base w-100">Submit Now</button>
-                                </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="alart alart-info">
+                                <span class="alart__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none">
+                                        <g clip-path="url(#clip0_10241_2432)">
+                                            <path
+                                                d="M10.0001 18.3334C14.6025 18.3334 18.3334 14.6024 18.3334 10C18.3334 5.39765 14.6025 1.66669 10.0001 1.66669C5.39771 1.66669 1.66675 5.39765 1.66675 10C1.66675 14.6024 5.39771 18.3334 10.0001 18.3334Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10 6.66669V10.4167" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M10 13.3236V13.3319" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_10241_2432">
+                                                <rect width="20" height="20" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <p class="alart__title">For your security, withdrawals require verification.</p>
                             </div>
                         </div>
+
+                        <div class="col-lg-12">
+                            <button class="btn btn--base summary__button w-100 mt-4">Proceed to Payment<i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
+                </div>
+                <div class="verification__alart">
+                    <span class="verification__alart__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_10141_948)">
+                                <path
+                                    d="M10.0013 18.3334C14.6037 18.3334 18.3346 14.6024 18.3346 10C18.3346 5.39765 14.6037 1.66669 10.0013 1.66669C5.39893 1.66669 1.66797 5.39765 1.66797 10C1.66797 14.6024 5.39893 18.3334 10.0013 18.3334Z"
+                                    stroke="#E17100" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10 6.66669V10" stroke="#E17100" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10 13.3333H10.0083" stroke="#E17100" stroke-width="1.66667"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_10141_948">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+
+                    <div class="verification__alart__content">
+                        <h3 class="verification__alart__title">Important Information:</h3>
+                        <p class="verification__alart__desc">Processing time: 24–72 hours</p>
+                        <p class="verification__alart__desc">Processing time: 24–72 hours</p>
+                        <p class="verification__alart__desc">Processing time: 24–72 hours</p>
+                    </div>
+                </div>
+
+                <div class="withdraw__table">
+
+
+                    <div class="dashboard__table">
+                        <table class="table table--responsive--md">
+                            <thead>
+                                <tr>
+                                    <th>Ref ID</th>
+                                    <th>Method</th>
+                                    <th>Amount</th>
+                                    <th>Fee</th>
+                                    <th>Net Amount</th>
+                                    <th>Status</th>
+                                    <th>Requested At</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Reference ID">
+                                        #01
+                                    </td>
+                                    <td data-label="Type">Bank Transfer</td>
+                                    <td data-label="Description">$500.00</td>
+                                    <td data-label="Amount">$5.00</td>
+                                    <td data-label="Date">$495.00</td>
+                                    <td data-label="Status"><span class="badge2 badge2--success">Complete</span>
+                                    </td>
+                                    <td data-label="Requested At">12/28/2024,</td>
+                                    <td data-label="Action"><a href="#" class="table__action "><svg width="16"
+                                                height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.37468 8.232C1.31912 8.08232 1.31912 7.91767 1.37468 7.768C1.91581 6.4559 2.83435 5.33402 4.01386 4.5446C5.19336 3.75517 6.58071 3.33374 8.00001 3.33374C9.41932 3.33374 10.8067 3.75517 11.9862 4.5446C13.1657 5.33402 14.0842 6.4559 14.6253 7.768C14.6809 7.91767 14.6809 8.08232 14.6253 8.232C14.0842 9.54409 13.1657 10.666 11.9862 11.4554C10.8067 12.2448 9.41932 12.6663 8.00001 12.6663C6.58071 12.6663 5.19336 12.2448 4.01386 11.4554C2.83435 10.666 1.91581 9.54409 1.37468 8.232Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>View
+                                        </a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Reference ID">
+                                        #01
+                                    </td>
+                                    <td data-label="Type">Bank Transfer</td>
+                                    <td data-label="Description">$500.00</td>
+                                    <td data-label="Amount">$5.00</td>
+                                    <td data-label="Date">$495.00</td>
+                                    <td data-label="Status"><span class="badge2 badge2--success">Complete</span>
+                                    </td>
+                                    <td data-label="Requested At">12/28/2024,</td>
+                                    <td data-label="Action"><a href="#" class="table__action "><svg width="16"
+                                                height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.37468 8.232C1.31912 8.08232 1.31912 7.91767 1.37468 7.768C1.91581 6.4559 2.83435 5.33402 4.01386 4.5446C5.19336 3.75517 6.58071 3.33374 8.00001 3.33374C9.41932 3.33374 10.8067 3.75517 11.9862 4.5446C13.1657 5.33402 14.0842 6.4559 14.6253 7.768C14.6809 7.91767 14.6809 8.08232 14.6253 8.232C14.0842 9.54409 13.1657 10.666 11.9862 11.4554C10.8067 12.2448 9.41932 12.6663 8.00001 12.6663C6.58071 12.6663 5.19336 12.2448 4.01386 11.4554C2.83435 10.666 1.91581 9.54409 1.37468 8.232Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>View
+                                        </a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Reference ID">
+                                        #01
+                                    </td>
+                                    <td data-label="Type">Bank Transfer</td>
+                                    <td data-label="Description">$500.00</td>
+                                    <td data-label="Amount">$5.00</td>
+                                    <td data-label="Date">$495.00</td>
+                                    <td data-label="Status"><span class="badge2 badge2--success">Complete</span>
+                                    </td>
+                                    <td data-label="Requested At">12/28/2024,</td>
+                                    <td data-label="Action"><a href="#" class="table__action "><svg width="16"
+                                                height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.37468 8.232C1.31912 8.08232 1.31912 7.91767 1.37468 7.768C1.91581 6.4559 2.83435 5.33402 4.01386 4.5446C5.19336 3.75517 6.58071 3.33374 8.00001 3.33374C9.41932 3.33374 10.8067 3.75517 11.9862 4.5446C13.1657 5.33402 14.0842 6.4559 14.6253 7.768C14.6809 7.91767 14.6809 8.08232 14.6253 8.232C14.0842 9.54409 13.1657 10.666 11.9862 11.4554C10.8067 12.2448 9.41932 12.6663 8.00001 12.6663C6.58071 12.6663 5.19336 12.2448 4.01386 11.4554C2.83435 10.666 1.91581 9.54409 1.37468 8.232Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>View
+                                        </a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Reference ID">
+                                        #01
+                                    </td>
+                                    <td data-label="Type">Bank Transfer</td>
+                                    <td data-label="Description">$500.00</td>
+                                    <td data-label="Amount">$5.00</td>
+                                    <td data-label="Date">$495.00</td>
+                                    <td data-label="Status"><span class="badge2 badge2--success">Complete</span>
+                                    </td>
+                                    <td data-label="Requested At">12/28/2024,</td>
+                                    <td data-label="Action"><a href="#" class="table__action "><svg width="16"
+                                                height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.37468 8.232C1.31912 8.08232 1.31912 7.91767 1.37468 7.768C1.91581 6.4559 2.83435 5.33402 4.01386 4.5446C5.19336 3.75517 6.58071 3.33374 8.00001 3.33374C9.41932 3.33374 10.8067 3.75517 11.9862 4.5446C13.1657 5.33402 14.0842 6.4559 14.6253 7.768C14.6809 7.91767 14.6809 8.08232 14.6253 8.232C14.0842 9.54409 13.1657 10.666 11.9862 11.4554C10.8067 12.2448 9.41932 12.6663 8.00001 12.6663C6.58071 12.6663 5.19336 12.2448 4.01386 11.4554C2.83435 10.666 1.91581 9.54409 1.37468 8.232Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>View
+                                        </a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Reference ID">
+                                        #01
+                                    </td>
+                                    <td data-label="Type">Bank Transfer</td>
+                                    <td data-label="Description">$500.00</td>
+                                    <td data-label="Amount">$5.00</td>
+                                    <td data-label="Date">$495.00</td>
+                                    <td data-label="Status"><span class="badge2 badge2--success">Complete</span>
+                                    </td>
+                                    <td data-label="Requested At">12/28/2024,</td>
+                                    <td data-label="Action"><a href="#" class="table__action "><svg width="16"
+                                                height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.37468 8.232C1.31912 8.08232 1.31912 7.91767 1.37468 7.768C1.91581 6.4559 2.83435 5.33402 4.01386 4.5446C5.19336 3.75517 6.58071 3.33374 8.00001 3.33374C9.41932 3.33374 10.8067 3.75517 11.9862 4.5446C13.1657 5.33402 14.0842 6.4559 14.6253 7.768C14.6809 7.91767 14.6809 8.08232 14.6253 8.232C14.0842 9.54409 13.1657 10.666 11.9862 11.4554C10.8067 12.2448 9.41932 12.6663 8.00001 12.6663C6.58071 12.6663 5.19336 12.2448 4.01386 11.4554C2.83435 10.666 1.91581 9.54409 1.37468 8.232Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>View
+                                        </a></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--==========================  Dashboard Section End  ==========================-->
+    <!--==========================  Dashboard Section End  ==========================-->
 
-@@include('../partials/_template-bottom.html')
+    @@include('../partials/_template-bottom.html')

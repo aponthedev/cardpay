@@ -288,268 +288,189 @@
     <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
 </div>
         <div class="dashboard__wrapper">
-            <div class="create-card">
-                <div class="row mb-4">
-                    <div class="col-lg-12">
-                        <div class="create-card__warning">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
+            <div class="withdraw">
+                <div class="kyc__alart">
+                    <div class="kyc__alart__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_10168_4145)">
+                                <path
+                                    d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8C14.6673 4.3181 11.6825 1.33334 8.00065 1.33334C4.31875 1.33334 1.33398 4.3181 1.33398 8C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
+                                    stroke="hsl(var(--black))" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 5.33334V8" stroke="hsl(var(--black))" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 10.6667H8.00667" stroke="hsl(var(--black))" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_10168_4145">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="kyc__alart__content">
+                        <span class="badge2 badge2--warning alart-text">Not Verified</span>
+                        <h3 class="kyc__alart__title">KYC verification is required before creating virtual cards.</h3>
+                    </div>
+                </div>
+
+
+                <div class="kyc__details card mb-4">
+                    <div class="kyc__wrap">
+
+                        <p class="kyc__details__title text-black">Personal Details</p>
+                        <button class="kyc__wiew-button"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_10168_4629)">
                                     <path
-                                        d="M15.8333 5.83333V3.33333C15.8333 3.11232 15.7455 2.90036 15.5893 2.74408C15.433 2.5878 15.221 2.5 15 2.5H4.16667C3.72464 2.5 3.30072 2.67559 2.98816 2.98816C2.67559 3.30072 2.5 3.72464 2.5 4.16667C2.5 4.60869 2.67559 5.03262 2.98816 5.34518C3.30072 5.65774 3.72464 5.83333 4.16667 5.83333H16.6667C16.8877 5.83333 17.0996 5.92113 17.2559 6.07741C17.4122 6.23369 17.5 6.44565 17.5 6.66667V10M17.5 10H15C14.558 10 14.134 10.1756 13.8215 10.4882C13.5089 10.8007 13.3333 11.2246 13.3333 11.6667C13.3333 12.1087 13.5089 12.5326 13.8215 12.8452C14.134 13.1577 14.558 13.3333 15 13.3333H17.5C17.721 13.3333 17.933 13.2455 18.0893 13.0893C18.2455 12.933 18.3333 12.721 18.3333 12.5V10.8333C18.3333 10.6123 18.2455 10.4004 18.0893 10.2441C17.933 10.0878 17.721 10 17.5 10Z"
-                                        stroke="#E17100" stroke-width="1.66667" stroke-linecap="round"
-                                        stroke-linejoin="round" />
+                                        d="M1.03125 6.174C0.989582 6.06174 0.989582 5.93825 1.03125 5.826C1.4371 4.84192 2.12601 4.00052 3.01064 3.40845C3.89527 2.81638 4.93577 2.50031 6.00025 2.50031C7.06473 2.50031 8.10524 2.81638 8.98987 3.40845C9.87449 4.00052 10.5634 4.84192 10.9693 5.826C11.0109 5.93825 11.0109 6.06174 10.9693 6.174C10.5634 7.15807 9.87449 7.99948 8.98987 8.59155C8.10524 9.18362 7.06473 9.49969 6.00025 9.49969C4.93577 9.49969 3.89527 9.18362 3.01064 8.59155C2.12601 7.99948 1.4371 7.15807 1.03125 6.174Z"
+                                        stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round" />
                                     <path
-                                        d="M2.5 4.16666V15.8333C2.5 16.2754 2.67559 16.6993 2.98816 17.0118C3.30072 17.3244 3.72464 17.5 4.16667 17.5H16.6667C16.8877 17.5 17.0996 17.4122 17.2559 17.2559C17.4122 17.0996 17.5 16.8877 17.5 16.6667V13.3333"
-                                        stroke="#E17100" stroke-width="1.66667" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg></span>
+                                        d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                        stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10168_4629">
+                                        <rect width="12" height="12" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>Read Only</button>
+                    </div>
 
-                            <div class="create-card__warning__content">
-                                <h5 class="create-card__warning__title">Insufficient Balance</h5>
-                                <p class="create-card__warning__desc">Your current balance is $450.00. You need at least
-                                    $500.00 to create a virtual card. Please add $50.00 to your wallet.</p>
-                                <a class="create-card__warning__link" href="#">Add Funds to Wallet</a>
+                    <div class="kyc__details__form">
+                        <div class="row ">
+                            <div class="col-lg-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <p class="kyc__title">John Doe</p>
                             </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="name" class="form-label">Date of Birth</label>
+                                <p class="kyc__title">January 15, 1990</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">Nationality</label>
+                                <p class="kyc__title">United States</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">Country of Residence</label>
+                                <p class="kyc__title">United States</p>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
-                <div class="row mb-4">
-                    <div class="col-lg-12">
-                        <div class="create-card__preview card">
-                            <div class="create-card__preview__heading">
-                                <p class="create-card__preview__wrap">Card Preview</p>
-                                <p class="create-card__preview__wrap"> <span>Card Type:</span>Virtual Visa Card</p>
-                            </div>
-                            <div class="credit-card__view bg--img"
-                                data-background-image="assets/images/dashboard/dashboard-card-bg1.png">
+                <div class="kyc__details card mb-4">
+                    <div class="kyc__wrap">
 
-                                <div class="credit-card__view-card">
-
-                                    <div class="credit-card__view__content">
-                                        <p class="credit-card__view__subtitle">Virtual Card</p>
-                                        <h3 class="credit-card__view__title">Demo Name</h3>
-                                    </div>
-                                    <span class="credit-card__view__logo"><img
-                                            src="assets/images/dashboard/card-logo.png" alt="image"></span>
-                                </div>
-                                <p class="credit-card__view__amount">**** ***** **** ****</p>
-                            </div>
-
-                            <p class="credit-card__view__text text-center mt-4">Card details will be revealed after
-                                successful creation
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row mb-4">
-
-                    <div class="col-lg-12">
-
-                        <div class="card-holder__info card">
-
-                            <div class="card-holder__info__top">
-                                <a href="#" class="card-holder__info__link">
-                                    <div class="card-holder__info__link__wrap">
-
-                                        <span class="card-holder__info__icon"><svg xmlns="http://www.w3.org/2000/svg"
-                                                width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                                <path
-                                                    d="M18.6663 24.5V22.1667C18.6663 20.929 18.1747 19.742 17.2995 18.8668C16.4243 17.9917 15.2374 17.5 13.9997 17.5H6.99967C5.762 17.5 4.57501 17.9917 3.69984 18.8668C2.82467 19.742 2.33301 20.929 2.33301 22.1667V24.5"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M10.4997 12.8333C13.077 12.8333 15.1663 10.744 15.1663 8.16667C15.1663 5.58934 13.077 3.5 10.4997 3.5C7.92235 3.5 5.83301 5.58934 5.83301 8.16667C5.83301 10.744 7.92235 12.8333 10.4997 12.8333Z"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M22.167 9.33331V16.3333" stroke="currentColor" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M25.667 12.8333H18.667" stroke="currentColor" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-
-                                        <div class="card-holder__info__content">
-                                            <h3 class="card-holder__info__content__title">Existing Card Holder</h3>
-                                            <p class="card-holder__info__content__desc">Use saved profile</p>
-                                        </div>
-                                    </div>
-                                    <span class="card-holder__info__check"><i
-                                            class="fa-solid fa-circle-check"></i></span>
-                                </a>
-                                <a href="existing-holder.html" class="card-holder__info__link active">
-                                    <div class="card-holder__info__link__wrap">
-
-                                        <span class="card-holder__info__icon"><svg xmlns="http://www.w3.org/2000/svg"
-                                                width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                                <path
-                                                    d="M18.6663 24.5V22.1667C18.6663 20.929 18.1747 19.742 17.2995 18.8668C16.4243 17.9917 15.2374 17.5 13.9997 17.5H6.99967C5.762 17.5 4.57501 17.9917 3.69984 18.8668C2.82467 19.742 2.33301 20.929 2.33301 22.1667V24.5"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M18.667 3.64929C19.6677 3.90872 20.554 4.4931 21.1866 5.3107C21.8193 6.1283 22.1626 7.13283 22.1626 8.16663C22.1626 9.20042 21.8193 10.205 21.1866 11.0226C20.554 11.8402 19.6677 12.4245 18.667 12.684"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M25.667 24.5V22.1667C25.6662 21.1327 25.3221 20.1282 24.6886 19.311C24.0551 18.4938 23.1681 17.9102 22.167 17.6517"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M10.4997 12.8333C13.077 12.8333 15.1663 10.744 15.1663 8.16667C15.1663 5.58934 13.077 3.5 10.4997 3.5C7.92235 3.5 5.83301 5.58934 5.83301 8.16667C5.83301 10.744 7.92235 12.8333 10.4997 12.8333Z"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-
-                                        <div class="card-holder__info__content">
-                                            <h3 class="card-holder__info__content__title">Existing Card Holder</h3>
-                                            <p class="card-holder__info__content__desc">Use saved profile</p>
-                                        </div>
-                                    </div>
-                                    <span class="card-holder__info__check"><i
-                                            class="fa-solid fa-circle-check"></i></span>
-                                </a>
-
-                            </div>
-
-                            <p class="card-holder__info__desc mb-4">Please provide the card holder's information. This
-                                will
-                                be used for billing and verification purposes.</p>
-
-                            <div class="card-holder__form">
-
-                                <a href="#" class="card-holder__client">
-                                    <span class="card-holder__client__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path
-                                                d="M19 21V19C19 17.9391 18.5786 16.9217 17.8284 16.1716C17.0783 15.4214 16.0609 15 15 15H9C7.93913 15 6.92172 15.4214 6.17157 16.1716C5.42143 16.9217 5 17.9391 5 19V21"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-
-
-                                    <div class="card-holder__client__content">
-                                        <h3 class="card-holder__client__title">John Smith</h3>
-                                        <p class="card-holder__client__desc">San Francisco, CA, United States</p>
-                                        <p class="card-holder__client__subdesc">2 active cards</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="card-holder__client">
-                                    <span class="card-holder__client__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path
-                                                d="M19 21V19C19 17.9391 18.5786 16.9217 17.8284 16.1716C17.0783 15.4214 16.0609 15 15 15H9C7.93913 15 6.92172 15.4214 6.17157 16.1716C5.42143 16.9217 5 17.9391 5 19V21"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-
-
-                                    <div class="card-holder__client__content">
-                                        <h3 class="card-holder__client__title">John Smith</h3>
-                                        <p class="card-holder__client__desc">San Francisco, CA, United States</p>
-                                        <p class="card-holder__client__subdesc">2 active cards</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="card-holder__client">
-                                    <span class="card-holder__client__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path
-                                                d="M19 21V19C19 17.9391 18.5786 16.9217 17.8284 16.1716C17.0783 15.4214 16.0609 15 15 15H9C7.93913 15 6.92172 15.4214 6.17157 16.1716C5.42143 16.9217 5 17.9391 5 19V21"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-
-
-                                    <div class="card-holder__client__content">
-                                        <h3 class="card-holder__client__title">John Smith</h3>
-                                        <p class="card-holder__client__desc">San Francisco, CA, United States</p>
-                                        <p class="card-holder__client__subdesc">2 active cards</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-
-                        <div class="create-card__summary card">
-
-                            <p class="create-card__summary__title">Creation Summary</p>
-
-                            <div class="create-card__summary__item__Wrap">
-
-                                <div class="create-card__summary__item">
-                                    <p>Card Creation Fee</p>
-                                    <p>$5.00</p>
-                                </div>
-                                <div class="create-card__summary__item">
-                                    <p>Card Creation Fee</p>
-                                    <p>$5.00</p>
-                                </div>
-                            </div>
-                            <div class="create-card__summary__amount">
-                                <h6 class="create-card__summary__amount__title">Total Required Balance</h6>
-                                <h6 class="create-card__summary__amount__mouny">$105.00</h6>
-                            </div>
-                            <div class="account__policy mb-4">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input " id="agree" name="agree"
-                                        required="">
-                                    <label class="form-check-label fs-16" for="agree">I agree to the card issuance
-                                        terms,
-                                        fees, and usage policy</label>
-                                </div>
-                            </div>
-
-                            <button class="btn btn--base summary__button">Create Virtual Card<i
-                                    class="fa-solid fa-arrow-right"></i></button>
-
-                            <span class="summary__alart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 20 20" fill="none">
+                        <p class="kyc__details__title text-black">Address Details</p>
+                        <button class="kyc__wiew-button"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_10168_4629)">
                                     <path
-                                        d="M10.0003 18.3333C14.6027 18.3333 18.3337 14.6023 18.3337 9.99996C18.3337 5.39759 14.6027 1.66663 10.0003 1.66663C5.39795 1.66663 1.66699 5.39759 1.66699 9.99996C1.66699 14.6023 5.39795 18.3333 10.0003 18.3333Z"
-                                        stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M10 13.3333V10" stroke="currentColor" stroke-width="1.33333"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10 6.66663H10.0083" stroke="currentColor" stroke-width="1.33333"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>The creation fee is non-refundable. The minimum deposit will be loaded onto your
-                                card and can be used for transactions.</span>
+                                        d="M1.03125 6.174C0.989582 6.06174 0.989582 5.93825 1.03125 5.826C1.4371 4.84192 2.12601 4.00052 3.01064 3.40845C3.89527 2.81638 4.93577 2.50031 6.00025 2.50031C7.06473 2.50031 8.10524 2.81638 8.98987 3.40845C9.87449 4.00052 10.5634 4.84192 10.9693 5.826C11.0109 5.93825 11.0109 6.06174 10.9693 6.174C10.5634 7.15807 9.87449 7.99948 8.98987 8.59155C8.10524 9.18362 7.06473 9.49969 6.00025 9.49969C4.93577 9.49969 3.89527 9.18362 3.01064 8.59155C2.12601 7.99948 1.4371 7.15807 1.03125 6.174Z"
+                                        stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                        stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10168_4629">
+                                        <rect width="12" height="12" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>Read Only</button>
+                    </div>
+
+                    <div class="kyc__details__form">
+                        <div class="row ">
+                            <div class="col-lg-12 mb-3">
+                                <label for="name" class="form-label">Address Line</label>
+                                <p class="kyc__title">123 Main Street, Apt 4B</p>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="name" class="form-label">City</label>
+                                <p class="kyc__title">New York</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">State / Province</label>
+                                <p class="kyc__title">New York</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">Postal Code</label>
+                                <p class="kyc__title">10001</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">Country</label>
+                                <p class="kyc__title">United States</p>
+                            </div>
 
                         </div>
-
                     </div>
                 </div>
+
+
+                <div class="kyc__details card mb-4">
+                    <div class="kyc__wrap">
+
+                        <p class="kyc__details__title text-black">Address Details</p>
+                        <button class="kyc__wiew-button"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_10168_4629)">
+                                    <path
+                                        d="M1.03125 6.174C0.989582 6.06174 0.989582 5.93825 1.03125 5.826C1.4371 4.84192 2.12601 4.00052 3.01064 3.40845C3.89527 2.81638 4.93577 2.50031 6.00025 2.50031C7.06473 2.50031 8.10524 2.81638 8.98987 3.40845C9.87449 4.00052 10.5634 4.84192 10.9693 5.826C11.0109 5.93825 11.0109 6.06174 10.9693 6.174C10.5634 7.15807 9.87449 7.99948 8.98987 8.59155C8.10524 9.18362 7.06473 9.49969 6.00025 9.49969C4.93577 9.49969 3.89527 9.18362 3.01064 8.59155C2.12601 7.99948 1.4371 7.15807 1.03125 6.174Z"
+                                        stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z"
+                                        stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10168_4629">
+                                        <rect width="12" height="12" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>Read Only</button>
+                    </div>
+
+                    <div class="kyc__details__form">
+
+                        <div class="kyc__details__info">
+
+                            <div class="row ">
+                                <div class="col-lg-6 mb-3">
+                                    <label for="name" class="form-label">Address Line</label>
+                                    <p class="kyc__title">123 Main Street, Apt 4B</p>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <label for="name" class="form-label">City</label>
+                                    <p class="kyc__title">New York</p>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <label for="name" class="form-label">City</label>
+                                    <p class="kyc__title">New York</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="view-image__title">Uploaded Documents</p>
+
+                        <div class="view-image">
+                            <span class="view-image__thumb"><img src="assets/images/dashboard/view-image.png"
+                                    alt="image"></span>
+                            <p class="view-image__desc">Document Front</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="btn btn--dark w-100 kyc__button">Submit KYC</button>
             </div>
-
         </div>
     </div>
     <!--==========================  Dashboard Section End  ==========================-->
-
     <!-- Jquery js -->
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <!-- Bootstrap Bundle Js -->

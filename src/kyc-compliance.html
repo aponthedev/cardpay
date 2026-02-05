@@ -288,268 +288,176 @@
     <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
 </div>
         <div class="dashboard__wrapper">
-            <div class="create-card">
-                <div class="row mb-4">
-                    <div class="col-lg-12">
-                        <div class="create-card__warning">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path
-                                        d="M15.8333 5.83333V3.33333C15.8333 3.11232 15.7455 2.90036 15.5893 2.74408C15.433 2.5878 15.221 2.5 15 2.5H4.16667C3.72464 2.5 3.30072 2.67559 2.98816 2.98816C2.67559 3.30072 2.5 3.72464 2.5 4.16667C2.5 4.60869 2.67559 5.03262 2.98816 5.34518C3.30072 5.65774 3.72464 5.83333 4.16667 5.83333H16.6667C16.8877 5.83333 17.0996 5.92113 17.2559 6.07741C17.4122 6.23369 17.5 6.44565 17.5 6.66667V10M17.5 10H15C14.558 10 14.134 10.1756 13.8215 10.4882C13.5089 10.8007 13.3333 11.2246 13.3333 11.6667C13.3333 12.1087 13.5089 12.5326 13.8215 12.8452C14.134 13.1577 14.558 13.3333 15 13.3333H17.5C17.721 13.3333 17.933 13.2455 18.0893 13.0893C18.2455 12.933 18.3333 12.721 18.3333 12.5V10.8333C18.3333 10.6123 18.2455 10.4004 18.0893 10.2441C17.933 10.0878 17.721 10 17.5 10Z"
-                                        stroke="#E17100" stroke-width="1.66667" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M2.5 4.16666V15.8333C2.5 16.2754 2.67559 16.6993 2.98816 17.0118C3.30072 17.3244 3.72464 17.5 4.16667 17.5H16.6667C16.8877 17.5 17.0996 17.4122 17.2559 17.2559C17.4122 17.0996 17.5 16.8877 17.5 16.6667V13.3333"
-                                        stroke="#E17100" stroke-width="1.66667" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg></span>
+            <div class="withdraw">
+                <div class="kyc__alart alart-success">
+                    <div class="kyc__alart__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_10168_4145)">
+                                <path
+                                    d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8C14.6673 4.3181 11.6825 1.33334 8.00065 1.33334C4.31875 1.33334 1.33398 4.3181 1.33398 8C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
+                                    stroke="hsl(var(--black))" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 5.33334V8" stroke="hsl(var(--black))" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 10.6667H8.00667" stroke="hsl(var(--black))" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_10168_4145">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
 
-                            <div class="create-card__warning__content">
-                                <h5 class="create-card__warning__title">Insufficient Balance</h5>
-                                <p class="create-card__warning__desc">Your current balance is $450.00. You need at least
-                                    $500.00 to create a virtual card. Please add $50.00 to your wallet.</p>
-                                <a class="create-card__warning__link" href="#">Add Funds to Wallet</a>
-                            </div>
-                        </div>
+                    <div class="kyc__alart__content">
+                        <span class="badge2 badge2--success alart-text">Not Verified</span>
+                        <h3 class="kyc__alart__title">KYC verification is required before creating virtual cards.</h3>
                     </div>
                 </div>
-                <div class="row mb-4">
-                    <div class="col-lg-12">
-                        <div class="create-card__preview card">
-                            <div class="create-card__preview__heading">
-                                <p class="create-card__preview__wrap">Card Preview</p>
-                                <p class="create-card__preview__wrap"> <span>Card Type:</span>Virtual Visa Card</p>
+
+                <div class="kyc__complete__view mb-4">
+                    <span class="kyc__complete__view__icon"><img src="assets/images/dashboard/success-icon.png"
+                            alt="image"></span>
+
+                    <p class="kyc__complete__view__title">Verification Complete!</p>
+                    <p class="kyc__complete__view__desc">Congratulations! Your account has been fully verified and all
+                        features are now unlocked.</p>
+                </div>
+
+                <div class="kyc__details card mb-4">
+                    <div class="kyc__wrap">
+                        <p class="kyc__details__title text-black">Verification Summary</p>
+                    </div>
+
+                    <div class="kyc__details__form">
+                        <div class="row ">
+                            <div class="col-lg-6 mb-3">
+                                <label for="name" class="form-label">Verified Name</label>
+                                <p class="kyc__title d-flex align-items-center gap-1">John Doe <span
+                                        class="text-success"><i class="fa-regular fa-circle-check"></i></span></p>
                             </div>
-                            <div class="credit-card__view bg--img"
-                                data-background-image="assets/images/dashboard/dashboard-card-bg1.png">
-
-                                <div class="credit-card__view-card">
-
-                                    <div class="credit-card__view__content">
-                                        <p class="credit-card__view__subtitle">Virtual Card</p>
-                                        <h3 class="credit-card__view__title">Demo Name</h3>
-                                    </div>
-                                    <span class="credit-card__view__logo"><img
-                                            src="assets/images/dashboard/card-logo.png" alt="image"></span>
+                            <div class="col-lg-6 mb-3">
+                                <label for="name" class="form-label">Country</label>
+                                <p class="kyc__title">United States</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">Verification Date</label>
+                                <p class="kyc__title">Recently verified</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">Verification Status</label>
+                                <div>
+                                    <p class="badge badge--success">Active</p>
                                 </div>
-                                <p class="credit-card__view__amount">**** ***** **** ****</p>
                             </div>
 
-                            <p class="credit-card__view__text text-center mt-4">Card details will be revealed after
-                                successful creation
-                            </p>
-                        </div>
 
-                    </div>
-                </div>
-
-                <div class="row mb-4">
-
-                    <div class="col-lg-12">
-
-                        <div class="card-holder__info card">
-
-                            <div class="card-holder__info__top">
-                                <a href="#" class="card-holder__info__link">
-                                    <div class="card-holder__info__link__wrap">
-
-                                        <span class="card-holder__info__icon"><svg xmlns="http://www.w3.org/2000/svg"
-                                                width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                                <path
-                                                    d="M18.6663 24.5V22.1667C18.6663 20.929 18.1747 19.742 17.2995 18.8668C16.4243 17.9917 15.2374 17.5 13.9997 17.5H6.99967C5.762 17.5 4.57501 17.9917 3.69984 18.8668C2.82467 19.742 2.33301 20.929 2.33301 22.1667V24.5"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M10.4997 12.8333C13.077 12.8333 15.1663 10.744 15.1663 8.16667C15.1663 5.58934 13.077 3.5 10.4997 3.5C7.92235 3.5 5.83301 5.58934 5.83301 8.16667C5.83301 10.744 7.92235 12.8333 10.4997 12.8333Z"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M22.167 9.33331V16.3333" stroke="currentColor" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M25.667 12.8333H18.667" stroke="currentColor" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-
-                                        <div class="card-holder__info__content">
-                                            <h3 class="card-holder__info__content__title">Existing Card Holder</h3>
-                                            <p class="card-holder__info__content__desc">Use saved profile</p>
-                                        </div>
-                                    </div>
-                                    <span class="card-holder__info__check"><i
-                                            class="fa-solid fa-circle-check"></i></span>
-                                </a>
-                                <a href="existing-holder.html" class="card-holder__info__link active">
-                                    <div class="card-holder__info__link__wrap">
-
-                                        <span class="card-holder__info__icon"><svg xmlns="http://www.w3.org/2000/svg"
-                                                width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                                <path
-                                                    d="M18.6663 24.5V22.1667C18.6663 20.929 18.1747 19.742 17.2995 18.8668C16.4243 17.9917 15.2374 17.5 13.9997 17.5H6.99967C5.762 17.5 4.57501 17.9917 3.69984 18.8668C2.82467 19.742 2.33301 20.929 2.33301 22.1667V24.5"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M18.667 3.64929C19.6677 3.90872 20.554 4.4931 21.1866 5.3107C21.8193 6.1283 22.1626 7.13283 22.1626 8.16663C22.1626 9.20042 21.8193 10.205 21.1866 11.0226C20.554 11.8402 19.6677 12.4245 18.667 12.684"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M25.667 24.5V22.1667C25.6662 21.1327 25.3221 20.1282 24.6886 19.311C24.0551 18.4938 23.1681 17.9102 22.167 17.6517"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M10.4997 12.8333C13.077 12.8333 15.1663 10.744 15.1663 8.16667C15.1663 5.58934 13.077 3.5 10.4997 3.5C7.92235 3.5 5.83301 5.58934 5.83301 8.16667C5.83301 10.744 7.92235 12.8333 10.4997 12.8333Z"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-
-                                        <div class="card-holder__info__content">
-                                            <h3 class="card-holder__info__content__title">Existing Card Holder</h3>
-                                            <p class="card-holder__info__content__desc">Use saved profile</p>
-                                        </div>
-                                    </div>
-                                    <span class="card-holder__info__check"><i
-                                            class="fa-solid fa-circle-check"></i></span>
-                                </a>
-
-                            </div>
-
-                            <p class="card-holder__info__desc mb-4">Please provide the card holder's information. This
-                                will
-                                be used for billing and verification purposes.</p>
-
-                            <div class="card-holder__form">
-
-                                <a href="#" class="card-holder__client">
-                                    <span class="card-holder__client__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path
-                                                d="M19 21V19C19 17.9391 18.5786 16.9217 17.8284 16.1716C17.0783 15.4214 16.0609 15 15 15H9C7.93913 15 6.92172 15.4214 6.17157 16.1716C5.42143 16.9217 5 17.9391 5 19V21"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-
-
-                                    <div class="card-holder__client__content">
-                                        <h3 class="card-holder__client__title">John Smith</h3>
-                                        <p class="card-holder__client__desc">San Francisco, CA, United States</p>
-                                        <p class="card-holder__client__subdesc">2 active cards</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="card-holder__client">
-                                    <span class="card-holder__client__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path
-                                                d="M19 21V19C19 17.9391 18.5786 16.9217 17.8284 16.1716C17.0783 15.4214 16.0609 15 15 15H9C7.93913 15 6.92172 15.4214 6.17157 16.1716C5.42143 16.9217 5 17.9391 5 19V21"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-
-
-                                    <div class="card-holder__client__content">
-                                        <h3 class="card-holder__client__title">John Smith</h3>
-                                        <p class="card-holder__client__desc">San Francisco, CA, United States</p>
-                                        <p class="card-holder__client__subdesc">2 active cards</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="card-holder__client">
-                                    <span class="card-holder__client__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path
-                                                d="M19 21V19C19 17.9391 18.5786 16.9217 17.8284 16.1716C17.0783 15.4214 16.0609 15 15 15H9C7.93913 15 6.92172 15.4214 6.17157 16.1716C5.42143 16.9217 5 17.9391 5 19V21"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-
-
-                                    <div class="card-holder__client__content">
-                                        <h3 class="card-holder__client__title">John Smith</h3>
-                                        <p class="card-holder__client__desc">San Francisco, CA, United States</p>
-                                        <p class="card-holder__client__subdesc">2 active cards</p>
-                                    </div>
-                                </a>
-                            </div>
 
                         </div>
                     </div>
-
                 </div>
+
+                <h3 class="unlocked__title">Unlocked Features</h3>
+                <p class="premium-features">You now have access to all premium features:</p>
 
                 <div class="row">
-                    <div class="col-lg-12">
-
-                        <div class="create-card__summary card">
-
-                            <p class="create-card__summary__title">Creation Summary</p>
-
-                            <div class="create-card__summary__item__Wrap">
-
-                                <div class="create-card__summary__item">
-                                    <p>Card Creation Fee</p>
-                                    <p>$5.00</p>
-                                </div>
-                                <div class="create-card__summary__item">
-                                    <p>Card Creation Fee</p>
-                                    <p>$5.00</p>
-                                </div>
-                            </div>
-                            <div class="create-card__summary__amount">
-                                <h6 class="create-card__summary__amount__title">Total Required Balance</h6>
-                                <h6 class="create-card__summary__amount__mouny">$105.00</h6>
-                            </div>
-                            <div class="account__policy mb-4">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input " id="agree" name="agree"
-                                        required="">
-                                    <label class="form-check-label fs-16" for="agree">I agree to the card issuance
-                                        terms,
-                                        fees, and usage policy</label>
-                                </div>
-                            </div>
-
-                            <button class="btn btn--base summary__button">Create Virtual Card<i
-                                    class="fa-solid fa-arrow-right"></i></button>
-
-                            <span class="summary__alart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 20 20" fill="none">
+                    <div class="col-lg-4">
+                        <div class=" premium-features__card">
+                            <span class="premium-features__card__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path
-                                        d="M10.0003 18.3333C14.6027 18.3333 18.3337 14.6023 18.3337 9.99996C18.3337 5.39759 14.6027 1.66663 10.0003 1.66663C5.39795 1.66663 1.66699 5.39759 1.66699 9.99996C1.66699 14.6023 5.39795 18.3333 10.0003 18.3333Z"
-                                        stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                        d="M20 5H4C2.89543 5 2 5.89543 2 7V17C2 18.1046 2.89543 19 4 19H20C21.1046 19 22 18.1046 22 17V7C22 5.89543 21.1046 5 20 5Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <path d="M10 13.3333V10" stroke="currentColor" stroke-width="1.33333"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10 6.66663H10.0083" stroke="currentColor" stroke-width="1.33333"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>The creation fee is non-refundable. The minimum deposit will be loaded onto your
-                                card and can be used for transactions.</span>
+                                    <path d="M2 10H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
 
+                            <h3 class="premium-features__card__title">Create Virtual Cards</h3>
+                            <p class="premium-features__card__desc">Generate unlimited virtual cards for secure online
+                                payments</p>
+                            <p class="premium-features__card__type"><i class="fa-regular fa-circle-check"></i>Unlocked
+                            </p>
                         </div>
-
                     </div>
-                </div>
-            </div>
+                    <div class="col-lg-4">
+                        <div class=" premium-features__card">
+                            <span class="premium-features__card__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M19 7V4C19 3.73478 18.8946 3.48043 18.7071 3.29289C18.5196 3.10536 18.2652 3 18 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5C3 5.53043 3.21071 6.03914 3.58579 6.41421C3.96086 6.78929 4.46957 7 5 7H20C20.2652 7 20.5196 7.10536 20.7071 7.29289C20.8946 7.48043 21 7.73478 21 8V12M21 12H18C17.4696 12 16.9609 12.2107 16.5858 12.5858C16.2107 12.9609 16 13.4696 16 14C16 14.5304 16.2107 15.0391 16.5858 15.4142C16.9609 15.7893 17.4696 16 18 16H21C21.2652 16 21.5196 15.8946 21.7071 15.7071C21.8946 15.5196 22 15.2652 22 15V13C22 12.7348 21.8946 12.4804 21.7071 12.2929C21.5196 12.1054 21.2652 12 21 12Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V16"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
 
+                            <h3 class="premium-features__card__title">Deposit & Withdraw</h3>
+                            <p class="premium-features__card__desc">Add funds and withdraw money to your bank account
+                            </p>
+                            <p class="premium-features__card__type"><i class="fa-regular fa-circle-check"></i>Unlocked
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class=" premium-features__card">
+                            <span class="premium-features__card__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M20 8H4C3.44772 8 3 8.44772 3 9V11C3 11.5523 3.44772 12 4 12H20C20.5523 12 21 11.5523 21 11V9C21 8.44772 20.5523 8 20 8Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 8V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M19 12V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V12"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7.5 8.00001C6.83696 8.00001 6.20107 7.73662 5.73223 7.26778C5.26339 6.79894 5 6.16305 5 5.50001C5 4.83697 5.26339 4.20108 5.73223 3.73224C6.20107 3.2634 6.83696 3.00001 7.5 3.00001C8.46469 2.9832 9.41003 3.45127 10.2127 4.34317C11.0154 5.23507 11.6383 6.50941 12 8.00001C12.3617 6.50941 12.9846 5.23507 13.7873 4.34317C14.59 3.45127 15.5353 2.9832 16.5 3.00001C17.163 3.00001 17.7989 3.2634 18.2678 3.73224C18.7366 4.20108 19 4.83697 19 5.50001C19 6.16305 18.7366 6.79894 18.2678 7.26778C17.7989 7.73662 17.163 8.00001 16.5 8.00001"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+
+                            <h3 class="premium-features__card__title">Referral Rewards</h3>
+                            <p class="premium-features__card__desc">Earn rewards by inviting friends to the platform</p>
+                            <p class="premium-features__card__type"><i class="fa-regular fa-circle-check"></i>Unlocked
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 mt-4">
+                        <div class="premium-features__alart alart3--info">
+                            <div class="premium-features__alart__icon">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="premium-features__alart__content">
+
+                                <h3 class="premium-features__alart__title">Your account is secure</h3>
+                                <p class="premium-features__alart__desc">Your identity verification helps us maintain a
+                                    safe and compliant platform. Your personal information is encrypted and stored
+                                    securely in accordance with data protection regulations.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="btn btn--dark w-100 kyc__button mt-4">Submit KYC<i
+                        class="fa-solid fa-arrow-right"></i></button>
+
+
+            </div>
         </div>
     </div>
     <!--==========================  Dashboard Section End  ==========================-->
-
     <!-- Jquery js -->
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <!-- Bootstrap Bundle Js -->
