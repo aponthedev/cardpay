@@ -3,205 +3,203 @@
 
 <!--==========================  Dashboard Section Start  ==========================-->
 <div class="dashboard">
-    
-    <div class="dashboard__sidebar">
-        <div class="sidebar__close"><i class="las la-times"></i></div>
-        <div class="dashboard__logo">
-            <a href="dashboard.html"><img src="assets/images/logo/logo-white.png" alt="logo"></a>
-        </div>
-        <div class="dashboard__menu">
-            <ul>
-                <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
-                <li class="upload__file__sb"><a href="upload-file.html"><i class="fa-solid fa-cloud-arrow-up"></i>
-                        Upload File</a></li>
-                <li>
-                    <a href="#collapseExample" class="active" data-bs-toggle="collapse" role="button"
-                        aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-file"></i> File
-                        <span class="dropdown__arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-                    <div class="collapse" id="collapseExample">
-                        <div class="sidebar__dropdown">
+    @@include('../components/_dashboard-sidebar.html')
+    <div class="dashboard__wrap">
+        @@include('../components/_dashboard__header.html')
+        <div class="dashboard__wrapper">
+            <div class="my-profile">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="profile__menu">
                             <ul>
-                                <li><a href="published-files.html" class="active">Published Files</a></li>
-                                <li><a href="reject-files.html">Reject File</a></li>
-                                <li><a href="pending-files.html">Pending File</a></li>
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="notifications.html">Notifications</a></li>
+                                <li><a href="language.html">Language</a></li>
                             </ul>
                         </div>
                     </div>
-                </li>
-                <li><a href="my-download.html"><i class="fa-solid fa-cloud-arrow-down"></i> My Download</a></li>
-                <li><a href="deposit.html"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</a></li>
-                <li><a href="withdraw.html"><i class="fa-solid fa-coins"></i> Withdraw</a></li>
-                <li><a href="transactions.html"><i class="fa-solid fa-list-ul"></i> Transactions</a></li>
-                <li><a href="my-tickets.html"><i class="fa-solid fa-headset"></i> Support Ticket</a></li>
-            </ul>
+                    <div class="col-lg-10">
+                        <div class="profile__items mb-4">
+                            <div class="uplode__image">
+                                <div class="uplode__image__wrap">
+                                    <div class="uplode__image__thumb">
+                                        <img src="assets/images/user.jpg" alt="image">
+                                    </div>
+
+                                    <div class="uplode__image__content">
+                                        <p class="uplode__image__title">John Anderson</p>
+                                        <p class="uplode__image__desc"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.6654 4.66667L8.67136 8.48467C8.46796 8.60281 8.23692 8.66504 8.0017 8.66504C7.76647 8.66504 7.53543 8.60281 7.33203 8.48467L1.33203 4.66667"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M13.332 2.66667H2.66536C1.92898 2.66667 1.33203 3.26363 1.33203 4.00001V12C1.33203 12.7364 1.92898 13.3333 2.66536 13.3333H13.332C14.0684 13.3333 14.6654 12.7364 14.6654 12V4.00001C14.6654 3.26363 14.0684 2.66667 13.332 2.66667Z"
+                                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg> <span>john.anderson@example.com</span> # ID: USR-2024-78451 </p>
+                                        <div class="badge__items">
+                                            <span class="badge2 badge2--success"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                                    <g clip-path="url(#clip0_10181_1777)">
+                                                        <path
+                                                            d="M12.7172 5.83334C12.9836 7.14077 12.7937 8.50001 12.1793 9.68439C11.5648 10.8688 10.5629 11.8067 9.34057 12.3418C8.11827 12.8769 6.74947 12.9767 5.46244 12.6247C4.17542 12.2727 3.04796 11.4902 2.2681 10.4075C1.48823 9.32485 1.10309 8.00756 1.17691 6.67532C1.25072 5.34307 1.77903 4.0764 2.67373 3.08653C3.56843 2.09666 4.77544 1.44343 6.09347 1.23577C7.41151 1.02812 8.76089 1.27859 9.9166 1.94543"
+                                                            stroke="currentColor" stroke-width="1.16667"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M5.25 6.41666L7 8.16666L12.8333 2.33333"
+                                                            stroke="currentColor" stroke-width="1.16667"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10181_1777">
+                                                            <rect width="14" height="14" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>Active</span>
+                                            <span class="badge2 badge2--primary"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                                    <g clip-path="url(#clip0_10181_1777)">
+                                                        <path
+                                                            d="M12.7172 5.83334C12.9836 7.14077 12.7937 8.50001 12.1793 9.68439C11.5648 10.8688 10.5629 11.8067 9.34057 12.3418C8.11827 12.8769 6.74947 12.9767 5.46244 12.6247C4.17542 12.2727 3.04796 11.4902 2.2681 10.4075C1.48823 9.32485 1.10309 8.00756 1.17691 6.67532C1.25072 5.34307 1.77903 4.0764 2.67373 3.08653C3.56843 2.09666 4.77544 1.44343 6.09347 1.23577C7.41151 1.02812 8.76089 1.27859 9.9166 1.94543"
+                                                            stroke="currentColor" stroke-width="1.16667"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M5.25 6.41666L7 8.16666L12.8333 2.33333"
+                                                            stroke="currentColor" stroke-width="1.16667"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10181_1777">
+                                                            <rect width="14" height="14" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>KYC Verified</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn--base edit__profile">Edit Profile</a>
+                            </div>
+
+
+                            <div class="profile__form mt-4">
+                                <div class="profile__form__heading">
+                                    <p class="profile__form__heading__title">Personal Details</p>
+                                    <a href="#" class="edit-outline">Edit<svg xmlns="http://www.w3.org/2000/svg"
+                                            width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M12.6771 4.98533L13.8452 3.8172C14.4904 3.17206 15.5364 3.17206 16.1815 3.8172C16.8266 4.46234 16.8266 5.50832 16.1815 6.15347L15.0134 7.3216M12.6771 4.98533L5.81556 11.8469C4.94447 12.718 4.50891 13.1535 4.21234 13.6843C3.91576 14.215 3.61736 15.4683 3.33203 16.6667C4.53044 16.3813 5.78369 16.0829 6.31444 15.7863C6.84519 15.4898 7.28073 15.0543 8.15182 14.1832L15.0134 7.3216M12.6771 4.98533L15.0134 7.3216"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M9.16797 16.6667H14.168" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label for="" class="form-label">Frist name</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="John">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="" class="form-label">Last Name</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder=" Anderson">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <label for="" class="form-label">Date of Birth <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M11.0833 6.41666H2.91667C2.27233 6.41666 1.75 6.93899 1.75 7.58332V11.6667C1.75 12.311 2.27233 12.8333 2.91667 12.8333H11.0833C11.7277 12.8333 12.25 12.311 12.25 11.6667V7.58332C12.25 6.93899 11.7277 6.41666 11.0833 6.41666Z"
+                                                    stroke="currentColor" stroke-width="1.16667" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M4.08594 6.41666V4.08332C4.08594 3.30977 4.39323 2.56791 4.94021 2.02093C5.48719 1.47395 6.22906 1.16666 7.0026 1.16666C7.77615 1.16666 8.51802 1.47395 9.065 2.02093C9.61198 2.56791 9.91927 3.30977 9.91927 4.08332V6.41666"
+                                                    stroke="currentColor" stroke-width="1.16667" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></label>
+                                        <div class="form-group mb-0">
+                                            <input type="text" class="form-control" placeholder=" January 15, 1990">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <label for="" class="form-label">Phone Number</label>
+                                        <div class="form-group mb-0">
+                                            <input type="text" class="form-control" placeholder="+1 (555) 123-4567">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="profile__form__desc">Locked after KYC verification</p>
+                            </div>
+
+                            <div class="profile__form mt-4">
+                                <div class="profile__form__heading">
+                                    <p class="profile__form__heading__title">Personal Address </p>
+                                    <a href="#" class="edit-outline">Edit<svg xmlns="http://www.w3.org/2000/svg"
+                                            width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M12.6771 4.98533L13.8452 3.8172C14.4904 3.17206 15.5364 3.17206 16.1815 3.8172C16.8266 4.46234 16.8266 5.50832 16.1815 6.15347L15.0134 7.3216M12.6771 4.98533L5.81556 11.8469C4.94447 12.718 4.50891 13.1535 4.21234 13.6843C3.91576 14.215 3.61736 15.4683 3.33203 16.6667C4.53044 16.3813 5.78369 16.0829 6.31444 15.7863C6.84519 15.4898 7.28073 15.0543 8.15182 14.1832L15.0134 7.3216M12.6771 4.98533L15.0134 7.3216"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M9.16797 16.6667H14.168" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label for="" class="form-label">Country</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Canada">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="" class="form-label">City</label>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Vancouver">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <label for="" class="form-label">Address <svg xmlns="http://www.w3.org/2000/svg"
+                                                width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                                <path
+                                                    d="M11.0833 6.41666H2.91667C2.27233 6.41666 1.75 6.93899 1.75 7.58332V11.6667C1.75 12.311 2.27233 12.8333 2.91667 12.8333H11.0833C11.7277 12.8333 12.25 12.311 12.25 11.6667V7.58332C12.25 6.93899 11.7277 6.41666 11.0833 6.41666Z"
+                                                    stroke="currentColor" stroke-width="1.16667" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M4.08594 6.41666V4.08332C4.08594 3.30977 4.39323 2.56791 4.94021 2.02093C5.48719 1.47395 6.22906 1.16666 7.0026 1.16666C7.77615 1.16666 8.51802 1.47395 9.065 2.02093C9.61198 2.56791 9.91927 3.30977 9.91927 4.08332V6.41666"
+                                                    stroke="currentColor" stroke-width="1.16667" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg></label>
+                                        <div class="form-group mb-0">
+                                            <input type="text" class="form-control" placeholder="Canada, Vancouver ">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <label for="" class="form-label">Zip Code</label>
+                                        <div class="form-group mb-0">
+                                            <input type="text" class="form-control" placeholder="18000">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="dashboard__wrap">
-        <div class="dashboard__header">
-            <div class="search__box">
-                <input type="text" class="form-control" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="dashboard__header__widgets">
-                <div class="upload__file">
-                    <a href="upload-file.html" class="btn btn--base"><i class="fa-solid fa-cloud-arrow-up"></i> Upload
-                        File</a>
-                </div>
-                <div class="dropdown">
-                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="notification__btn">
-                            <i class="las la-bell"></i>
-                            <span class="notification__count">
-                                <span>21</span>
-                            </span>
-                        </span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <div class="notification__wrap">
-                            <div class="notification__header">
-                                <h4>Notifications</h4>
-                                <span class="badge badge--base">12 Unread</span>
-                            </div>
-                            <div class="notification__body">
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                            </div>
-                            <div class="notification__footer">
-                                <a href="#" class="btn btn--sm btn--base w-100">View all</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropdown-toggle d-flex align-items-center gap-2" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="profile__dropdown">
-                            <img src="assets/images/user.jpg" alt="image">
-                            <span>Max Sujak</span>
-                        </span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="profile.html">Profile Setting</a></li>
-                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
-                        <li><a class="dropdown-item" href="two-factor.html">2FA Security</a></li>
-                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
-                    </ul>
-                </div>
-                <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
-            </div>
-        </div>
-        <div class="dashboard__wrapper">
-            <div class="row g-4">
-                <div class="col-xl-5">
-                    <div class="profile__left card p-4">
-                        <div class="profile__wr">
-                            <div class="profile__upload">
-                                <label for="profile__change">
-                                    <img src="assets/images/user.jpg" alt="image">
-                                    <i class="fa-solid fa-image"></i>
-                                </label>
-                                <input type="file" id="profile__change">
-                            </div>
-                            <h4>@testuser</h4>
-                        </div>
-                        <ul>
-                            <li>
-                                <div class="profile__contact">
-                                    <p><i class="fa-solid fa-envelope"></i>Email Address</p>
-                                    <a href="mailto:testuser@gmail.com">testuser@gmail.com</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile__contact">
-                                    <p><i class="fa-solid fa-phone"></i>Mobile Number</p>
-                                    <a href="tel:+934516569658">+93 451 656 9658</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile__contact">
-                                    <p><i class="fa-solid fa-location-dot"></i>Address</p>
-                                    <span>Staten Island, NY 10301, United States</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-7">
-                    <div class="profile__wrap card p-4">
-                        <div class="row g-4">
-                            <div class="col-sm-6">
-                                <div class="profile__form">
-                                    <label class="form-label">First Name</label>
-                                    <input class="form-control" type="text" placeholder="Enter First Name">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="profile__form">
-                                    <label class="form-label">Last Name</label>
-                                    <input class="form-control" type="text" placeholder="Enter Last Name">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="profile__form">
-                                    <label class="form-label">Country</label>
-                                    <input class="form-control" type="text" placeholder="Enter Country">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="profile__form">
-                                    <label class="form-label">Address</label>
-                                    <input class="form-control" type="text" placeholder="Enter Address">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="profile__form">
-                                    <label class="form-label">State</label>
-                                    <input class="form-control" type="text" placeholder="Enter State">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="profile__form">
-                                    <label class="form-label">Zip Code</label>
-                                    <input class="form-control" type="text" placeholder="Enter Zip Code">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="profile__form">
-                                    <label class="form-label">City</label>
-                                    <input class="form-control" type="text" placeholder="Enter City">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="profile__form">
-                                    <button type="submit" class="btn btn--base w-100">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--==========================  Dashboard Section End  ==========================-->
-
-@@include('../partials/_template-bottom.html')
+    <!--==========================  Dashboard Section End  ==========================-->
+    @@include('../partials/_template-bottom.html')

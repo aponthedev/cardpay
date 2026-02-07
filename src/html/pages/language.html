@@ -1,0 +1,137 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+    @@include('../components/_dashboard-sidebar.html')
+    <div class="dashboard__wrap">
+        @@include('../components/_dashboard__header.html')
+        <div class="dashboard__wrapper">
+            <div class="my-profile">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="profile__menu">
+                            <ul>
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="notifications.html">Notifications</a></li>
+                                <li><a href="language.html">Language</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="language card">
+                            <p class="language__title text-black">Choose the language</p>
+                            <p class="language__subtitle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 16 16" fill="none">
+                                    <g clip-path="url(#clip0_10180_1622)">
+                                        <path
+                                            d="M8.0026 14.6667C11.6845 14.6667 14.6693 11.6819 14.6693 8.00004C14.6693 4.31814 11.6845 1.33337 8.0026 1.33337C4.32071 1.33337 1.33594 4.31814 1.33594 8.00004C1.33594 11.6819 4.32071 14.6667 8.0026 14.6667Z"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.0026 1.33337C6.29076 3.13081 5.33594 5.51787 5.33594 8.00004C5.33594 10.4822 6.29076 12.8693 8.0026 14.6667C9.71445 12.8693 10.6693 10.4822 10.6693 8.00004C10.6693 5.51787 9.71445 3.13081 8.0026 1.33337Z"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M1.33594 8H14.6693" stroke="currentColor" stroke-width="1.33333"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10180_1622">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>Language</p>
+
+                            <label for="lang-en" class="language__items">
+                                <div class="language__content">
+                                    <span class="language__content__thumb"><img src="assets/images/english.png"
+                                            alt="image"></span>
+                                    <p class="language__content__title">English</p>
+                                </div>
+
+                                <div>
+                                    <div class="form-radio">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="lang-en"
+                                            value="option2">
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="language__items">
+                                <div class="language__content">
+                                    <span class="language__content__thumb"><img src="assets/images/france.png"
+                                            alt="image"></span>
+                                    <p class="language__content__title">French</p>
+                                </div>
+
+                                <div>
+                                    <div class="form-radio">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="language__items">
+                                <div class="language__content">
+                                    <span class="language__content__thumb"><img src="assets/images/german.png"
+                                            alt="image"></span>
+                                    <p class="language__content__title">English</p>
+                                </div>
+
+                                <div>
+                                    <div class="form-radio">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="language__items">
+                                <div class="language__content">
+                                    <span class="language__content__thumb"><img src="assets/images/english.png"
+                                            alt="image"></span>
+                                    <p class="language__content__title">German</p>
+                                </div>
+
+                                <div>
+                                    <div class="form-radio">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="language__items">
+                                <div class="language__content">
+                                    <span class="language__content__thumb"><img src="assets/images/india.png"
+                                            alt="image"></span>
+                                    <p class="language__content__title">Korean</p>
+                                </div>
+
+                                <div>
+                                    <div class="form-radio">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="language__items">
+                                <div class="language__content">
+                                    <span class="language__content__thumb"><img src="assets/images/vietnamese.png"
+                                            alt="image"></span>
+                                    <p class="language__content__title">Vietnamese</p>
+                                </div>
+
+                                <div>
+                                    <div class="form-radio">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==========================  Dashboard Section End  ==========================-->
+    @@include('../partials/_template-bottom.html')

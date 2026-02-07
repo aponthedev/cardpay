@@ -1,0 +1,246 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+    @@include('../components/_dashboard-sidebar.html')
+    <div class="dashboard__wrap">
+        @@include('../components/_dashboard__header.html')
+        <div class="dashboard__wrapper">
+            <div class="referrals__heading">
+                <div class="referrals__heading__content">
+                    <h3 class="referrals__heading__title">Invite your friends and earn up to R$93.60 in PIX per referral
+                    </h3>
+                    <p class="referrals__heading__desc">Invite your friends and earn up to R$93.60 in PIX per referral
+                    </p>
+                </div>
+
+                <div class="referrals__heading__thumb">
+                    <img src="assets/images/dashboard/giftbox.png" alt="image">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="referral-link card">
+                        <p class="referral-link__title text-black">Your Referral Link</p>
+
+                        <div class="referral-link__wrap w-100">
+
+                            <div class="form-group w-100 mb-0">
+                                <input type="text" class="form-control"
+                                    placeholder="https://app.fintech.com/signup?ref=RAYHAN24">
+                            </div>
+
+                            <button class="copy__button btn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" viewBox="0 0 16 16" fill="none">
+                                    <g clip-path="url(#clip0_10159_3167)">
+                                        <path
+                                            d="M13.332 5.33334H6.66536C5.92898 5.33334 5.33203 5.9303 5.33203 6.66668V13.3333C5.33203 14.0697 5.92898 14.6667 6.66536 14.6667H13.332C14.0684 14.6667 14.6654 14.0697 14.6654 13.3333V6.66668C14.6654 5.9303 14.0684 5.33334 13.332 5.33334Z"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M2.66536 10.6667C1.93203 10.6667 1.33203 10.0667 1.33203 9.33334V2.66668C1.33203 1.93334 1.93203 1.33334 2.66536 1.33334H9.33203C10.0654 1.33334 10.6654 1.93334 10.6654 2.66668"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10159_3167">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>Copy</button>
+                        </div>
+
+                        <p class="referral-link__desc">Share this link to invite new users.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="referral-link card">
+                        <p class="referral-link__title text-black">Referral Code</p>
+
+                        <div class="referral-link__wrap w-100">
+
+                            <div class="form-group w-100 mb-0">
+                                <input type="text" class="form-control referral-code" placeholder="RAYHAN24">
+                            </div>
+
+                            <button class="referral__button btn btn--black"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g clip-path="url(#clip0_10159_3167)">
+                                        <path
+                                            d="M13.332 5.33334H6.66536C5.92898 5.33334 5.33203 5.9303 5.33203 6.66668V13.3333C5.33203 14.0697 5.92898 14.6667 6.66536 14.6667H13.332C14.0684 14.6667 14.6654 14.0697 14.6654 13.3333V6.66668C14.6654 5.9303 14.0684 5.33334 13.332 5.33334Z"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M2.66536 10.6667C1.93203 10.6667 1.33203 10.0667 1.33203 9.33334V2.66668C1.33203 1.93334 1.93203 1.33334 2.66536 1.33334H9.33203C10.0654 1.33334 10.6654 1.93334 10.6654 2.66668"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10159_3167">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>Copy</button>
+                        </div>
+
+                        <p class="referral-link__desc">Users can enter this code during signup.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div class="dashboard__table__card">
+                        <div class="dh__title">
+                            <h5>Your Referrals</h5>
+
+                        </div>
+                        <div class="dashboard__table">
+                            <table class="table table--responsive--md">
+                                <thead>
+                                    <tr>
+                                        <th>User</th>
+                                        <th>Email</th>
+                                        <th>Joined Date</th>
+                                        <th>KYC Status</th>
+                                        <th>Transactions</th>
+                                        <th>Reward Earned</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td><span class="badge2 badge2--primary">Verified</span></td>
+                                        <td>12</td>
+                                        <td>$5.00</td>
+                                        <td><span class="badge2 badge2--success"><i
+                                                    class="fa-regular fa-circle-check"></i>Active</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td><span class="badge2 badge2--warning">Pending</span></td>
+                                        <td>12</td>
+                                        <td>$5.00</td>
+                                        <td><span class="badge2 badge2--success"><i
+                                                    class="fa-regular fa-circle-check"></i>Active</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td><span class="badge2 badge2--primary">Verified</span></td>
+                                        <td>12</td>
+                                        <td>$5.00</td>
+                                        <td><span class="badge2 badge2--success"><i
+                                                    class="fa-regular fa-circle-check"></i>Active</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td><span class="badge2 badge2--primary">Verified</span></td>
+                                        <td>12</td>
+                                        <td>$5.00</td>
+                                        <td><span class="badge2 badge2--success"><i
+                                                    class="fa-regular fa-circle-check"></i>Active</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td><span class="badge2 badge2--primary">Verified</span></td>
+                                        <td>12</td>
+                                        <td>$5.00</td>
+                                        <td><span class="badge2 badge2--success"><i
+                                                    class="fa-regular fa-circle-check"></i>Active</span></td>
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-4 mb-4">
+                <div class="col-lg-12">
+                    <div class="dashboard__table__card">
+                        <div class="dh__title">
+                            <h5>Detailed Earnings History</h5>
+                        </div>
+                        <div class="dashboard__table">
+                            <table class="table table--responsive--md">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Referral User</th>
+                                        <th>Reward Date</th>
+                                        <th>Amount</th>
+                                        <th>Reward Earned</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td>+$25.00</td>
+                                        <td>$5.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td>+$25.00</td>
+                                        <td>$5.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td>+$25.00</td>
+                                        <td>$5.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td>+$25.00</td>
+                                        <td>$5.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>John D.</td>
+                                        <td>j***n@email.com</td>
+                                        <td>2024-12-15</td>
+                                        <td>+$25.00</td>
+                                        <td>$5.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="referral__text">Showing 5 earnings • Payouts are processed within 3-5 business days after KYC
+                verification</p>
+        </div>
+    </div>
+    <!--==========================  Dashboard Section End  ==========================-->
+    @@include('../partials/_template-bottom.html')

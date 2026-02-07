@@ -3,368 +3,252 @@
 
 <!--==========================  Dashboard Section Start  ==========================-->
 <div class="dashboard">
-    <div class="dashboard__sidebar">
-        <div class="sidebar__close"><i class="las la-times"></i></div>
-        <div class="dashboard__logo">
-            <a href="dashboard.html"><img src="assets/images/logo/logo-white.png" alt="logo"></a>
-        </div>
-        <div class="dashboard__menu">
-            <ul>
-                <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
-                <li class="upload__file__sb"><a href="upload-file.html"><i class="fa-solid fa-cloud-arrow-up"></i>
-                        Upload File</a></li>
-                <li>
-                    <a href="#collapseExample" class="active" data-bs-toggle="collapse" role="button"
-                        aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-file"></i> File
-                        <span class="dropdown__arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-                    <div class="collapse" id="collapseExample">
-                        <div class="sidebar__dropdown">
-                            <ul>
-                                <li><a href="published-files.html" class="active">Published Files</a></li>
-                                <li><a href="reject-files.html">Reject File</a></li>
-                                <li><a href="pending-files.html">Pending File</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="my-download.html"><i class="fa-solid fa-cloud-arrow-down"></i> My Download</a></li>
-                <li><a href="deposit.html"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</a></li>
-                <li><a href="withdraw.html"><i class="fa-solid fa-coins"></i> Withdraw</a></li>
-                <li><a href="transactions.html"><i class="fa-solid fa-list-ul"></i> Transactions</a></li>
-                <li><a href="my-tickets.html"><i class="fa-solid fa-headset"></i> Support Ticket</a></li>
-            </ul>
-        </div>
-    </div>
+    @@include('../components/_dashboard-sidebar.html')
     <div class="dashboard__wrap">
-        <div class="dashboard__header">
-            <div class="search__box">
-                <input type="text" class="form-control" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="dashboard__header__widgets">
-                <div class="upload__file">
-                    <a href="upload-file.html" class="btn btn--base"><i class="fa-solid fa-cloud-arrow-up"></i> Upload
-                        File</a>
-                </div>
-                <div class="dropdown">
-                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="notification__btn">
-                            <i class="las la-bell"></i>
-                            <span class="notification__count">
-                                <span>21</span>
-                            </span>
-                        </span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <div class="notification__wrap">
-                            <div class="notification__header">
-                                <h4>Notifications</h4>
-                                <span class="badge badge--base">12 Unread</span>
-                            </div>
-                            <div class="notification__body">
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                    <span>26 minutes ago</span>
-                                </a>
-                            </div>
-                            <div class="notification__footer">
-                                <a href="#" class="btn btn--sm btn--base w-100">View all</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropdown-toggle d-flex align-items-center gap-2" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="profile__dropdown">
-                            <img src="assets/images/user.jpg" alt="image">
-                            <span>Max Sujak</span>
-                        </span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="profile.html">Profile Setting</a></li>
-                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
-                        <li><a class="dropdown-item" href="two-factor.html">2FA Security</a></li>
-                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
-                    </ul>
-                </div>
-                <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
-            </div>
-        </div>
+        @@include('../components/_dashboard__header.html')
         <div class="dashboard__wrapper">
-            <div class="row">
+            <div class="transactions__heading">
+                <div class="transactions__heading__left">
+                    <div class="form-group position-relative mb-0">
+                        <input type="text" class="form-control" placeholder="Search by Transaction ID / Reference">
+                        <span class="transactions__icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none">
+                                <path d="M14.0008 14L11.1074 11.1067" stroke="currentColor" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                                    stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </div>
+                    <button class="transactions__input__button btn btn--black">Search</button>
+                </div>
+
+                <div class="transactions__heading__right">
+                    <button class="export__button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path d="M8 10V2" stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10"
+                                stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M4.66602 6.66666L7.99935 10L11.3327 6.66666" stroke="currentColor"
+                                stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>Export CSV</button>
+                    <button class="export__button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M10.0013 1.33334H4.0013C3.64768 1.33334 3.30854 1.47381 3.05849 1.72386C2.80844 1.97391 2.66797 2.31305 2.66797 2.66667V13.3333C2.66797 13.687 2.80844 14.0261 3.05849 14.2761C3.30854 14.5262 3.64768 14.6667 4.0013 14.6667H12.0013C12.3549 14.6667 12.6941 14.5262 12.9441 14.2761C13.1942 14.0261 13.3346 13.687 13.3346 13.3333V4.66667L10.0013 1.33334Z"
+                                stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.33203 1.33334V4C9.33203 4.35362 9.47251 4.69276 9.72256 4.94281C9.9726 5.19286 10.3117 5.33334 10.6654 5.33334H13.332"
+                                stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6.66536 6H5.33203" stroke="currentColor" stroke-width="1.33333"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.6654 8.66666H5.33203" stroke="currentColor" stroke-width="1.33333"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.6654 11.3333H5.33203" stroke="currentColor" stroke-width="1.33333"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>Export CSV</button>
+                </div>
+            </div>
+
+            <div class="row mt-4">
                 <div class="col-lg-12">
-                    <div class="card">
-                        <div class="table__topbar">
-                            <h5>Transactions</h5>
-                            <div class="table__topbar__right">
-                                <div class="search__box">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                                <div class="filter__wrap">
-                                    <span class="btn btn--base filter__btn"><i class="fa-solid fa-filter"></i>
-                                        Filter</span>
-                                    <div class="filter__main">
-                                        <div class="row g-3">
-                                            <div class="col-lg-12">
-                                                <div class="text-end">
-                                                    <span class="filter__close"><i class="fa-solid fa-xmark"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="filter__topbar">
-                                                    <h5>Filter</h5>
-                                                    <a href="#">Clear All</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="filter__card">
-                                                    <h5>File Type</h5>
-                                                    <div class="filter__form">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check1">
-                                                                PDF
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check1">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check2">
-                                                                DOCX
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check2">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check3">
-                                                                ZIP
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check3">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check4">
-                                                                RTF
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check4">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check5">
-                                                                Microsoft Word
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check5">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check51">
-                                                                TXT
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check51">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="filter__card">
-                                                    <h5>Category</h5>
-                                                    <div class="filter__form">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check6">
-                                                                All
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check6">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check7">
-                                                                Resume
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check7">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check8">
-                                                                Invoice
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check8">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check9">
-                                                                Ebook
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check9">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check10">
-                                                                Report
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check10">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check11">
-                                                                Legal Form
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check11">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="filter__card">
-                                                    <h5>License Type</h5>
-                                                    <div class="filter__form">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check12">
-                                                                Personal
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check12">
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="filter__check13">
-                                                                Commercial
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="filter__check13">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="filter__card">
-                                                    <h5>Price Range</h5>
-                                                    <div class="filter__range">
-                                                        <div class="range-slider" data-group-type="status"
-                                                            bis_skin_checked="1">
-                                                            <div class="range-slider-box" bis_skin_checked="1">
-                                                                <div class="slider-box" bis_skin_checked="1">
-                                                                    <div class="sliderr" bis_skin_checked="1">
-                                                                        <div class="progresss" bis_skin_checked="1">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="range-input" bis_skin_checked="1">
-                                                                        <input type="range" class="range-min" min="10"
-                                                                            max="10000" value="10" step="100">
-                                                                        <input type="range" class="range-max" min="0"
-                                                                            max="10000" value="10000" step="100">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="price-input d-flex justify-content-between align-items-center g-2"
-                                                                    bis_skin_checked="1">
-                                                                    <h6>$<span class="input-min min_price">10</span>
-                                                                    </h6>
-                                                                    <h6>$<span class="input-max min_price">10000</span>
-                                                                    </h6>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="filter__action">
-                                                    <button type="submit" class="btn btn--base w-100">Apply Now</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="dashboard__table__card">
+
                         <div class="dashboard__table">
                             <table class="table table--responsive--md">
                                 <thead>
                                     <tr>
-                                        <th>Trx</th>
-                                        <th>Transacted</th>
+                                        <th>Date</th>
+                                        <th>Transaction ID</th>
+                                        <th>Type</th>
+                                        <th>Method</th>
                                         <th>Amount</th>
-                                        <th>Detail</th>
+                                        <th>Fee</th>
+                                        <th>Net Amount</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--success"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 2.5V9.5" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M9.5 6L6 9.5L2.5 6" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--danger"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M2.5 6L6 2.5L9.5 6" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M6 9.5V2.5" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--primary"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path
+                                                        d="M10 2.5H2C1.44772 2.5 1 2.94772 1 3.5V8.5C1 9.05228 1.44772 9.5 2 9.5H10C10.5523 9.5 11 9.05228 11 8.5V3.5C11 2.94772 10.5523 2.5 10 2.5Z"
+                                                        stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M1 5H11" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--success"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 2.5V9.5" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M9.5 6L6 9.5L2.5 6" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--success"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 2.5V9.5" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M9.5 6L6 9.5L2.5 6" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--success"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 2.5V9.5" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M9.5 6L6 9.5L2.5 6" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--success"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 2.5V9.5" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M9.5 6L6 9.5L2.5 6" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--success"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 2.5V9.5" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M9.5 6L6 9.5L2.5 6" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
                                     <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
+                                        <td>
+                                            <p class="text-black">Jan 15, 2024</p>
+                                            <p>04:30 PM</p>
+                                        </td>
+                                        <td>TXN-2024-001234</td>
+                                        <td><span class="badge2 badge2--success"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M6 2.5V9.5" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M9.5 6L6 9.5L2.5 6" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>Deposit</span></td>
+                                        <td><span class="method-text">USDT TRC20</span></td>
+                                        <td>$1500.00</td>
+                                        <td>$15.00</td>
+                                        <td>$1485.00</td>
+
                                     </tr>
-                                    <tr>
-                                        <td>#QVHH29B86838</td>
-                                        <td>May 10, 2025 - 05:48 PM</td>
-                                        <td><span class="text--base">1,638.00 USD</span></td>
-                                        <td>Payment Via Manual</td>
-                                    </tr>
+
+
                                 </tbody>
                             </table>
                         </div>
@@ -373,7 +257,5 @@
             </div>
         </div>
     </div>
-</div>
-<!--==========================  Dashboard Section End  ==========================-->
-
-@@include('../partials/_template-bottom.html')
+    <!--==========================  Dashboard Section End  ==========================-->
+    @@include('../partials/_template-bottom.html')

@@ -88,6 +88,10 @@
         background-color: hsl(var(--dashboard-bg));
         border-right: 0;
 
+        @include xxxl-screen {
+          font-size: 14px;
+        }
+
         &:not(:first-child) {
           border-left: 0;
         }
@@ -122,8 +126,6 @@
 
       &:last-child {
         td {
-          border-bottom: 1px solid hsl(var(--black) / 0.08);
-
           &:first-child {
             border-radius: 0px 0 0 6px;
           }
@@ -146,6 +148,10 @@
         max-width: 170px;
         font-size: 16px;
         border-bottom: 1px solid hsl(var(--black) / 0.08);
+
+        @include xxxl-screen {
+          font-size: 14px;
+        }
 
         &::before {
           content: attr(data-label);

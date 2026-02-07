@@ -1,0 +1,256 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+    @@include('../components/_dashboard-sidebar.html')
+    <div class="dashboard__wrap">
+        @@include('../components/_dashboard__header.html')
+        <div class="dashboard__wrapper">
+            <div class="withdraw">
+                <div class="kyc__alart alart-danger">
+                    <div class="kyc__alart__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_10168_6106)">
+                                <path
+                                    d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 7.99999C14.6673 4.3181 11.6825 1.33333 8.00065 1.33333C4.31875 1.33333 1.33398 4.3181 1.33398 7.99999C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
+                                    stroke="hsl(var(--black))" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10 6L6 10" stroke="hsl(var(--black))" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6 6L10 10" stroke="hsl(var(--black))" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_10168_6106">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="kyc__alart__content">
+                        <span class="badge2 badge2--danger alart-text">Not Verified</span>
+                        <h3 class="kyc__alart__title">KYC verification is required before creating virtual cards.</h3>
+                    </div>
+                </div>
+
+                <div class="kyc__rejected__view mb-4">
+                    <span class="kyc__rejected__view__icon"><img src="assets/images/dashboard/danger-icon.png"
+                            alt="image"></span>
+
+                    <p class="kyc__rejected__view__title">Verification Complete!</p>
+                    <p class="kyc__rejected__view__desc">Don't worry! You can correct the issues and resubmit your KYC
+                        documentation. Make sure to address the specific reason mentioned below.</p>
+                </div>
+
+                <div class="rejection__box card mb-4">
+                    <p class="rejection__box__title">Rejection Reason</p>
+
+                    <div class="kyc__alart">
+                        <div class="kyc__alart__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_10168_4145)">
+                                    <path
+                                        d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8C14.6673 4.3181 11.6825 1.33334 8.00065 1.33334C4.31875 1.33334 1.33398 4.3181 1.33398 8C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
+                                        stroke="hsl(var(--black))" stroke-width="1.33333" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M8 5.33334V8" stroke="hsl(var(--black))" stroke-width="1.33333"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8 10.6667H8.00667" stroke="hsl(var(--black))" stroke-width="1.33333"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10168_4145">
+                                        <rect width="16" height="16" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="kyc__alart__content">
+                            <span class="badge2 badge2--warning alart-text">Not Verified</span>
+                            <h3 class="kyc__alart__title">KYC verification is required before creating virtual cards.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="unlocked__title">Common Rejection Reasons</h3>
+                <p class="premium-features">Understanding common issues can help you avoid them in your resubmission:
+                </p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-lg-6">
+                        <div class=" reject__card">
+                            <span class="reject__card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H15.8333C16.7538 17.5 17.5 16.7538 17.5 15.8333V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5Z"
+                                        stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7.50065 9.16665C8.42113 9.16665 9.16732 8.42045 9.16732 7.49998C9.16732 6.57951 8.42113 5.83331 7.50065 5.83331C6.58018 5.83331 5.83398 6.57951 5.83398 7.49998C5.83398 8.42045 6.58018 9.16665 7.50065 9.16665Z"
+                                        stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M17.5 12.5L14.9283 9.92835C14.6158 9.61589 14.1919 9.44037 13.75 9.44037C13.3081 9.44037 12.8842 9.61589 12.5717 9.92835L5 17.5"
+                                        stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+
+                            <div class="reject__card__content">
+                                <h3 class="reject__card__title">Blurry Document</h3>
+                                <p class="reject__card__desc">The document image is not clear enough to verify</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class=" reject__card">
+                            <span class="reject__card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M18.109 15L11.4423 3.33332C11.297 3.07682 11.0862 2.86347 10.8314 2.71504C10.5767 2.56661 10.2872 2.4884 9.99234 2.4884C9.69752 2.4884 9.40797 2.56661 9.15324 2.71504C8.8985 2.86347 8.6877 3.07682 8.54234 3.33332L1.87567 15C1.72874 15.2544 1.6517 15.5432 1.65235 15.8371C1.653 16.1309 1.73132 16.4194 1.87938 16.6732C2.02744 16.927 2.23996 17.1371 2.49542 17.2823C2.75088 17.4275 3.04018 17.5026 3.33401 17.5H16.6673C16.9598 17.4997 17.2469 17.4225 17.5001 17.2761C17.7532 17.1297 17.9634 16.9192 18.1094 16.6659C18.2555 16.4126 18.3324 16.1253 18.3323 15.8329C18.3322 15.5405 18.2552 15.2532 18.109 15Z"
+                                        stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10 7.5V10.8333" stroke="currentColor" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 14.1667H10.0083" stroke="currentColor" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+
+                            <div class="reject__card__content">
+                                <h3 class="reject__card__title">Information Mismatch</h3>
+                                <p class="reject__card__desc">Personal details don't match the document provided</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class=" reject__card">
+                            <span class="reject__card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M6.66602 1.66663V4.99996" stroke="currentColor" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13.334 1.66663V4.99996" stroke="currentColor" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z"
+                                        stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2.5 8.33331H17.5" stroke="currentColor" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+
+                            <div class="reject__card__content">
+                                <h3 class="reject__card__title">Expired ID</h3>
+                                <p class="reject__card__desc">The identity document has already expired</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class=" reject__card">
+                            <span class="reject__card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M12.5007 1.66663H5.00065C4.55862 1.66663 4.1347 1.84222 3.82214 2.15478C3.50958 2.46734 3.33398 2.89127 3.33398 3.33329V16.6666C3.33398 17.1087 3.50958 17.5326 3.82214 17.8451C4.1347 18.1577 4.55862 18.3333 5.00065 18.3333H15.0007C15.4427 18.3333 15.8666 18.1577 16.1792 17.8451C16.4917 17.5326 16.6673 17.1087 16.6673 16.6666V5.83329L12.5007 1.66663Z"
+                                        stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M11.666 1.66663V4.99996C11.666 5.44199 11.8416 5.86591 12.1542 6.17847C12.4667 6.49103 12.8907 6.66663 13.3327 6.66663H16.666"
+                                        stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.0827 10.4166L7.91602 14.5833" stroke="currentColor"
+                                        stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.91602 10.4166L12.0827 14.5833" stroke="currentColor"
+                                        stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+
+                            <div class="reject__card__content">
+                                <h3 class="reject__card__title">Invalid Document</h3>
+                                <p class="reject__card__desc">Document type is not accepted or incomplete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="tips__box">
+                            <p class="tips__box__title">Tips for Successful Resubmission</p>
+
+                            <ul>
+                                <li> <strong>Use good lighting:</strong> Take photos in a well-lit area without shadows
+                                    or glare</li>
+                                <li> <strong>Ensure clarity:</strong>All text and details on your document must be
+                                    clearly readable</li>
+                                <li> <strong>Check expiry dates:</strong>Make sure your document is still valid and not
+                                    expired</li>
+                                <li> <strong>Match information:</strong> Ensure all personal details exactly match your
+                                    document</li>
+                                <li> <strong>File format:</strong>Upload images in JPG or PNG format, max size 5MB</li>
+                                <li> <strong>Selfie quality:</strong> Hold your document next to your face, both must be
+                                    clearly visible</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="kyc__details card mb-4">
+                    <div class="kyc__wrap">
+                        <p class="kyc__details__title text-black">Personal Details</p>
+                    </div>
+
+                    <div class="kyc__details__form">
+                        <div class="row ">
+                            <div class="col-lg-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <p class="kyc__title">John Doe</p>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="name" class="form-label">Document Type</label>
+                                <p class="kyc__title">passport</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">Country</label>
+                                <p class="kyc__title">United States</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">Submission Date</label>
+                                <p class="kyc__title">January 3, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-lg-12">
+                        <div class="cta-banner">
+                            <div class="cta-banner__content">
+                                <p class="cta-banner__title">Ready to Resubmit?</p>
+                                <p class="cta-banner__desc">Please correct the issues mentioned above and submit your
+                                    KYC documentation again.</p>
+                            </div>
+                            <button class="cta-banner__button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M2 8C2 9.18669 2.35189 10.3467 3.01118 11.3334C3.67047 12.3201 4.60754 13.0892 5.7039 13.5433C6.80026 13.9974 8.00666 14.1162 9.17054 13.8847C10.3344 13.6532 11.4035 13.0818 12.2426 12.2426C13.0818 11.4035 13.6532 10.3344 13.8847 9.17054C14.1162 8.00666 13.9974 6.80026 13.5433 5.7039C13.0892 4.60754 12.3201 3.67047 11.3334 3.01118C10.3467 2.35189 9.18669 2 8 2C6.32263 2.00631 4.71265 2.66082 3.50667 3.82667L2 5.33333"
+                                        stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2 2V5.33333H5.33333" stroke="currentColor" stroke-width="1.33333"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>Resubmit KYC
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <span class="ready-alart">Need help? Contact our support team at <a href="#">support@example.com</a>if
+                    you have questions
+                    about the rejection or need assistance with resubmission.</span>
+            </div>
+        </div>
+    </div>
+    <!--==========================  Dashboard Section End  ==========================-->
+    @@include('../partials/_template-bottom.html')

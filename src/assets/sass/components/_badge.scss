@@ -46,8 +46,11 @@
 .badge2 {
   font-size: 16px;
   font-weight: 400;
-  padding: 4px 32px;
+  padding: 4px 8px;
   border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 
   &--base {
     background-color: hsl(var(--base) / 0.1);

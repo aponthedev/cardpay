@@ -1,0 +1,92 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+    @@include('../components/_dashboard-sidebar.html')
+    <div class="dashboard__wrap">
+        @@include('../components/_dashboard__header.html')
+        <div class="dashboard__wrapper">
+            <div class="withdraw two-factor__wrapper">
+                <div class="qr-code__thumb">
+                    <img src="assets/images/dashboard/qr-code.png" alt="image">
+                </div>
+                <div class="two-factor__input d-flex gap-3">
+
+                    <div class="number">
+                        1
+                    </div>
+
+                    <div class="copy__input w-100">
+                        <p class="copy__input__title">Manual secret key:</p>
+                        <div class="referral-link__wrap w-100">
+
+                            <div class="form-group w-100 mb-0">
+                                <input type="text" class="form-control"
+                                    placeholder="https://app.fintech.com/signup?ref=RAYHAN24">
+                            </div>
+
+                            <button class="referral__button btn btn--black"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g clip-path="url(#clip0_10159_3167)">
+                                        <path
+                                            d="M13.332 5.33334H6.66536C5.92898 5.33334 5.33203 5.9303 5.33203 6.66668V13.3333C5.33203 14.0697 5.92898 14.6667 6.66536 14.6667H13.332C14.0684 14.6667 14.6654 14.0697 14.6654 13.3333V6.66668C14.6654 5.9303 14.0684 5.33334 13.332 5.33334Z"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M2.66536 10.6667C1.93203 10.6667 1.33203 10.0667 1.33203 9.33334V2.66668C1.33203 1.93334 1.93203 1.33334 2.66536 1.33334H9.33203C10.0654 1.33334 10.6654 1.93334 10.6654 2.66668"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10159_3167">
+                                            <rect width="16" height="16" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="two-factor__figure">
+                    <div class="number">2</div>
+                    <p class="copy__input__title">Enter the 6 figure confirmation code shown on the app:</p>
+                </div>
+                <form class="account-form">
+                    <div class="verification-wrapper">
+                        <div class="otp-inputs justify-content-center">
+                            <input type="text" maxlength="1" class="otp-input" placeholder="8" />
+                            <input type="text" maxlength="1" class="otp-input" placeholder="8" />
+                            <input type="text" maxlength="1" class="otp-input" placeholder="8" />
+                            <input type="text" maxlength="1" class="otp-input" placeholder="8" />
+                            <input type="text" maxlength="1" class="otp-input" placeholder="8" />
+                            <input type="text" maxlength="1" class="otp-input" placeholder="8" />
+                        </div>
+                    </div>
+                    <p class="copy__input__title">Scan this QR code using Google Authenticator or Authy.</p>
+                    <button class="two-factor__button btn btn--black w-100">Next: Verify Code<svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3.33594 8H12.6693" stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8 3.33331L12.6667 7.99998L8 12.6666" stroke="white" stroke-width="1.33333"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+
+                </form>
+                <p class="two-factor__point">Where 2FA is Required</p>
+                <ul class="two-foctor">
+                    <li><span class="list__icon"><i class="fa-solid fa-check"></i></span>
+                        <p>Login</p> <span class="two-foctor__badge">Required</span>
+                    </li>
+                    <li><span class="list__icon"><i class="fa-solid fa-check"></i></span>
+                        <p>Withdraw request</p> <span class="two-foctor__badge">Required</span>
+                    </li>
+                    <li><span class="list__icon"><i class="fa-solid fa-check"></i></span>
+                        <p>Security settings change</p> <span class="two-foctor__badge">Required</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==========================  Dashboard Section End  ==========================-->
+    @@include('../partials/_template-bottom.html')

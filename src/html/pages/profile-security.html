@@ -1,0 +1,114 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+    @@include('../components/_dashboard-sidebar.html')
+    <div class="dashboard__wrap">
+        @@include('../components/_dashboard__header.html')
+        <div class="dashboard__wrapper">
+            <div class="my-profile">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="profile__menu">
+                            <ul>
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="notifications.html">Notifications</a></li>
+                                <li><a href="language.html">Language</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="profile__items mb-4">
+
+
+
+                            <div class="profile__form mt-4">
+
+
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <p class="text-black">Password</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <label class="form-label">Current Password</label>
+                                        <div class="form-group">
+                                            <div class="password__field">
+                                                <input type="password" name="password"
+                                                    class="form-control password-input"
+                                                    placeholder="• • • • • • • • • • • •" required="">
+
+                                                <div class="password-show-hide">
+                                                    <i class="fa-solid fa-eye open-eye-icon"></i>
+                                                    <i class="fa-solid fa-eye-slash close-eye-icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="form-label">New Password</label>
+                                        <div class="form-group">
+                                            <div class="password__field">
+                                                <input type="password" name="password"
+                                                    class="form-control password-input"
+                                                    placeholder="• • • • • • • • • • • •" required="">
+
+                                                <div class="password-show-hide">
+                                                    <i class="fa-solid fa-eye open-eye-icon"></i>
+                                                    <i class="fa-solid fa-eye-slash close-eye-icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="form-label">Confirm Password</label>
+                                        <div class="form-group">
+                                            <div class="password__field">
+                                                <input type="password" name="password"
+                                                    class="form-control password-input"
+                                                    placeholder="• • • • • • • • • • • •" required="">
+
+                                                <div class="password-show-hide">
+                                                    <i class="fa-solid fa-eye open-eye-icon"></i>
+                                                    <i class="fa-solid fa-eye-slash close-eye-icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button class="btn btn--base w-100 kyc__button">Save Password</button>
+                                        <div class="alert alert--base mt-4">
+                                            <span class="alert__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="20" viewBox="0 0 20 20" fill="none">
+                                                    <path
+                                                        d="M16.6693 10.8333C16.6693 15 13.7526 17.0833 10.2859 18.2916C10.1044 18.3532 9.90722 18.3502 9.7276 18.2833C6.2526 17.0833 3.33594 15 3.33594 10.8333V4.99997C3.33594 4.77895 3.42374 4.56699 3.58002 4.41071C3.7363 4.25443 3.94826 4.16663 4.16927 4.16663C5.83594 4.16663 7.91927 3.16663 9.36927 1.89997C9.54582 1.74913 9.7704 1.66626 10.0026 1.66626C10.2348 1.66626 10.4594 1.74913 10.6359 1.89997C12.0943 3.17497 14.1693 4.16663 15.8359 4.16663C16.057 4.16663 16.2689 4.25443 16.4252 4.41071C16.5815 4.56699 16.6693 4.77895 16.6693 4.99997V10.8333Z"
+                                                        stroke="currentColor" stroke-width="1.66667"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.5 10L9.16667 11.6667L12.5 8.33334" stroke="currentColor"
+                                                        stroke-width="1.66667" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+
+                                            <div class="alert__content">
+                                                <h3 class="alert__title mb-0">Use a strong password with at least 8
+                                                    characters.
+                                                </h3>
+                                                <p class="alert__desc">Include uppercase, lowercase, numbers, and
+                                                    special characters for better security.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==========================  Dashboard Section End  ==========================-->
+    @@include('../partials/_template-bottom.html')

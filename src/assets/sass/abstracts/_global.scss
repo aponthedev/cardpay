@@ -25,6 +25,10 @@
   border-radius: 24px !important;
   padding: 24px !important;
   border: 1px solid hsl(var(--border-color)) !important;
+
+  @include xsm-screen {
+    padding: 12px !important;
+  }
 }
 
 /* ======================  Section Heading Start  ======================*/
@@ -240,7 +244,6 @@
   transition: 0.3s;
 
   @include sm-screen {
-    right: auto;
     width: 300px;
   }
 
@@ -326,3 +329,23 @@
   padding: 22px 18px 18px 18px;
 }
 /* ======================  filter End  ======================*/
+
+.scroll__table {
+  width: 100%;
+  overflow-x: auto; /* horizontal scroll */
+  overflow-y: hidden;
+}
+
+/* Smooth scrolling (optional) */
+.scroll__table ::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll__table ::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.scroll__table ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

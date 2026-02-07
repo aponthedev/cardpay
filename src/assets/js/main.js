@@ -23,6 +23,84 @@
   });
   //============================ Scroll To Top Js End ========================
 
+  // otp input ==========================
+  const $inputs = $(".otp-input");
+
+  $inputs.on("input", function () {
+    let $this = $(this);
+    $this.val($this.val().replace(/\D/g, ""));
+    if ($this.val().length === 1) {
+      let index = $inputs.index(this);
+      let next = $inputs.eq(index + 1);
+      if (next.length) next.focus();
+    }
+  });
+  $inputs.on("keydown", function (e) {
+    let index = $inputs.index(this);
+    if (index === 0) return;
+
+    if (e.key === "Backspace" && $(this).val() === "") {
+      let prev = $inputs.eq(index - 1);
+      if (prev.length) prev.focus();
+    }
+  });
+  $inputs.on("paste", function (e) {
+    e.preventDefault();
+    let pasteData = (e.originalEvent || e).clipboardData
+      .getData("text")
+      .replace(/\D/g, "");
+
+    pasteData.split("").forEach((num, i) => {
+      if (i < $inputs.length) {
+        $inputs.eq(i).val(num);
+      }
+    });
+
+    // Boundary check for focus
+    let lastIndex = pasteData.length - 1;
+    if (lastIndex < $inputs.length && lastIndex >= 0) {
+      $inputs.eq(lastIndex).focus();
+    }
+  });
+  // otp input ==========================
+
+  //============== image uplode==============
+
+  //============== image uplode==============
+
+  // ========================== js gsap ========================== /
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const items = document.querySelectorAll(".banner__content > *");
+
+    gsap.from(items, {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".banner__content",
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.from(".banner__thumb img", {
+      y: 50,
+      opacity: 0,
+      scale: 0.5,
+      duration: 1.9,
+      delay: 0.3,
+      ease: "power5.out",
+    });
+  });
+
+  // ========================== js gsap ========================== /
+
   //====================== testimonial card js ======================//
   $(document).on("click", ".testimonial__card__top-button", function () {
     const $card = $(this).closest(".testimonial__card__content");
@@ -41,16 +119,34 @@
 
   // ================card slider================
   var swiper = new Swiper(".mycardSwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 16,
     loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+
+    // ✅ Responsive Breakpoints
+    breakpoints: {
+      // Mobile (0px - 575px)
+      0: {
+        slidesPerView: 1,
+      },
+
+      // Tablet (768px+)
+      768: {
+        slidesPerView: 2,
+      },
+
+      // Large Screen (1200px+)
+      1399: {
+        slidesPerView: 1,
+      },
     },
   });
 
@@ -114,6 +210,17 @@
     return bg;
   });
   // ========================== Add Attribute For Bg Image Js End =====================
+
+  //============================ Sidebar Js Start ============================
+  $(document).on("click", ".sidebar__open", function () {
+    $(".dashboard__sidebar, .overlay").addClass("active");
+  });
+
+  $(document).on("click", ".sidebar__close, .overlay", function () {
+    $(".dashboard__sidebar, .overlay").removeClass("active");
+  });
+
+  //============================ Sidebar Js End ==============================
 
   // ========================= Odometer Js Start ===================
   if ($(".odometer").length > 0) {

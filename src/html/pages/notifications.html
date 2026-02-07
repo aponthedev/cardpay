@@ -1,0 +1,87 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+    @@include('../components/_dashboard-sidebar.html')
+    <div class="dashboard__wrap">
+        @@include('../components/_dashboard__header.html')
+        <div class="dashboard__wrapper">
+            <div class="my-profile">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="profile__menu">
+                            <ul>
+                                <li><a class="active" href="#">My Profile</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="notifications.html">Notifications</a></li>
+                                <li><a href="language.html">Language</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="notifications profile__form ">
+                            <p class="text-black mb-3">Notifications</p>
+
+                            <div class="notifications__items">
+                                <div class="notifications__items__content">
+                                    <h3 class="notifications__items__title">Login Alerts</h3>
+                                    <p class="notifications__items__desc">Get notified when someone logs into your
+                                        account</p>
+                                </div>
+
+                                <div class="notifications__item__switch">
+                                    <div class="form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="switchCheckDefault">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notifications__items">
+                                <div class="notifications__items__content">
+                                    <h3 class="notifications__items__title">Withdrawal Notifications</h3>
+                                    <p class="notifications__items__desc">Alerts for withdrawal requests and completions
+                                    </p>
+                                </div>
+
+                                <div class="notifications__item__switch">
+                                    <div class="form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="switchCheckDefault">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notifications__items">
+                                <div class="notifications__items__content">
+                                    <h3 class="notifications__items__title">Transaction Updates</h3>
+                                    <p class="notifications__items__desc">Real-time updates on all transactions</p>
+                                </div>
+
+                                <div class="notifications__item__switch">
+                                    <div class="form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="switchCheckDefault">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notifications__items">
+                                <div class="notifications__items__content">
+                                    <h3 class="notifications__items__title">Promotional Emails</h3>
+                                    <p class="notifications__items__desc">Special offers and product updates</p>
+                                </div>
+
+                                <div class="notifications__item__switch">
+                                    <div class="form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="switchCheckDefault">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==========================  Dashboard Section End  ==========================-->
+    @@include('../partials/_template-bottom.html')
