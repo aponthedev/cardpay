@@ -330,22 +330,35 @@
 }
 /* ======================  filter End  ======================*/
 
+/* Responsive Scroll Table */
+
 .scroll__table {
   width: 100%;
-  overflow-x: auto; /* horizontal scroll */
+  overflow-x: auto;
   overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  @include lg-screen {
+    overflow-x: visible;
+  }
+}
+.scroll__table table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  @include md-screen {
+    min-width: 100%;
+  }
+}
+.scroll__table::-webkit-scrollbar-track {
+  background: hsl(var(--black) / 0.1);
 }
 
-/* Smooth scrolling (optional) */
-.scroll__table ::-webkit-scrollbar {
-  height: 6px;
+// gsap animation js
+.brand .swiper-slide img {
+  transition: all 0.3s ease;
 }
 
-.scroll__table ::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 10px;
+.brand .swiper-slide:hover img {
+  transform: scale(1.1);
 }
-
-.scroll__table ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+// gsap animation js

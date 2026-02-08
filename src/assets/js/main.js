@@ -99,6 +99,78 @@
     });
   });
 
+  // brand gsap
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Title Animation
+    gsap.from(".brand-title", {
+      scrollTrigger: {
+        trigger: ".brand",
+        start: "top 80%",
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+
+    gsap.from(".brand-slider", {
+      scrollTrigger: {
+        trigger: ".brand",
+        start: "top 75%",
+      },
+      scale: 0.9,
+      opacity: 0,
+      duration: 1.2,
+      delay: 0.2,
+      ease: "power3.out",
+    });
+
+    gsap.from(".brand .swiper-slide", {
+      scrollTrigger: {
+        trigger: ".brand",
+        start: "top 70%",
+      },
+      y: 30,
+      opacity: 0,
+      stagger: 0.1,
+      duration: 0.8,
+      ease: "power2.out",
+    });
+  });
+  // brand gsap
+
+  // cta
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate left image
+    gsap.from(".cta__wrapper__left", {
+      x: -100, // start from left
+      opacity: 0, // fade in
+      duration: 1.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".cta__wrapper__left",
+        start: "top 80%", // when top of image hits 80% of viewport
+      },
+    });
+
+    // Animate right image
+    gsap.from(".cta__wrapper__right", {
+      x: 100, // start from right
+      opacity: 0, // fade in
+      duration: 1.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".cta__wrapper__right",
+        start: "top 80%",
+      },
+    });
+  });
+  // cta
+
   // ========================== js gsap ========================== /
 
   //====================== testimonial card js ======================//
@@ -131,19 +203,15 @@
       clickable: true,
     },
 
-    // ✅ Responsive Breakpoints
     breakpoints: {
-      // Mobile (0px - 575px)
       0: {
         slidesPerView: 1,
       },
 
-      // Tablet (768px+)
       768: {
         slidesPerView: 2,
       },
 
-      // Large Screen (1200px+)
       1399: {
         slidesPerView: 1,
       },
@@ -332,19 +400,41 @@
   //============================ Filter Js End ==============================
 
   // ========================= Scroll Reveal Js Start ===================
+
+  // ========================= Scroll Reveal Js Start ===================
   const sr = ScrollReveal({
     origin: "top",
     distance: "60px",
     duration: 1500,
     delay: 100,
-    reset: true,
+    reset: false,
   });
 
-  sr.reveal(".class__name", {
-    delay: 60,
-    interval: 100,
-    origin: "bottom",
-  });
+  sr.reveal(
+    ".section-heading, .manage-payments__thumb, .company-values__thumb,.about-us__left ,.contact__form",
+    {
+      delay: 100,
+      origin: "top",
+    },
+  );
+
+  sr.reveal(
+    ".how-it-works__buttom, .services__tab, .testimonialSwiper, .manage-payments__content, .about__wrapper__thumb,.about-us__content ,.contact__info",
+    {
+      delay: 100,
+      origin: "bottom",
+    },
+  );
+
+  sr.reveal(
+    ".payments__card, .payments__card2, .how-it-works__item, .features__card__item ,.news__card, .stats__item, .company-values__item, .accordion-item, .contact__info__item, .security__item__wrap",
+    {
+      delay: 100,
+      interval: 100,
+      origin: "bottom",
+    },
+  );
+  // ========================= Scroll Reveal Js End ===================
   // ========================= Scroll Reveal Js End ===================
 
   // ========================== Table Data Label Js Start =====================

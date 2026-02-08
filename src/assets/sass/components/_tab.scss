@@ -16,7 +16,7 @@
     .nav-link {
       color: hsl(var(--heading-color));
       padding: 16px;
-      background-color: hsl(var(--black) / 0.1) !important;
+      background-color: hsl(var(--white)) !important;
       border-radius: 16px;
       transition: 0.4s;
       border: 1px solid hsl(var(--border-color)) !important;
@@ -36,22 +36,14 @@
         font-size: 14px;
       }
 
+      &:hover,
       &.active {
-        color: hsl(var(--black)) !important;
+        color: hsl(var(--black));
         background-color: hsl(var(--white)) !important;
         border: 1px solid hsl(var(--base)) !important;
         box-shadow: 0px 4px 10px 0 hsl(var(--black) / 0.1);
-
-        .nav-link__icon svg {
-          stroke: hsl(var(--base)) !important;
-        }
-      }
-
-      &:hover {
-        color: hsl(var(--black)) !important;
-
-        .nav-link__icon svg {
-          stroke: hsl(var(--base)) !important;
+        span {
+          color: hsl(var(--base));
         }
       }
     }

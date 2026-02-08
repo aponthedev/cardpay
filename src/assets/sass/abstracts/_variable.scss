@@ -31,11 +31,10 @@
 
   //Border Color
   @include colorVariable(--border-color, #d6dadf, 50);
-  //Border Color
-  @include colorVariable(--border-color, #f4f5f6, 50);
 
   // Section Background
   @include colorVariable(--dashboard-bg, #f4f5f6);
+  @include colorVariable(--section-bg, #f8f3fd);
 
   /* ================================ Box Shadow Start =============================== */
   --box-shadow: 0px 2px 15px hsl(var(--black) / 0.05);
