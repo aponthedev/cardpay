@@ -23,10 +23,6 @@
   });
   //============================ Scroll To Top Js End ========================
 
-  // gsap
-
-  // gsap
-
   // otp input ==========================
   const $inputs = $(".otp-input");
 
@@ -149,22 +145,20 @@
   document.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animate left image
     gsap.from(".cta__wrapper__left", {
-      x: -100, // start from left
-      opacity: 0, // fade in
+      x: -100,
+      opacity: 0,
       duration: 1.2,
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".cta__wrapper__left",
-        start: "top 80%", // when top of image hits 80% of viewport
+        start: "top 80%",
       },
     });
 
-    // Animate right image
     gsap.from(".cta__wrapper__right", {
-      x: 100, // start from right
-      opacity: 0, // fade in
+      x: 100,
+      opacity: 0,
       duration: 1.2,
       ease: "power3.out",
       scrollTrigger: {
@@ -198,15 +192,14 @@
     slidesPerView: 1,
     spaceBetween: 16,
     loop: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-
     breakpoints: {
       0: {
         slidesPerView: 1,

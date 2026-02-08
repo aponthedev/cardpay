@@ -5751,6 +5751,10 @@ input[type=number] {
     opacity: 1;
 }
 
+.email-check__icon {
+    color: hsl(Var(--base));
+}
+
 .dashboard__header {
     display: flex;
     align-items: center;
