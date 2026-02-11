@@ -132,6 +132,10 @@
     font-weight: 500;
     margin-bottom: 0;
 
+    @include xl-screen {
+      font-size: 40px;
+    }
+
     @include sm-screen {
       font-size: 35px;
     }

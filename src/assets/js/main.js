@@ -323,10 +323,10 @@
     freeMode: true,
     loop: true,
 
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
 
     pagination: {
       el: ".swiper-pagination",
@@ -340,7 +340,11 @@
       },
 
       576: {
-        slidesPerView: 1,
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
         spaceBetween: 20,
       },
 

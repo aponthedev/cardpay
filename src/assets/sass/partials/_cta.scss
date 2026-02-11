@@ -32,7 +32,7 @@
       top: 0;
       z-index: -1;
 
-      @include sm-screen {
+      @include md-screen {
         display: none;
       }
     }
@@ -43,7 +43,7 @@
       left: 24px;
       z-index: 1;
 
-      @include sm-screen {
+      @include md-screen {
         display: none;
       }
     }

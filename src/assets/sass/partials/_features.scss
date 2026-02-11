@@ -28,6 +28,7 @@
     @include md-screen {
       grid-template-columns: repeat(1, 1fr);
     }
+
     &__item {
       background-color: hsl(var(--black) / 0.01);
       padding: 24px;
@@ -71,7 +72,12 @@
       transition: 0.3s;
       width: 100%;
 
+      img {
+        width: 100%;
+      }
+
       svg {
+        width: 100%;
         @include sm-screen {
           max-width: 100%;
           width: 100%;
@@ -86,6 +92,10 @@
       }
 
       svg {
+        @include md-screen {
+          height: 40px;
+          width: 40px;
+        }
         @include xsm-screen {
           height: 30px;
           width: 30px;
@@ -99,7 +109,7 @@
       color: hsl(var(--body-color));
       margin-bottom: 16px;
 
-      @include md-screen {
+      @include xl-screen {
         font-size: 22px;
         margin-bottom: 8px;
       }

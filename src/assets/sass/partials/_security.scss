@@ -99,7 +99,7 @@
         margin-bottom: 10px;
       }
 
-      @include xsm-screen {
+      @include md-screen {
         height: 36px;
         width: 36px;
       }
@@ -110,8 +110,9 @@
       font-weight: 700;
       color: hsl(var(--body-color));
 
-      @include sm-screen {
+      @include md-screen {
         font-size: 20px;
+        margin-bottom: 2px;
       }
 
       @include xsm-screen {
@@ -122,7 +123,7 @@
     &__desc {
       font-size: 20px;
       font-weight: 400;
-      @include sm-screen {
+      @include md-screen {
         font-size: 16px;
       }
     }

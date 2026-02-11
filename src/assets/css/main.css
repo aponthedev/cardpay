@@ -2807,19 +2807,12 @@ label.required:after {
     border: 1px solid hsl(var(--border-color));
     color: hsl(var(--black));
     line-height: 1;
-    padding-left: 45px;
-}
-
-@media screen and (max-width: 767px) {
-    .form-control {
-        padding: 16px 18px;
-        padding-left: 45px;
-    }
 }
 
 @media screen and (max-width: 424px) {
     .form-control {
         border-radius: 10px;
+        padding: 12px;
     }
 }
 
@@ -3709,7 +3702,7 @@ input[type=number] {
     color: hsl(var(--black));
     background-color: hsl(var(--white)) !important;
     border: 1px solid hsl(var(--base)) !important;
-    box-shadow: 0px 4px 10px 0 hsl(var(--black)/0.1);
+    box-shadow: 0 108px 30px 0 hsl(var(--black)/0), 0 69px 28px 0 hsl(var(--black)/0.01), 0 39px 23px 0 hsl(var(--black)/0.05), 0 17px 17px 0 hsl(var(--black)/0.09), 0 4px 10px 0 hsl(var(--black)/0.01);
 }
 
 .custom--tab .nav-item .nav-link:hover span, .custom--tab .nav-item .nav-link.active span {
@@ -4968,6 +4961,12 @@ input[type=number] {
     gap: 6px;
 }
 
+@media screen and (max-width: 424px) {
+    .blog__details__content h1 {
+        font-size: 18px;
+    }
+}
+
 .blog__details__content h1 span img {
     margin-bottom: 0;
 }
@@ -5117,6 +5116,12 @@ input[type=number] {
     border-right: 1px solid hsl(var(--border-color));
 }
 
+@media screen and (max-width: 991px) {
+    .blog__details__wrapper {
+        padding: 72px 16px;
+    }
+}
+
 .blog__sidebar__content__title {
     font-size: 64px;
     font-weight: 500;
@@ -5124,9 +5129,34 @@ input[type=number] {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1399px) {
+    .blog__sidebar__content__title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .blog__sidebar__content__title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .blog__sidebar__content__title {
+        font-size: 20px;
+    }
+}
+
 .blog__user__wrapper {
     padding-top: 50px;
     padding-bottom: 100px;
+}
+
+@media screen and (max-width: 575px) {
+    .blog__user__wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .blog__user {
@@ -5180,6 +5210,17 @@ input[type=number] {
     margin-bottom: 20px;
 }
 
+.table__contents__item a:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 424px) {
+    .table__contents__item a {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
 .table__contents__item a:hover {
     color: hsl(var(--black));
 }
@@ -5221,6 +5262,12 @@ input[type=number] {
     font-weight: 400;
     color: hsl(var(--body-color));
     margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1399px) {
+    .get__in__desc {
+        margin-bottom: 30px;
+    }
 }
 
 .pance__card {
@@ -6547,6 +6594,20 @@ input[type=number] {
         padding-right: 80px;
         width: 100% !important;
     }
+}
+
+@media screen and (max-width: 424px) {
+    .mycardSwiper {
+        padding-right: unset;
+        width: 100% !important;
+    }
+}
+
+.card-holder__info__title {
+    font-size: 16px;
+    color: hsl(var(--black));
+    font-weight: 500;
+    padding-top: 20px;
 }
 
 .mycardSwiper .swiper-slide img {
@@ -8600,7 +8661,7 @@ input[type=number] {
     border: 1px solid hsl(var(--border-color));
     border-radius: 12px;
     background: hsl(var(--white));
-    color: hsl(var(--body-color));
+    color: hsl(var(--black));
     outline: none;
     -webkit-transition: 0.2s;
     transition: 0.2s;
@@ -8628,7 +8689,7 @@ input[type=number] {
 }
 
 .otp-inputs .otp-input::placeholder {
-    color: hsl(var(--black)/0.2);
+    color: hsl(var(--black)/0.4);
     font-weight: 400;
 }
 
@@ -9082,7 +9143,6 @@ input[type=number] {
 .profile-upload {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .profile-img {
@@ -9122,6 +9182,10 @@ input[type=number] {
 .camera-btn:hover {
     background-color: hsl(var(--base));
     color: hsl(var(--white));
+}
+
+.withdraw .custom__input {
+    height: 56px;
 }
 
 /* ======================  Profile Section Start  ======================*/
@@ -9490,7 +9554,7 @@ input[type=number] {
     }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 991px) {
     .security__item__icon svg {
         height: 36px;
         width: 36px;
@@ -9503,9 +9567,10 @@ input[type=number] {
     color: hsl(var(--body-color));
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .security__item__title {
         font-size: 20px;
+        margin-bottom: 2px;
     }
 }
 
@@ -9520,7 +9585,7 @@ input[type=number] {
     font-weight: 400;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .security__item__desc {
         font-size: 16px;
     }
@@ -9718,6 +9783,14 @@ input[type=number] {
     width: 100%;
 }
 
+.features__card__bg img {
+    width: 100%;
+}
+
+.features__card__bg svg {
+    width: 100%;
+}
+
 @media screen and (max-width: 767px) {
     .features__card__bg svg {
         max-width: 100%;
@@ -9735,6 +9808,13 @@ input[type=number] {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .features__card__icon svg {
+        height: 40px;
+        width: 40px;
+    }
+}
+
 @media screen and (max-width: 424px) {
     .features__card__icon svg {
         height: 30px;
@@ -9749,7 +9829,7 @@ input[type=number] {
     margin-bottom: 16px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1399px) {
     .features__card__title {
         font-size: 22px;
         margin-bottom: 8px;
@@ -9935,6 +10015,18 @@ input[type=number] {
     z-index: 2;
 }
 
+@media screen and (max-width: 1399px) {
+    .payments__card__bg {
+        max-width: 138px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .payments__card__bg {
+        max-width: 194px;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .payments__card__bg img {
         width: 170px;
@@ -9993,6 +10085,12 @@ input[type=number] {
     overflow: hidden;
 }
 
+@media screen and (max-width: 991px) {
+    .payments__price {
+        margin-bottom: 64px;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .payments__price {
         margin-bottom: 24px;
@@ -10042,6 +10140,12 @@ input[type=number] {
     margin-bottom: 163px;
 }
 
+@media screen and (max-width: 991px) {
+    .payments__price__desc {
+        margin-bottom: 36px;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .payments__price__desc {
         margin-bottom: 36px;
@@ -10086,6 +10190,12 @@ input[type=number] {
     padding: 100px 110px;
     border-left: 1px solid hsl(var(--border-color));
     border-right: 1px solid hsl(var(--border-color));
+}
+
+@media screen and (max-width: 991px) {
+    .how-it-works__wrapper {
+        padding: 40px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -10197,6 +10307,12 @@ input[type=number] {
     margin-left: 16px;
 }
 
+@media screen and (max-width: 991px) {
+    .how-it-works__button {
+        padding: 12px;
+    }
+}
+
 @media screen and (max-width: 424px) {
     .how-it-works__button svg {
         height: 24px;
@@ -10306,6 +10422,22 @@ input[type=number] {
 }
 
 @media screen and (max-width: 575px) {
+    .testimonial__card {
+        height: 504px;
+        width: 369px;
+        object-fit: cover;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .testimonial__card {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
     .testimonial__card__top-button svg {
         height: 30px;
         width: 30px;
@@ -10331,6 +10463,12 @@ input[type=number] {
     z-index: 2;
     padding: 36px;
     width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .testimonial__card__content {
+        padding: 16px;
+    }
 }
 
 .testimonial__card__thumb {
@@ -10363,6 +10501,12 @@ input[type=number] {
     margin-bottom: 24px;
 }
 
+@media screen and (max-width: 767px) {
+    .testimonial__card__top {
+        margin-bottom: 8px;
+    }
+}
+
 .testimonial__card__name {
     font-size: 22px;
     font-weight: 700;
@@ -10372,7 +10516,7 @@ input[type=number] {
 
 @media screen and (max-width: 575px) {
     .testimonial__card__name {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -10394,6 +10538,12 @@ input[type=number] {
     margin-bottom: 16px;
     color: hsl(var(--white));
     transition: 0.3s;
+}
+
+@media screen and (max-width: 991px) {
+    .testimonial__card__desc {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -10649,7 +10799,7 @@ input[type=number] {
     z-index: -1;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .cta__wrapper__left {
         display: none;
     }
@@ -10662,7 +10812,7 @@ input[type=number] {
     z-index: 1;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .cta__wrapper__right {
         display: none;
     }
@@ -11316,13 +11466,6 @@ input[type=number] {
 }
 
 /* ======================  Contact Section End  ======================*/
-.input__icon {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translate(-50%, -50%);
-}
-
 .form-shot .input__icon {
     left: 26px !important;
 }
@@ -11341,6 +11484,39 @@ input[type=number] {
     .contact .section-heading {
         flex-wrap: wrap;
     }
+}
+
+.custom__input .form-control {
+    background-color: transparent;
+    border: none;
+    padding: 2px;
+}
+
+.custom__input {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: 1px solid hsl(var(--border-color));
+    height: 68px;
+    padding: 10px;
+    gap: 8px;
+    background-color: hsl(var(--white));
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 575px) {
+    .custom__input {
+        height: 50px;
+        border-radius: 12px;
+    }
+}
+
+.contact__heading__text {
+    color: hsl(var(--black));
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
 /* ======================  Account Section Start  ======================*/
@@ -11486,6 +11662,12 @@ input[type=number] {
     font-size: 64px;
     font-weight: 500;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1399px) {
+    .account__title {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 767px) {

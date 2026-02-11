@@ -41,7 +41,13 @@
         color: hsl(var(--black));
         background-color: hsl(var(--white)) !important;
         border: 1px solid hsl(var(--base)) !important;
-        box-shadow: 0px 4px 10px 0 hsl(var(--black) / 0.1);
+        box-shadow:
+          0 108px 30px 0 hsl(var(--black) / 0),
+          0 69px 28px 0 hsl(var(--black) / 0.01),
+          0 39px 23px 0 hsl(var(--black) / 0.05),
+          0 17px 17px 0 hsl(var(--black) / 0.09),
+          0 4px 10px 0 hsl(var(--black) / 0.01);
+
         span {
           color: hsl(var(--base));
         }

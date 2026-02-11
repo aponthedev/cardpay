@@ -86,6 +86,14 @@
       position: relative;
       z-index: 2;
 
+      @include xl-screen {
+        max-width: 138px;
+      }
+
+      @include lg-screen {
+        max-width: 194px;
+      }
+
       img {
         @include msm-screen {
           width: 170px;
@@ -145,6 +153,9 @@
   z-index: 1;
   overflow: hidden;
 
+  @include md-screen {
+    margin-bottom: 64px;
+  }
   @include msm-screen {
     margin-bottom: 24px;
   }
@@ -188,6 +199,9 @@
     color: hsl(var(--body-color));
     margin-bottom: 163px;
 
+    @include md-screen {
+      margin-bottom: 36px;
+    }
     @include msm-screen {
       margin-bottom: 36px;
     }

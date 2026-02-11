@@ -955,6 +955,17 @@
     padding-right: 80px;
     width: 100% !important;
   }
+  @include xsm-screen {
+    padding-right: unset;
+    width: 100% !important;
+  }
+}
+
+.card-holder__info__title {
+  font-size: 16px;
+  color: hsl(var(--black));
+  font-weight: 500;
+  padding-top: 20px;
 }
 
 .mycardSwiper .swiper-slide img {
@@ -2920,7 +2931,7 @@
   border: 1px solid hsl(var(--border-color));
   border-radius: 12px;
   background: hsl(var(--white));
-  color: hsl(var(--body-color));
+  color: hsl(var(--black));
   outline: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -2948,7 +2959,7 @@
 }
 
 .otp-inputs .otp-input::placeholder {
-  color: hsl(var(--black) / 0.2);
+  color: hsl(var(--black) / 0.4);
   font-weight: 400;
 }
 
@@ -3399,7 +3410,6 @@
 .profile-upload {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .profile-img {
@@ -3439,4 +3449,8 @@
     background-color: hsl(var(--base));
     color: hsl(var(--white));
   }
+}
+
+.withdraw .custom__input {
+  height: 56px;
 }
