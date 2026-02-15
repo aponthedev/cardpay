@@ -8,9 +8,11 @@
 
     @include sm-screen {
       padding: 40px 16px;
+      padding-top: 180px;
     }
     @include xsm-screen {
       padding: 40px 8px;
+      padding-top: 180px;
     }
   }
 
@@ -56,6 +58,10 @@
       font-size: 20px;
       font-weight: 400;
       color: hsl(var(--body-color));
+
+      @include msm-screen {
+        font-size: 15px;
+      }
     }
     &__top {
       display: flex;

@@ -70,11 +70,10 @@
     }
 
     &__desc {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 400;
-      color: hsl(var(--body-color));
+      color: hsl(var(--heading-color));
       margin-bottom: 32px;
-
       @include xsm-screen {
         margin-bottom: 20px;
       }

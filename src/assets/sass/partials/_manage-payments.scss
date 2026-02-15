@@ -49,14 +49,17 @@
 
   &__list {
     margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 424px;
     flex-wrap: wrap;
     gap: 40px;
     row-gap: 12px;
     text-align: start;
-    justify-content: start;
+
+    @include msm-screen {
+      grid-template-columns: repeat(1, 1fr);
+    }
     li {
       display: flex;
       align-items: center;

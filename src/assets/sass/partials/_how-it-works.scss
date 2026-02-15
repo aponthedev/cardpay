@@ -184,6 +184,10 @@
   font-weight: 400;
   color: hsl(var(--heading-color));
   max-width: 400px;
+
+  @include msm-screen {
+    font-size: 15px;
+  }
 }
 
 /* ======================  How-it-works Section End  ======================*/

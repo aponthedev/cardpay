@@ -19,6 +19,7 @@
 .brand-slider {
   position: relative;
   z-index: 1;
+  padding: 10px;
 
   &::after {
     content: "";
@@ -35,7 +36,7 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    right: -1px;
     width: 20%;
     height: 100%;
     background: linear-gradient(to right, transparent, hsl(var(--body-bg)));

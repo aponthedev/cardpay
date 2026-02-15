@@ -529,7 +529,7 @@ button:focus {
 
 @media screen and (max-width: 424px) {
     .section-heading h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
@@ -5652,7 +5652,8 @@ input[type=number] {
 
 @media screen and (max-width: 1399px) {
     .dashboard__logo {
-        padding-bottom: 0;
+        padding: 16px 19px;
+        padding-bottom: 15px;
     }
 }
 
@@ -6004,7 +6005,6 @@ input[type=number] {
     padding: 10px;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid hsl(var(--base)/0.3);
 }
 
 .notification__header {
@@ -6650,6 +6650,13 @@ input[type=number] {
     right: 12px;
     bottom: 33px;
     z-index: 1;
+}
+
+@media screen and (max-width: 374px) {
+    .credit-card__logo svg {
+        max-width: 60px;
+        bottom: 10px;
+    }
 }
 
 .credit-card__shape1 {
@@ -8215,6 +8222,7 @@ input[type=number] {
     justify-content: center;
     align-items: center;
     border-radius: 12px;
+    flex-shrink: 0;
 }
 
 .reject__card__title {
@@ -9360,6 +9368,7 @@ input[type=number] {
 .brand-slider {
     position: relative;
     z-index: 1;
+    padding: 10px;
 }
 
 .brand-slider::after {
@@ -9378,7 +9387,7 @@ input[type=number] {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    right: -1px;
     width: 20%;
     height: 100%;
     background: linear-gradient(to right, transparent, hsl(var(--body-bg)));
@@ -9740,13 +9749,14 @@ input[type=number] {
 
 .features__card__item {
     background-color: hsl(var(--black)/0.01);
-    padding: 24px;
+    padding: 20px;
     padding-bottom: 60px;
     border: 1px solid hsl(var(--base)/0.1);
     border-radius: 16px;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 991px) {
@@ -9835,8 +9845,14 @@ input[type=number] {
     }
 }
 
+@media screen and (max-width: 424px) {
+    .features__card__title {
+        font-size: 18px;
+    }
+}
+
 .features__card__desc {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
     color: hsl(var(--body-color));
 }
@@ -9923,12 +9939,14 @@ input[type=number] {
 @media screen and (max-width: 767px) {
     .payments__wrapper {
         padding: 40px 16px;
+        padding-top: 180px;
     }
 }
 
 @media screen and (max-width: 424px) {
     .payments__wrapper {
         padding: 40px 8px;
+        padding-top: 180px;
     }
 }
 
@@ -9980,6 +9998,12 @@ input[type=number] {
     font-size: 20px;
     font-weight: 400;
     color: hsl(var(--body-color));
+}
+
+@media screen and (max-width: 575px) {
+    .payments__card__desc {
+        font-size: 15px;
+    }
 }
 
 .payments__card__top {
@@ -10392,6 +10416,12 @@ input[type=number] {
     max-width: 400px;
 }
 
+@media screen and (max-width: 575px) {
+    .client__info__desc {
+        font-size: 15px;
+    }
+}
+
 /* ======================  How-it-works Section End  ======================*/
 /* ======================  Testimonial Section Start  ======================*/
 .testimonial {
@@ -10619,14 +10649,19 @@ input[type=number] {
 
 .manage-payments__list {
     margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 424px;
     flex-wrap: wrap;
     gap: 40px;
     row-gap: 12px;
     text-align: start;
-    justify-content: start;
+}
+
+@media screen and (max-width: 575px) {
+    .manage-payments__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .manage-payments__list li {
@@ -10744,9 +10779,9 @@ input[type=number] {
 }
 
 .news__content__desc {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    color: hsl(var(--body-color));
+    color: hsl(var(--heading-color));
     margin-bottom: 32px;
 }
 
@@ -11432,6 +11467,17 @@ input[type=number] {
     padding: 20px 30px;
     border-radius: 24px;
     margin-bottom: 28px;
+}
+
+.contact__info__item:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .contact__info__item {
+        padding: 20px;
+        border-radius: 16px;
+    }
 }
 
 .contact__info__item__icon {

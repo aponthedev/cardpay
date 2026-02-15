@@ -48,7 +48,7 @@
   font-weight: 700;
 
   @include xsm-screen {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
@@ -495,9 +495,6 @@
   color: hsl(var(--base-two)) !important;
 }
 
-
-
-
 .custom__input:focus-within {
-    border-color: hsl(var(--base));
+  border-color: hsl(var(--base));
 }
