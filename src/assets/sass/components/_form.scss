@@ -51,7 +51,6 @@ label.required:after {
   border: 1px solid hsl(var(--border-color));
   color: hsl(var(--black));
   line-height: 1;
-  // padding-left: 45px;
 
   @include xsm-screen {
     border-radius: 10px;

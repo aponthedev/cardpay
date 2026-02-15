@@ -84,7 +84,7 @@
 
     padding: 4px 10px;
     border-left: 2px solid hsl(var(--base));
-    margin-bottom: 28px;
+    margin-bottom: 18px;
 
     @include msm-screen {
       font-size: 15px;
@@ -190,7 +190,7 @@
     &__line {
       height: 48px;
       width: 1px;
-      background-color: hsl(var(--black) / 0.3);
+      background-color: hsl(var(--border-color));
     }
   }
 }

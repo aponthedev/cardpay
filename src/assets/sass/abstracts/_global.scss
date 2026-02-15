@@ -494,3 +494,10 @@
 .input-group-custom__link:hover {
   color: hsl(var(--base-two)) !important;
 }
+
+
+
+
+.custom__input:focus-within {
+    border-color: hsl(var(--base));
+}

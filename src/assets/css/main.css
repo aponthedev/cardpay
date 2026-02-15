@@ -397,27 +397,27 @@ h6 {
     }
 }
 
-h1 {
+h1, .h1 {
     font-size: 48px;
 }
 
-h2 {
+h2, .h2 {
     font-size: 40px;
 }
 
-h3 {
+h3, .h3 {
     font-size: 30px;
 }
 
-h4 {
+h4, .h4 {
     font-size: 24px;
 }
 
-h5 {
+h5, .h5 {
     font-size: 20px;
 }
 
-h6 {
+h6, .h6 {
     font-size: 16px;
 }
 
@@ -972,6 +972,10 @@ button:focus {
 
 .input-group-custom__link:hover {
     color: hsl(var(--base-two)) !important;
+}
+
+.custom__input:focus-within {
+    border-color: hsl(var(--base));
 }
 
 /* ================================= Background Color Css Start =========================== */
@@ -2524,26 +2528,6 @@ button:focus {
     opacity: 1;
 }
 
-.btn--base {
-    background-color: hsl(var(--base)) !important;
-}
-
-.btn--base:hover, .btn--base:focus .btn--base:focus-visible {
-    background-color: hsl(var(--base-d-200)) !important;
-    border: 1px solid hsl(var(--base-d-200)) !important;
-}
-
-.btn-outline--base {
-    background-color: transparent !important;
-    border: 1px solid hsl(var(--base)) !important;
-    color: hsl(var(--base)) !important;
-}
-
-.btn-outline--base:hover, .btn-outline--base:focus .btn-outline--base:focus-visible {
-    background-color: hsl(var(--base)) !important;
-    color: hsl(var(--white)) !important;
-}
-
 .btn--success {
     background-color: hsl(var(--success)) !important;
 }
@@ -4090,7 +4074,7 @@ input[type=number] {
 .offcanvas__area .offcanvas__main .offcanvas__menu ul li a {
     display: block;
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
     color: hsl(var(--heading-color));
     border-bottom: 1px solid hsl(var(--black)/0.06);
     padding: 12px 0;
@@ -4318,7 +4302,7 @@ input[type=number] {
 .header__login__button {
     padding: 11px 22px;
     font-weight: 400;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 
 .login__button {
@@ -4341,6 +4325,7 @@ input[type=number] {
     padding: 100px 40px;
     position: relative;
     z-index: 1;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -4359,10 +4344,7 @@ input[type=number] {
     font-size: 190px;
     text-align: center;
     white-space: nowrap;
-    position: absolute;
-    bottom: 14%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    position: relative;
     z-index: -1;
     background-image: linear-gradient(3deg, hsl(var(--base-l-300)) 0%, hsl(var(--base-two)/0.01) 100%);
     -webkit-text-fill-color: transparent;
@@ -4370,6 +4352,7 @@ input[type=number] {
     opacity: 0.1;
     line-height: 1;
     margin-bottom: 0;
+    margin-top: -60px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -5454,7 +5437,7 @@ input[type=number] {
     background-image: linear-gradient(to right, hsl(var(--base)/0.1), transparent);
     padding: 4px 10px;
     border-left: 2px solid hsl(var(--base));
-    margin-bottom: 28px;
+    margin-bottom: 18px;
 }
 
 @media screen and (max-width: 575px) {
@@ -5590,7 +5573,7 @@ input[type=number] {
 .banner__counter__line {
     height: 48px;
     width: 1px;
-    background-color: hsl(var(--black)/0.3);
+    background-color: hsl(var(--border-color));
 }
 
 /* ======================  Banner Section End  ======================*/
@@ -5633,6 +5616,9 @@ input[type=number] {
 .dashboard__sidebar__wrapper {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -5707,6 +5693,11 @@ input[type=number] {
 
 .sidebar__open:hover {
     color: hsl(var(--base));
+}
+
+.dashboard__menu {
+    flex: 1;
+    overflow: auto;
 }
 
 .dashboard__menu ul {
@@ -6350,11 +6341,7 @@ input[type=number] {
     padding: 18px;
     border-radius: 16px;
     background-image: linear-gradient(350deg, hsl(var(--base)) 0%, hsl(var(--base-two)) 50%, hsl(var(--base)) 100%);
-    position: absolute;
-    left: 44%;
-    bottom: -360px;
-    transform: translate(-50%, -50%);
-    width: 89%;
+    margin-bottom: 40px;
 }
 
 .sidebar__footer__title {
@@ -8752,11 +8739,13 @@ input[type=number] {
 
 .profile__menu {
     border-right: 1px solid hsl(var(--black)/0.1);
+    height: calc(100vh - 94px);
 }
 
 @media screen and (max-width: 1399px) {
     .profile__menu {
         border-right: none;
+        height: unset;
     }
 }
 
@@ -8783,6 +8772,12 @@ input[type=number] {
 
 .profile__menu ul li {
     width: 100%;
+}
+
+@media screen and (max-width: 1399px) {
+    .profile__menu ul li {
+        width: unset;
+    }
 }
 
 .profile__menu ul li a {
@@ -9186,6 +9181,10 @@ input[type=number] {
 
 .withdraw .custom__input {
     height: 56px;
+}
+
+.email__wrap {
+    height: 100vh;
 }
 
 /* ======================  Profile Section Start  ======================*/

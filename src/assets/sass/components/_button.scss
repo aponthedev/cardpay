@@ -104,7 +104,7 @@
   // ============= Gradient Button End =======================
 
   // ============= Different Color Button Start ==================
-  @include btn-style(--base);
+  // @include btn-style(--base);
   @include btn-style(--success);
   @include btn-style(--base-two);
   @include btn-style(--primary);
